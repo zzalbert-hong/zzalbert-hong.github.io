@@ -10,7 +10,7 @@ body {
     margin: 0;
 }
 .container {
-    max-width: 900px;
+    max-width: 900px; /* Not sure what this is for */
     margin: auto;
 }
 header {
@@ -19,7 +19,7 @@ header {
     text-align: center;
 }
 footer {
-    background-color: #808080;
+    background-color: #6f6f6f;
     padding: 1em 0;
     text-align: center;
 }
@@ -34,14 +34,15 @@ nav a {
     color: #ffffff;
 }
 main {
-    margin-top: 2em;
+    text-align: justify;
+    padding: 0.6em;
 }
 /* Mobile-first: full width layout */
 .container {
     width: 100%;
 }
-/* Desktop: 70% centered layout */
-@media (min-width: 768px) {
+/* Desktop: 80% centered layout */
+@media (min-width: 720px) {
     .container {
         width: 80%;
     }
@@ -50,7 +51,7 @@ main {
     }
 }
 /* Mobile: stack nav links vertically */
-@media (max-width: 767px) {
+@media (max-width: 720px) {
     nav {
         flex-direction: column;
     }
@@ -77,6 +78,22 @@ main {
     <h3>About Me</h3>
     <p>I am an undergrad at UofT specializing in Mathematics and minoring in Philosophy and Economics.
        I am interested in Real Analysis, Logic, and Philosophy of Mathematics.
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+       Ut enim ad minim veniam,
+       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+       Excepteur sint occaecat cupidatat non proident,
+       sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
     <h3>Contact</h3>
     <p>Email: <a href="mailto:albert.hong@mail.utoronto.ca">albert.hong@mail.utoronto.ca</a>
