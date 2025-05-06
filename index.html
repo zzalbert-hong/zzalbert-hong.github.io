@@ -19,7 +19,7 @@ header {
     text-align: center;
 }
 footer {
-    background-color: #6f6f6f;
+    background-color: #696969;
     padding: 1em 0;
     text-align: center;
 }
@@ -32,6 +32,14 @@ nav {
 nav a {
     text-decoration: none;
     color: #ffffff;
+}
+nav a:link {
+    text-decoration: none;
+    color: #ffffff;
+}
+nav a:hover {
+    text-decoration: none;
+    color: #bbbbff;
 }
 main {
     text-align: justify;
@@ -51,6 +59,11 @@ main {
     nav {
         flex-direction: column;
     }
+}
+a:link, a:visited, a:hover {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
 }
 </style>
 </head>
