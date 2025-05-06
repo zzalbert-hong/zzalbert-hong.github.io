@@ -1,73 +1,86 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>Albert Hong | Home</title>
-      <link rel="icon" type="image/x-icon" href="/images/favicon.png">
-   </head> 
-   <body>
-      <header>   
-      <h1 style="text-align:center;">Zhao-Ze Albert Hong</h1>
-      <nav>
-         Email: <a href=”albert.hong@mail.utoronto.ca”>albert.hong@mail.utoronto.ca</a>
-         <br><img src=”profile-picture.png”>
-         <p>Disclaimer 1: This website does not guarantee completeness nor consistency
-            within its content.<br>
-            Disclaimer 2: This website does not claim originality in its content.
-            Contact the owner if your work is presented and you want it removed.
-         </p>
-         <p>I am an undergrad at UofT specializing in Mathematics and minoring in Philosophy and Economics.
-            I am interested in Analysis, Mathematical Education, and Logic.
-         </p>
-      </nav>
-      </header>
-      <main>
-         <div class=”row">
-            <div class=”post-text-box”>
-               <h1>1. Undergrad: UofT Math</h1>
-               <p>Below you will find the notes to each course Albert took at UofT.
-                  <br>Each file corresponds to a course and will contain the following sections:
-                  <br>    (a) Overview of the math content and the course.
-                  <br>    (b) List of definitions and theorems for each chapter.
-                  <br>    (c) My explanations for some of the confusing concepts.
-                  <br>    (d) Theorems proofs that I find amazingly elegant.
-                  <br>    (e) Practice or exam problems that I find interesting.
-                  <br>The intended audience of these notes are:
-                  <br>    (a) People who are currently taking the course may use these notes
-                  for exam review.
-                  <br>    (b) People who are not enrolled in the course but are trying
-                  to learn the math content. The notes provide recommendation for textbooks.
-                  In addition, one may use the list of definitions and theorems as
-                  a learning check-list.
-                  <br>    (c) People planning to take the course can have a better picture of
-                  the course by reading throught the overviews and browsing through the theorems.
-               </p>
-               <p>...I will add a table here later...</p>
-            </div>
-            <div class=”post-text-box”>
-               <h1>2. PhD: Mars</h1>
-               <p>After living for 6 years on Mars, I got bored of eating potatoes.</p>
-            </div>
-            <div class=”post-text-box”>
-               <h1>3. Projects and Ideas</h1>
-               <a href="https://scholar.google.ca/">
-                  Hong, A. (2030). How functions and numbers work differently on Mars
-                  than on Earth. The Canadian Mathematics Monthly, 28(6), 220-284.
-               </a>
-            </div>
-            <div class=”post-text-box”>
-               <h1>4. Book Review and Summaries</h1>
-               <p>De Kuo Yi Liou Da Hsue Jiau Ni Shoo Hsue Jia De 22 Ge Si Cau Gong Ju</p>
-            </div>
-            <div class=”post-text-box”>
-               <h1>5. Teaching Materials</h1>
-               <p>Below are the handouts I made when I TA-ed MAT185 at UofT.</p>
-            </div>
-            <div class=”post-text-box”>
-               <h1>6. Others</h1>
-               <p>...some random stuff probably...</p>
-            </div>
-         </div>        
-      </main>
-      <footer>DEFY GRAVITY</footer>
-    </body>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Albert Hong | Home</title>
+<link rel="icon" type="image/x-icon" href="/images/favicon.png">
+<style>
+body {
+    margin: 0;
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 1em;
+}
+header, footer {
+    background-color: #000000;
+    padding: 1em 0;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+main {
+    margin-top: 2em;
+}
+/* Mobile-first: full width layout */
+.container {
+    width: 100%;
+}
+/* Desktop: 70% centered layout */
+@media (min-width: 768px) {
+    .container {
+        width: 70%;
+    }
+    nav {
+        flex-direction: row;
+    }
+}
+/* Mobile: stack nav links vertically */
+@media (max-width: 767px) {
+    nav {
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+    <h1 style="color:white;">Zhao-Ze Albert Hong</h1>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/notes.html">Notes</a>
+        <a href="/about.html">About</a>
+    </nav>
+</header>
+
+
+
+<main>
+    <h2>Article Title</h2>
+    <p>This is the content of the article. You can add more sections, images, or math content here.
+       Email: <a href=”albert.hong@mail.utoronto.ca”>albert.hong@mail.utoronto.ca</a>
+    </p>
+</main>
+
+
+
+<footer>
+    <nav>
+        <a href="mailto:example@example.com">Contact</a>
+        <a href="https://github.com/yourusername">GitHub</a>
+    </nav>
+</footer>
+</div>
+</body>
 </html>
