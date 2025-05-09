@@ -34,8 +34,8 @@ main {
     text-align: justify;
     padding: 0.6em;
 }
-h1 {
-    color: red;
+body h1 {
+    color: red !important;
 }
 h2 {
     font-size: 1em;
