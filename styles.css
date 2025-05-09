@@ -35,7 +35,7 @@ main {
     padding: 0.6em;
 }
 h1 {
-    color: #ffffff;
+    color: red;
 }
 h2 {
     font-size: 1em;
@@ -68,10 +68,11 @@ h3 {
 }
 /* Mobile: stack nav links vertically */
 @media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-    }
-    body {
+    
+    html {
     font-size: 90%;
 }
+nav {
+        flex-direction: column;
+    }
 }
