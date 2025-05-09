@@ -52,12 +52,38 @@ h3 {
     nav {
         flex-direction: row;
     }
+    h1 {
+    color: #ffffff;
+}
+h2 {
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+h3 {
+    font-size: 1em;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+}
 }
 /* Mobile: stack nav links vertically */
 @media (max-width: 600px) {
     nav {
         flex-direction: column;
     }
+    h1 {
+    color: #ffffff;
+}
+h2 {
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+h3 {
+    font-size: 1em;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+}
     p {
         font-size: 0.9em;
     }
