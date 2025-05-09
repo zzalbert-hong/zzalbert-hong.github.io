@@ -2,123 +2,85 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="John Doe">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>ZZAlbert | Articles</title>
+<title>Articles | ZZAlbert</title>
 <link rel="icon" type="image/x-icon" href="/images/favicon.png?v=2">
-<style>
-body {
-    margin: 0;
-}
-.container {
-    max-width: 900px;
-    margin: auto;
-}
-header {
-    background-color: #000000;
-    padding: 1.5em 0;
-    text-align: center;
-}
-footer {
-    background-color: #696969;
-    padding: 1em 0;
-    text-align: center;
-}
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    flex-wrap: wrap;
-}
-nav a {
-    text-decoration: none;
-    color: #ffffff;
-}
-nav a:hover {
-    text-decoration: none;
-    color: #bbbbff;
-}
-main {
-    text-align: justify;
-    padding: 0.6em;
-}
-.container {
-    width: 100%;
-}
-/* Desktop: stack nav links horizontally */
-@media (min-width: 600px) {
-    nav {
-        flex-direction: row;
-    }
-}
-/* Mobile: stack nav links vertically */
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-    }
-}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="container">
 <header>
-    <h1 style="color:white;">Zhao-Ze Albert Hong</h1>
+    <h1>Zhao-Ze Albert Hong</h1>
     <nav>
-        <a href="https://zzalbert.com/">Home</a>
+        <a href="/">Home</a>
         <a href="profile.html">Profile</a>
-        <a style="color:#bbbbff;" href="articles.html">Articles</a>
+        <a style="color:#bbbbff;">Articles</a>
         <a href="index_backup.html">Courses</a>
         <a href="profile.html">Research</a>
         <a href="other.html">Other</a>
     </nav>
 </header>
-<!-- ZZAH: Home, Profile, Articles, Courses, Research, Other -->
-<!-- ZZAH: Home, Profile, Articles, Courses, Research, Other -->
-<!-- (if too many articles later) ZZA|Articles: <Back, Mathematics, Philosophy, Other -->
-<!-- ZZA|Articles: <Back -->
 
 
 
 <main>
-    <p> Below you will find essays I have written to explain mathematical concepts or
-        express my philosophical views, etc. I intended to make this like a blog.
-        Hopefully I continue to write articles like those.
+    <p> Below you will find essays I wrote to explain mathematical concepts or express
+        my philosophical views, etc. I intended to make this like a blog.
+        Hopefully I continue writing articles like these.
     </p>
 
     <h3>Mathematics</h3>
-    <p> <a href="profile.html">Limits Part I (webpage; 2025.05.20)</a>:
+    <p> <a href="/">Limits Part I (webpage; 2025.05.20)</a>:
         The most confusing topic that first year math students encounter is perhaps the
         Epsilon-Delta Definition for limits. For one, students struggle to understand the
         statement; for another, it is not clear why limits are defined like so.
         In this article, I explain and motivate the Definition from a special perspective.
     </p>
-    <p> <a href="profile.html">Limits Part II (PDF; 2025.05.20)</a>:
+    <p> <a href="/">Limits Part II (PDF; 2025.05.20)</a>:
         Another confusing aspect about limits is the idea of "approaching but not touching."
         A lot of students ask: Are limits actually equal to some value or infinitely
         approaching but not equal? In this article, I explain how to understand and use the
         terminology "limit."
     </p>
-    <p> <a href="profile.html">Limits Part III (PDF; 2025.05.20)</a>:
+    <p> <a href="/">Limits Part III (PDF; 2025.05.20)</a>:
         While we often associate limits with specific ideas, there are peculiar functions
         that challenge these inuitions. I have wrote this article to provide a few,
         and share my attitude towards those cases.
     </p>
-    <p> <a href="profile.html">Dedekind Cuts, Big Picture (webpage; 2025.04.05)</a>:
+    <p> <a href="/">Dedekind Cuts, Big Picture (webpage; 2025.04.05)</a>:
         ...
     </p>
-    <p> <a href="profile.html">Invertible But Not Continuous (PDF; 2025.04.26)</a>:
+    <p> <a href="/">Invertible But Not Continuous (PDF; 2025.04.26)</a>:
         In MAT157, we proved that continuous bijections have continuous inverses. ...
+    </p>
+    <p>See <a href="math_articles.html">full list</a>.
     </p>
 
     <h3>Philosophy</h3>
-    <p> <a href="profile.html">"Aesthetics" Solely Subjective (webpage; 2025.04.27)</a>:
+    <p> <a href="/">"Aesthetics" Solely Subjective (webpage; 2025.04.27)</a>:
         In the philosophical discussion of aesthetics, there is one key question:
         Is aesthetics objective or subjective? For various reasons, many people today
         consider aesthetics "mostly subjective but containing some objective element."
         Yet in this article, I propose 3 arguments to defend my position that "aesthetics"
         is solely subjective.
     </p>
-    <p> <a href="profile.html">Will Machines Ever Be "Intelligent?"(webpage; 2025.05.20)</a>:
+    <p> <a href="/">Will Machines Ever Be "Intelligent?"(webpage; 2025.05.20)</a>:
         ...
+    </p>
+    <p>See <a href="philos_articles.html">full list</a>.
+    </p>
+
+    <h3>Other</h3>
+    <p> <a href="/">The Good Classmate Manifesto (webpage; 2025.04.27)</a>:
+        Be a good classmate.
+    </p>
+    <p> <a href="/">Short Story(webpage; 2025.05.20)</a>:
+        ...
+    </p>
+    <p>See <a href="other_articles.html">full list</a>.
     </p>
 </main>
 
@@ -126,12 +88,12 @@ main {
 
 <footer>
     <nav>
-        <a href="https://zzalbert.com/">Home</a>
+        <a href="/">Home</a>
         <a href="profile.html">Profile</a>
         <a href="/">Top</a>
         <a href="mailto:albert.hong@mail.utoronto.ca">Contact</a>
     </nav>
-    <p style="color:white; margin-top:1.2em; margin-bottom:0em;">
+    <p style="color:white; margin-top:1.2em; margin-bottom:0em; font-size:80%;">
         Copyright &copy; 2025, Zhao-Ze Albert Hong</p>
 </footer>
 </div>
