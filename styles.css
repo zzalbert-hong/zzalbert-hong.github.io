@@ -64,6 +64,12 @@ h3 {
     font-weight: bold;
     text-align: center;
 }
+img {
+    border: 1px solid #000000;
+}
+.mybox {
+    border: 1px solid #000000;
+}
 .cpyrt {
     color: #ffffff;
     margin-top:1.2em;
