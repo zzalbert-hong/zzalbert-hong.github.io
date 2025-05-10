@@ -34,11 +34,8 @@ main {
     text-align: justify;
     padding: 0.6em;
 }
-.container h1 {
-    color: red;
-}
 h2 {
-    font-size: 1em;
+    font-size: 1.17em;
     margin-top: 1em;
     margin-bottom: 1em;
 }
@@ -47,32 +44,44 @@ h3 {
     margin-top: 1.33em;
     margin-bottom: 1.33em;
 }
+.pageheading {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    color: #ffffff;
+}
+.essayheading {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    text-align: center;
+}
+.cpyrt {
+    color: #ffffff;
+    margin-top:1.2em;
+    margin-bottom:0em;
+    font-size:80%;
+}
 /* Desktop: stack nav links horizontally */
-@media (min-width: 600px) {
+@media (min-width: 500px) {
     nav {
         flex-direction: row;
     }
-    h1 {
-    color: #ffffff;
-}
-h2 {
-    font-size: 1em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-h3 {
-    font-size: 1em;
-    margin-top: 1.33em;
-    margin-bottom: 1.33em;
-}
 }
 /* Mobile: stack nav links vertically */
 @media (max-width: 600px) {
-    
     html {
-    font-size: 90%;
-}
-nav {
+        font-size: 90%;
+    }
+    nav {
         flex-direction: column;
     }
 }
