@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Zhao-Ze Albert Hong</title>
+<meta name="description" content=
+"See my articles explaining mathematical concepts and discussing philosophical topics.">
+<meta name="author" content="Albert Hong">
+<link rel="icon" type="image/x-icon" href="/images/favicon.png?v=2">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container" id="hhh">
+<header>
+    <h2 class="pageheading">Articles | ZZAlbert</h2>
+    <nav>
+        <a href="articles.html">&lt;&lt;Articles</a>
+        <a href="math_articles.html">&lt;Mathematics</a>
+    </nav>
+</header>
+
+
+
+<main>
+    <h1 class="essayheading">Dedekind Cuts, Big Picture</h1>
+    <p style="text-align: center;">April 4, 2025<br>Length: Short</p>
+    <div class="mybox">
+    <p> During our lecture on Dedekind Cuts, I found many of my classmates struggling,
+        e.g. not understanding why we want to prove "a + b = b + a" in such a
+        complicated way. This article is a Piazza post I made after the lecture
+        to explain the big picture behind Dedekind Cuts (with some revisions).
+        For the more technical details of Dedekind Cuts, see the last section of my
+        MAT157Y1 notes.
+    </p>
+    </div>
+
+    <p> I felt that many people were confused during today's lecture,
+        so I thought I could share my understanding of Dedekind Cuts here.
+    </p>
+    <p> I think today's material is better understood by thinking analogously
+        to vector spaces. If you recall, a vector space consists of a Domain,
+        a Vector Addition operator, and a Scalar Multiplication operator.
+        An example---we first define:
+        <ul>
+            <li>Domain: (x,y) | x,y \in Q
+                i.e. the set of rational pairs</li>
+            <li>Vector Addition: (x,y) + (a,b) = (x+a,y+b)</li>
+            <li>Scalar Multiplication: c(x,y) = (cx,cy)</li>
+        </ul>
+        Then, we verify such a structure satisfies the axioms of vector spaces.
+    </p>
+    <p> We do something similar for fields. Just like we deployed the notion of Q
+        and constructed the vector space Q^2, this time we want to deploy, still,
+        the notion of Q, and construct an interesting ordered field, called R.
+        I will explain the philosophical "why we do" in a moment, but for now
+        just focus on the "what we do"---we first define the Domain,
+        Addition, Multiplication, Order, etc. of R, as follows:
+        (remember, the ultimate goal of this discussion is to construct R, which
+        means at this point we should not beg the question and assume R already
+        existed, and so the following definitions avoid deploying the notion of R)
+        <ul>
+            <li>Domain: a \subset Q | a is a Dedekind Cut
+                i.e. the set of Dedekind Cuts (a Dedekind Cut is a subset
+                of Q that has specific properties)</li>
+            <li>Addition: a+b = x+y | x in a, y in b</li>
+            <li>Multiplication: ...</li>
+            <li>... etc. (as defined in class)</li>
+        </ul>
+        Then, we verify (or "discover," if you wish) that such a structure
+        satisfies (P1)-(P13).
+    </p>
+    <p> After all of that, we simply define R:=R, with numbers in R just being
+        shorthand notations for Dedekind Cuts in R. For instance, the (true)
+        statement about R:<br>
+        circled1 0 + 1 = 1<br>
+        can be contracted to:<br>
+        circled2 0 + 1 = 1<br>
+        Or we can also say, when we write down statements about R,
+        such as circled2, it is actually something like circled1 in disguise.
+    </p>
+    <p> The reason why we go through all of these cumbersome tasks and define R
+        in such a complicated way is that, philosophically we want to make as few
+        assumptions as possible, especially about what kinds of structures exist.
+        Recall the natural numbers. (HAVE NOT FINISHED REVISING THE REST)
+    </p>
+    <p> the fact that there is actually a structure satisfying the Peano Axioms of
+        Natural Number is not obvious at all. So the existence of N is really just
+        an assumption---we presuppose the existence of N and then do arithmetics.
+        We HAVE TO accept that presupposition, otherwise we cannot do any math.
+    </p>
+    <p> Now you might think, we also HAVE TO "assume" that there is a structure
+        satisfying the Axioms of Reals (i.e. (P1)-(P13)),
+        but the genius thing about Dedekind Cuts is that, we don't! As we have shown,
+        by only assuming the existence of N, we can then so to speak
+        "construct (no longer assuming)" the existence of structures like Z, Q,
+        and (using Dedekind Cuts) R. In short, Dedekind Cuts allow us to not "assume"
+        the existence of R, but "construct" it!
+    </p>
+
+    <div class="mybox">
+    <p> Actions:
+        <ul>
+            <li>Back to <a href="#hhh">top</a>.</li>
+            <li>Back to <a href="../articles.html">Articles</a>.</li>
+            <li>Back to <a href="../math_articles.html">Mathematics</a>.</li>
+            <li>See also <a href="proofs_and_axioms.html">Proofs And Axioms</a>.</li>
+        </ul>
+    </p>
+    </div>
+</main>
+
+
+
+<footer>
+    <nav>
+        <a href="/">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="mailto:albert.hong@mail.utoronto.ca">Contact</a>
+    </nav>
+    <p class="cpyrt">Copyright &copy; 2025, Zhao-Ze Albert Hong</p>
+</footer>
+</div>
+</body>
+</html>
