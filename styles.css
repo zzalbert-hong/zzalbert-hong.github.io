@@ -78,9 +78,17 @@ img {
 }
 .cpyrt {
     color: #ffffff;
-    margin-top:1.2em;
-    margin-bottom:0em;
-    font-size:80%;
+    margin-top: 1.2em;
+    margin-bottom: 0em;
+    font-size: 80%;
+}
+.mycap {
+    text-align: center;
+    width: 80%;
+    margin-top: 0.6em; 
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #909090;
 }
 /* Desktop: stack nav links horizontally */
 @media (min-width: 500px) {
