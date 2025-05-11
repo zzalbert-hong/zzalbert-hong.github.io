@@ -88,7 +88,8 @@ img {
     margin-top: 0.6em; 
     margin-left: 10%;
     margin-right: 10%;
-    color: #909090;
+    color: #a4a4a4;
+    font-size: 0.9em;
 }
 /* Desktop: stack nav links horizontally */
 @media (min-width: 500px) {
