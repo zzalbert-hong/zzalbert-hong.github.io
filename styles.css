@@ -66,6 +66,10 @@ h3 {
 }
 img {
     border: 1px solid #000000;
+    display:block;
+    margin:auto;
+    max-width: 100%;
+    height: auto;
 }
 .mybox {
     border: 1px solid #000000;
