@@ -103,6 +103,6 @@ img {
         font-size: 90%;
     }
     nav {
-        flex-direction: column;
+        flex-direction: row;
     }
 }
