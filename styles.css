@@ -13,7 +13,7 @@ header {
 }
 footer {
     background-color: #777777;
-    padding: 1em 0;
+    padding: 1.1em 0;
     text-align: center;
 }
 nav {
@@ -91,18 +91,17 @@ img {
     color: #a4a4a4;
     font-size: 0.9em;
 }
-/* Desktop: stack nav links horizontally */
-@media (min-width: 500px) {
+/* @media (min-width: 500px) {
     nav {
         flex-direction: row;
     }
-}
-/* Mobile: stack nav links vertically */
+} */
 @media (max-width: 600px) {
     html {
         font-size: 90%;
     }
-    nav {
-        flex-direction: row;
-    }
+    /* nav {
+        flex-direction: column;
+        https://www.w3schools.com/howto/howto_css_dropdown.asp
+    } */
 }
