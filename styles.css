@@ -45,6 +45,16 @@ h3 {
     margin-top: 1.33em;
     margin-bottom: 1.33em;
 }
+img {
+    border: 1px solid #000000;
+    display:block;
+    margin:auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
 .pageheading {
     display: block;
     font-size: 2em;
@@ -64,13 +74,6 @@ h3 {
     margin-right: 0;
     font-weight: bold;
     text-align: center;
-}
-img {
-    border: 1px solid #000000;
-    display:block;
-    margin:auto;
-    max-width: 100%;
-    height: auto;
 }
 .mybox {
     border: 1px solid #000000;
@@ -93,21 +96,25 @@ img {
     color: #a4a4a4;
     font-size: 0.9em;
 }
-/* @media (min-width: 500px) {
-    nav {
-        flex-direction: row;
-    }
-} */
-@media (max-width: 600px) {
-    html {
-        font-size: 90%;
-    }
-    /* nav {
-        flex-direction: column;
-        https://www.w3schools.com/howto/howto_css_dropdown.asp
-    } */
-}
 
+
+
+.tile {
+    display: flex;
+    flex-direction: row;
+}
+.tile-picture {
+    padding: 0px;
+    flex: 35%;
+}
+.tile-text {
+    text-align: justify;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    flex: 65%;
+}
 
 
 .flip-box {
@@ -135,4 +142,24 @@ img {
 }
 .flip-box-back {
     transform: rotateY(180deg);
+}
+
+
+
+/* @media (min-width: 500px) {
+    nav {
+        flex-direction: row;
+    }
+} */
+@media (max-width: 600px) {
+    html {
+        font-size: 90%;
+    }
+    .tile {
+        flex-direction: column;
+    }
+    /* nav {
+        flex-direction: column;
+        https://www.w3schools.com/howto/howto_css_dropdown.asp
+    } */
 }
