@@ -69,11 +69,14 @@ img {
     border: 1px solid #000000;
     display:block;
     margin:auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
     max-width: 100%;
     height: auto;
 }
 .mybox {
     border: 1px solid #000000;
+    border-radius: 3px;
     padding-right: 0.6em;
     padding-left: 0.6em;
 }
@@ -86,7 +89,7 @@ img {
 .mycap {
     text-align: center;
     width: 80%;
-    margin-top: 0.6em; 
+    margin-top: -0.4em; 
     margin-left: 10%;
     margin-right: 10%;
     color: #a4a4a4;
