@@ -114,6 +114,7 @@ img {
     background-color: transparent;
     width: 200px;
     height: 200px;
+    margin: auto;
 }
 .flip-box-inner {
     position: relative;
