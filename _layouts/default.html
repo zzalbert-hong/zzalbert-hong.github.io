@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>{{ page.title }}</title>
-{% if page.description %}
-<meta name="description" content="{{ page.description }}">
+{% if page.title %}<title>{{ page.title }} | zzalbert.com</title>
+{% else %}<title>Zhao-Ze Albert Hong</title>
+{% endif %}
+{% if page.description %}<meta name="description" content="{{ page.description }}">
 {% endif %}
 <meta name="author" content="Albert Hong">
 <link rel="icon" type="image/x-icon" href="/images/favicon.png?v=2">
