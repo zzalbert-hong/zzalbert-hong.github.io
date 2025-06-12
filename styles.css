@@ -2,11 +2,6 @@ body {
     margin: 0;
     font-family: 'Times New Roman', serif;
 }
-.container {
-    max-width: 800px;
-    min-height: 100vh;
-    margin: auto;
-}
 header {
     background-color: #000000;
     padding: 1.2em 0;
@@ -45,8 +40,13 @@ h3 {
     margin-top: 1.33em;
     margin-bottom: 1.33em;
 }
+ul, ol {
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
 img {
     border: 1px solid #000000;
+    border-radius: 3px;
     display:block;
     margin:auto;
     max-width: 100%;
@@ -55,6 +55,11 @@ img {
 
 
 
+.container {
+    max-width: 800px;
+    min-height: 100vh;
+    margin: auto;
+}
 .pageheading {
     display: block;
     font-size: 2em;
@@ -80,6 +85,10 @@ img {
     border-radius: 3px;
     padding-right: 0.6em;
     padding-left: 0.6em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 .cpyrt {
     color: #ffffff;
@@ -105,7 +114,10 @@ img {
 }
 .tile-picture {
     padding: 0px;
-    flex: 35%;
+    flex: 25%;
+}
+.tile-picture img {
+    max-width: 250px;
 }
 .tile-text {
     text-align: justify;
@@ -113,8 +125,9 @@ img {
     padding-right: 0.6em;
     padding-top: 0em;
     padding-bottom: 0em;
-    flex: 65%;
+    flex: 75%;
 }
+
 
 
 .flip-box {
