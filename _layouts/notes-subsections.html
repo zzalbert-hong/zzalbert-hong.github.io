@@ -5,20 +5,22 @@ layout: default
 <header>
     <h2 class="pageheading">Zhao-Ze Albert Hong</h2>
     <nav>
-        {% if page.option == 'home' %}<a style="color:#bbbbff;">
-            {% else %}<a href="/">{% endif %}Home</a>
-        {% if page.option == 'profile' %}<a style="color:#bbbbff;">
-            {% else %}<a href="profile/">{% endif %}Profile</a>
-        {% if page.option == 'blog' %}<a style="color:#bbbbff;">
-            {% else %}<a href="blog/">{% endif %}Blog</a>
-        {% if page.option == 'notes' %}<a style="color:#bbbbff;">
-            {% else %}<a href="notes/">{% endif %}Notes</a>
-        {% if page.option == 'extras' %}<a style="color:#bbbbff;">
-            {% else %}<a href="extras/">{% endif %}Extras</a>
+        <a href="/notes/">{% if page.option == 'post' %}&lt;{% endif %}&lt; Notes</a>
+        {% if page.option == 'mathematics' %}<a style="color:#bbbbff;">
+            {% else %}<a href="/notes/mathematics.html">{% endif %}
+            {% if page.option == 'post' %}&lt; {% endif %}Mathematics</a>
+        {% if page.option == 'philosophy' %}<a style="color:#bbbbff;">
+            {% else %}<a href="/notes/philosophy.html">{% endif %}
+            {% if page.option == 'post' %}&lt; {% endif %}Philosophy</a>
+        {% if page.option == 'other' %}<a style="color:#bbbbff;">
+            {% else %}<a href="/notes/other.html">{% endif %}
+            {% if page.option == 'post' %}&lt; {% endif %}Other</a>
     </nav>
 </header>
 
 <main>
-    <h1 style="display:none;">{{ page.heading-one }}</h1>
+    {% if page.option == 'post' %}<h1>{{ page.heading }}</h1>
+        <p style="margin-top:-0.4em; text-align:center;">{{ page.mydate }}</p>
+        {% else %}<h1 style="display:none;">{{ page.heading }}</h1>{% endif %}
     {{ content }}
 </main>

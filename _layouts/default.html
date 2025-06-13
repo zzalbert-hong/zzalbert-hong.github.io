@@ -4,8 +4,8 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-{% if page.title %}<title>{{ page.title }} | zzalbert.com</title>
-{% else %}<title>Zhao-Ze Albert Hong</title>
+{% if page.option == 'home' or page.option == 'post' %}<title>{{ page.title }}</title>
+{% else %}<title>{{ page.title }} | zzalbert.com</title>
 {% endif %}
 {% if page.description %}<meta name="description" content="{{ page.description }}">
 {% endif %}
