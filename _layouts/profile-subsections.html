@@ -5,16 +5,17 @@ layout: default
 <header>
     <h2 class="pageheading">Zhao-Ze Albert Hong</h2>
     <nav>
-        {% if page.option == 'home' %}<a style="color:#bbbbff;">
+        <a href="/profile/">{% if page.option == 'post' %}&lt;{% endif %}&lt; Profile</a>
+        {% if page.option == 'h' %}<a style="color:#bbbbff;">
             {% else %}<a href="/">{% endif %}Home</a>
         {% if page.option == 'profile' %}<a style="color:#bbbbff;">
-            {% else %}<a href="/profile/">{% endif %}Profile</a>
+            {% else %}<a href="profile/">{% endif %}Profile</a>
         {% if page.option == 'blog' %}<a style="color:#bbbbff;">
-            {% else %}<a href="/blog/">{% endif %}Blog</a>
+            {% else %}<a href="blog/">{% endif %}Blog</a>
         {% if page.option == 'notes' %}<a style="color:#bbbbff;">
-            {% else %}<a href="/notes/">{% endif %}Notes</a>
+            {% else %}<a href="notes/">{% endif %}Notes</a>
         {% if page.option == 'extras' %}<a style="color:#bbbbff;">
-            {% else %}<a href="/extras/">{% endif %}Extras</a>
+            {% else %}<a href="extras/">{% endif %}Extras</a>
     </nav>
 </header>
 
