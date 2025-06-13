@@ -117,7 +117,10 @@ img {
     flex: 25%;
 }
 .tile-picture img {
+    width: 100%;
     max-width: 250px;
+    margin: auto;
+    margin-top: 0;
 }
 .tile-text {
     text-align: justify;
