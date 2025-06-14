@@ -27,6 +27,8 @@ nav a:hover {
     color: #bbbbff;
 }
 main {
+    max-width: 800px;
+    margin: 0 auto;
     text-align: justify;
     padding: 0.6em;
 }
@@ -66,7 +68,7 @@ img {
 
 
 .container {
-    max-width: 800px;
+    width: 100%;
     min-height: 100vh;
     margin: auto;
 }
