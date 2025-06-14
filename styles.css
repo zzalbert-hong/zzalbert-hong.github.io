@@ -118,7 +118,7 @@ table.go-to, table.go-to th, table.go-to td {
   text-align: center;
   font-size: 1em;
   width: 20em;
-  margin: auto;
+  margin: 1em auto;
 }
 table.go-to th {
   padding: 0.4em 0 0.3em;
