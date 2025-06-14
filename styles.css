@@ -113,27 +113,23 @@ img {
 .tile {
     display: flex;
     flex-direction: row;
-    background-color: #fafafa;
+    background-color: #fcfcfc;
     margin: 0.8em 0;
     padding: 0.6em;
 }
 .tile-picture {
     padding: 0 0.6em 0 0;
-    flex: 23%;
+    flex: 21%;
 }
 .tile-picture img {
     width: 100%;
-    max-width: 200px;
-    max-height: 160px;
-    width: auto;
-    height: auto;
     margin: auto;
     margin-top: 0;
 }
 .tile-text {
     text-align: justify;
     padding: 0;
-    flex: 77%;
+    flex: 79%;
 }
 .tile-text p {
     margin: 0;
@@ -184,6 +180,12 @@ img {
     }
     .tile-picture {
         padding: 0 0 0.6em 0;
+    }
+    .tile-picture img {
+        max-width: 200px;
+        max-height: 160px;
+        width: auto;
+        height: auto;
     }
     /* nav {
         flex-direction: column;
