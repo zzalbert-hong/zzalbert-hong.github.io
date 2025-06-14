@@ -18,7 +18,7 @@ header {
 .pageheading {
     display: block;
     font-size: 2em;
-    margin: 0.67em 0 0.69em 0;
+    margin: 0.68em 0 0.68em 0;
     font-weight: bold;
     color: #ffffff;
 }
@@ -39,7 +39,7 @@ nav {
     gap: 1.5em;
     flex-wrap: wrap;
 }
-nav a {
+nav a:link {
     text-decoration: none;
     color: #ffffff;
 }
@@ -60,7 +60,7 @@ main a:link, a:visited {
     color: #1559ff;
 }
 main a:hover {
-    background-color: #b6cbf6;
+    background-color: #c9daf8;
 }
 h1 {
     font-size: 1.16em;
