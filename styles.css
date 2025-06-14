@@ -30,6 +30,9 @@ main {
     text-align: justify;
     padding: 0.6em;
 }
+main a:visited {
+    color: blue;
+}
 h1 {
     font-size: 1.16em;
     margin: 1em 0;
@@ -110,7 +113,7 @@ img {
 .tile {
     display: flex;
     flex-direction: row;
-    background-color: #f0f0f0;
+    background-color: #fafafa;
     margin: 0.8em 0;
     padding: 0.6em;
 }
@@ -122,6 +125,8 @@ img {
     width: 100%;
     max-width: 200px;
     max-height: 160px;
+    width: auto;
+    height: auto;
     margin: auto;
     margin-top: 0;
 }
