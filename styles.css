@@ -39,11 +39,11 @@ nav {
     gap: 1.5em;
     flex-wrap: wrap;
 }
-nav a:link {
+header a:link, footer a:link, header a:visited, footer a:visited {
     text-decoration: none;
     color: #ffffff;
 }
-nav a:hover {
+header a:hover, footer a:hover {
     text-decoration: none;
     color: #bbbbff;
 }
