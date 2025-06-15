@@ -75,10 +75,10 @@ h3 {
     font-size: 1em;
     margin: 0.8em 0 0.8em 0;
 }
-.paraheading {
+/* .paraheading {
     font-weight: bold;
     margin-right: 1em;
-}
+} */
 p, ul, ol {
     margin-top: 0.8em;
     margin-bottom: 0.8em;
@@ -121,7 +121,7 @@ img {
 
 
 
-table.go-to, table.go-to th, table.go-to td {
+/* table.go-to, table.go-to th, table.go-to td {
     border: 1px solid #000000;
     border-collapse: collapse;
     text-align: center;
@@ -136,7 +136,7 @@ table.go-to th {
 }
 table.go-to td {
     padding: 0.2em;  
-}
+} */
 
 
 
