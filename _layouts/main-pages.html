@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<header>
+    <h2 class="pageheading"><a href="/">Zhao-Ze Albert Hong</a></h2>
+    <nav>
+        {% if page.option == 'home' %}<a style="color:#bbbbff;">
+            {% else %}<a href="/">{% endif %}Home</a>
+        {% if page.option == 'profile' %}<a style="color:#bbbbff;">
+            {% else %}<a href="/profile/">{% endif %}Profile</a>
+        {% if page.option == 'blog' %}<a style="color:#bbbbff;">
+            {% else %}<a href="/blog/">{% endif %}Blog</a>
+        {% if page.option == 'notes' %}<a style="color:#bbbbff;">
+            {% else %}<a href="/notes/">{% endif %}Notes</a>
+        {% if page.option == 'extras' %}<a style="color:#bbbbff;">
+            {% else %}<a href="/extras/">{% endif %}Extras</a>
+    </nav>
+</header>
+
+<main>
+    <h1 style="display:none;">{{ page.heading }}</h1>
+    {{ content }}
+</main>

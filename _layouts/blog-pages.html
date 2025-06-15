@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<header>
+    <h2 class="pageheading"><a href="/">Zhao-Ze Albert Hong</a></h2>
+    <nav>
+        <a href="/blog/">{% if page.option == 'post' %}&lt;{% endif %}&lt; Blog</a>
+        {% if page.option == 'mathematics' %}<a style="color:#bbbbff;">
+            {% else %}<a href="/blog/mathematics.html">{% endif %}
+            {% if page.option == 'post' %}&lt; {% endif %}Mathematics</a>
+        {% if page.option == 'philosophy' %}<a style="color:#bbbbff;">
+            {% else %}<a href="/blog/philosophy.html">{% endif %}
+            {% if page.option == 'post' %}&lt; {% endif %}Philosophy</a>
+        {% if page.option == 'other' %}<a style="color:#bbbbff;">
+            {% else %}<a href="/blog/other.html">{% endif %}
+            {% if page.option == 'post' %}&lt; {% endif %}Other</a>
+    </nav>
+</header>
+
+<main>
+    {% if page.option == 'post' %}<h1>{{ page.heading }}</h1>
+        <p style="margin-top:-0.4em; text-align:center;">{{ page.mydate }}<br>
+        Length: {{ page.length }}</p>
+        {% else %}<h1 style="display:none;">{{ page.heading }}</h1>{% endif %}
+    {{ content }}
+</main>
