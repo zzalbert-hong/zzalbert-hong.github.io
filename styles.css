@@ -132,7 +132,9 @@ img {
 }
 hr.go-to {
     margin: 1em auto;
-    border-style: solid;
+    height: 2px;
+    background-color: #000000;
+    border: none;
 }
 .mycap {
     text-align: center;
