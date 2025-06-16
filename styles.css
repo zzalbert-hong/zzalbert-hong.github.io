@@ -48,6 +48,7 @@ header a:hover, footer a:hover {
     color: #b6cef6;
 }
 .fake-nav-link {
+    display: inline;
     color: #b6cef6;
 }
 
