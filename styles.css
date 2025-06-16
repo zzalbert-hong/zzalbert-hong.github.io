@@ -45,10 +45,10 @@ header a:link, footer a:link, header a:visited, footer a:visited {
 }
 header a:hover, footer a:hover {
     text-decoration: none;
-    color: #a4c2f4; /* #b6cef6 */
+    color: #b3c2f4; /* or #b6cef6 or #a4c2f4 */
 }
 .fake-nav-link {
-    color: #a4c2f4; /* #b6cef6 */
+    color: #b3c2f4; /* or #b6cef6 or #a4c2f4 */
 }
 
 
@@ -131,7 +131,7 @@ img {
     height: auto;
 }
 hr.go-to {
-    margin: 1em auto;
+    margin: 1.5em auto 1.2em;
     height: 2px;
     background-color: #000000;
     border: none;
