@@ -19,9 +19,15 @@ layout: default
 </header>
 
 <main>
-    {% if page.option == 'post' %}<h1>{{ page.heading }}</h1>
-        <p style="margin-top:-0.4em; text-align:center;">{{ page.mydate }}<br>
+    {% if page.option == 'post' %}
+        <article>
+        <h1 style="margin-bottom:0.2em;">{{ page.heading }}</h1>
+        <p style="margin-top:0; margin-bottom:1em; text-align:center;">{{ page.mydate }}<br>
         Length: {{ page.length }}</p>
-        {% else %}<h1 style="display:none;">{{ page.heading }}</h1>{% endif %}
-    {{ content }}
+        {{ content }}
+        </article>
+    {% else %}
+        <h1 style="display:none;">{{ page.heading }}</h1>
+        {{ content }}
+    {% endif %}
 </main>
