@@ -45,10 +45,10 @@ header a:link, footer a:link, header a:visited, footer a:visited {
 }
 header a:hover, footer a:hover {
     text-decoration: none;
-    color: #a4c2f4;
+    color: #a4c2f4; /* #b6cef6 */
 }
 .fake-nav-link {
-    color: #a4c2f4;
+    color: #a4c2f4; /* #b6cef6 */
 }
 
 
