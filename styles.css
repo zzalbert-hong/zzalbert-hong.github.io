@@ -29,8 +29,8 @@ footer {
 }
 .cpyrt {
     color: #ffffff;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
     font-size: 80%;
 }
 nav {
@@ -85,6 +85,9 @@ a.paraheading:link, a.paraheading:visited {
 .fake-paraheading-link:hover {
     background-color: #f0f4fa;
 }
+
+
+
 h1 {
     font-size: 1.16em;
     margin: 1em 0;
@@ -126,6 +129,10 @@ img {
     margin:auto;
     max-width: 100%;
     height: auto;
+}
+hr.go-to {
+    margin: 1em auto;
+    border-style: solid;
 }
 .mycap {
     text-align: center;
