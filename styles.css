@@ -45,11 +45,10 @@ header a:link, footer a:link, header a:visited, footer a:visited {
 }
 header a:hover, footer a:hover {
     text-decoration: none;
-    color: #b6cef6;
+    color: #a4c2f4;
 }
 .fake-nav-link {
-    display: inline;
-    color: #b6cef6;
+    color: #a4c2f4;
 }
 
 
@@ -78,6 +77,7 @@ a.paraheading:link, a.paraheading:visited {
     margin-right: 1em;
 }
 .fake-paraheading-link {
+    display: inline;
     text-decoration: underline;
     color: #1559ff;
     margin-right: 1em;
