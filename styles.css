@@ -112,6 +112,9 @@ ul ul, ul ol, ol ul, ol ol {
 .final-block {
     margin-bottom: 1em;
 }
+.first-block {
+    margin-top: 1em;
+}
 ul.touch-above {
     margin-top: -0.5em;
 }
