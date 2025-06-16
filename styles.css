@@ -109,6 +109,9 @@ ul ul, ul ol, ol ul, ol ol {
     margin-top: 0;
     margin-bottom: 0;
 }
+.bottom-line {
+    margin-bottom: 1em;
+}
 ul.touch-above {
     margin-top: -0.5em;
 }
