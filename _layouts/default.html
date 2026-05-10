@@ -38,13 +38,13 @@
                 
                 {% if page.nav-bar == 'home-nav' %}
                     {% include home-nav.html %}
-                {% elseif page.nav-bar == 'profile-nav' %}
+                {% elsif page.nav-bar == 'profile-nav' %}
                     {% include profile-nav.html %}
-                {% elseif page.nav-bar == 'courses-nav' %}
+                {% elsif page.nav-bar == 'courses-nav' %}
                     {% include courses-nav.html %}
-                {% elseif page.nav-bar == 'blog-nav' %}
+                {% elsif page.nav-bar == 'blog-nav' %}
                     {% include blog-nav.html %}
-                {% if page.nav-bar == 'extra-nav' %}
+                {% elsif page.nav-bar == 'extra-nav' %}
                     {% include extra-nav.html %}
                 {% endif %}
 
