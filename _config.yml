@@ -1,0 +1,38 @@
+title: ZZAlbert
+description: |-
+  I am .....................
+author: Albert Hong
+
+# url: "https://zzalbert.com"
+# baseurl: ""
+
+# markdown: kramdown
+# theme: minima
+
+permalink: pretty
+
+collections:
+  notes:
+    output: true
+    permalink: /notes/:title/
+
+  projects:
+    output: true
+    permalink: /notes/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
