@@ -55,9 +55,9 @@ header a:hover, footer a:hover {
 
 main {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 1em auto;
     text-align: justify;
-    padding: 0.6em;
+    padding: 0;
 }
 main a:link {
     color: #1559ff;
@@ -137,7 +137,7 @@ img {
     color: #a4a4a4;
     font-size: 0.9em;
 }
-.mybox {
+.my-box {
     background-color: #efefef;
     border: 1px solid #000000;
     border-radius: 3px;
@@ -145,7 +145,7 @@ img {
     margin: 1em 0;
 }
 hr {
-    margin: 1.5em auto 1.2em;
+    margin: 1em auto 1em;
     border-color: #000000;
     border-style: solid;
     border-width: 1px;
