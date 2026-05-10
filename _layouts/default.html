@@ -36,7 +36,17 @@
 
                 <h2 class="page-heading"><a href="/">Zhao-Ze Albert Hong</a></h2>
                 
-                {% include {{ page.nav-bar }}.html %}
+                {% if page.nav-bar == 'home-nav' %}
+                    {% include home-nav.html %}
+                {% elseif page.nav-bar == 'profile-nav' %}
+                    {% include profile-nav.html %}
+                {% elseif page.nav-bar == 'courses-nav' %}
+                    {% include courses-nav.html %}
+                {% elseif page.nav-bar == 'blog-nav' %}
+                    {% include blog-nav.html %}
+                {% if page.nav-bar == 'extra-nav' %}
+                    {% include extra-nav.html %}
+                {% endif %}
 
             </header>
 
