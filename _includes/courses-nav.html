@@ -1,0 +1,26 @@
+<nav>
+
+    <a href="/Courses/">&lt; Courses</a>
+    
+    {% if page.title == 'Mathematics Courses' %}
+        <a class="fake-nav-link">
+    {% else %}
+        <a href="/courses/mathematics.html">
+    {% endif %}
+        Mathematics</a>
+    
+    {% if page.title == 'Philosophy Courses' %}
+        <a class="fake-nav-link">
+    {% else %}
+        <a href="/courses/philosophy.html">
+    {% endif %}
+        Philosophy</a>
+    
+    {% if page.title == 'Other Courses' %}
+        <a class="fake-nav-link">
+    {% else %}
+        <a href="/courses/other.html">
+    {% endif %}
+        Other</a>
+
+</nav>
