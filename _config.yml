@@ -33,6 +33,6 @@ defaults:
     values:
       layout: "project"
 
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
+# plugins:
+#   - jekyll-feed
+#   - jekyll-sitemap
