@@ -55,9 +55,9 @@ header a:hover, footer a:hover {
 
 main {
     max-width: 800px;
-    margin: 1.8em 0.6em;
+    margin: 1.8em auto;
     text-align: justify;
-    padding: 0;
+    padding: 0 0.6em;
 }
 main a:link {
     color: #1559ff;
