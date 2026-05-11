@@ -1,0 +1,53 @@
+title: ZZAlbert
+description: |-
+  Zhao-Ze Albert Hong (third year undergrad and TA):
+  My articles, notes, past projects, and more.
+  Writing about philosophy and mathematics.
+author: Albert Hong
+
+# url: "https://zzalbert.com"
+# baseurl: ""
+
+# markdown: kramdown
+# theme: minima
+
+permalink: pretty
+
+collections:
+  projects:
+    output: true
+    permalink: /notes/:slug/
+
+  course-info:
+    output: true
+    permalink: /courses/:slug/
+
+  blog-posts:
+    output: true
+    permalink: /blog/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "projects-posts"
+      nav-bar: "profile-nav"
+
+  - scope:
+      path: ""
+      type: "course-info"
+    values:
+      layout: "courses-posts"
+      nav-bar: "courses-nav"
+
+  - scope:
+      path: ""
+      type: "blog-posts"
+    values:
+      layout: "blog-posts"
+      nav-bar: "blog-nav"
+
+# plugins:
+#   - jekyll-feed
+#   - jekyll-sitemap
