@@ -55,7 +55,7 @@ header a:hover, footer a:hover {
 
 main {
     max-width: 800px;
-    margin: 1.8em auto;
+    margin: 1.8em auto 2.4em;
     text-align: justify;
     padding: 0 0.6em;
 }
