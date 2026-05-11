@@ -55,7 +55,7 @@ header a:hover, footer a:hover {
 
 main {
     max-width: 800px;
-    margin: 1.5em auto;
+    margin: 1.8em 0.6em;
     text-align: justify;
     padding: 0;
 }
@@ -83,13 +83,13 @@ a.para-heading:visited {
     color: #3f59ff;
     margin-right: 1em;
 }
-.fake-para-heading-link {
+.tile-heading {
     display: inline;
     text-decoration: underline;
     color: #1559ff;
     margin-right: 1em;
 }
-.fake-para-heading-link:hover {
+.tile-heading:hover {
     background-color: #f0f4fa;
 }
 
@@ -97,7 +97,7 @@ a.para-heading:visited {
 
 h1 {
     font-size: 1.16em;
-    margin: 1em 0;
+    margin: 1em 0 1em 0;
     text-align: center;
 }
 h2 {
@@ -119,6 +119,9 @@ ul ul, ul ol, ol ul, ol ol {
 
 
 
+figure {
+    margin: 0.8em auto;
+}
 img {
     border: 1px solid #000000;
     border-radius: 3px;
@@ -141,7 +144,7 @@ figcaption {
     background-color: #efefef;
     border: 1px solid #000000;
     border-radius: 3px;
-    padding: 0em 0.6em;
+    padding: 0.2em 0.6em;
     margin: 1em 0;
 }
 hr {
@@ -156,16 +159,16 @@ hr {
 .tile {
     display: flex;
     flex-direction: row;
-    background-color: #fbfbfb;
+    background-color: #f9f9f9;
     margin: 0.8em 0;
     padding: 0.6em;
 }
 .tile:hover {
-    background-color: #f8f8f8;
+    background-color: #f0f4fa;
 }
 .tile-picture {
     padding: 0 0.6em 0 0;
-    flex: 21%;
+    flex: 22%;
 }
 .tile-picture img {
     width: 100%;
@@ -175,7 +178,7 @@ hr {
 .tile-text {
     text-align: justify;
     padding: 0;
-    flex: 79%;
+    flex: 78%;
 }
 .tile-text p {
     margin: 0;
@@ -225,7 +228,7 @@ hr {
         flex-direction: column;
     }
     .tile-picture {
-        padding: 0 0 0.6em 0;
+        padding: 0 0 0.3em 0;
     }
     .tile-picture img {
         max-width: 200px;
