@@ -1,0 +1,26 @@
+<nav>
+
+    <a href="/extras/">&lt; Extras</a>
+    
+    {% if page.title == 'External Resources' %}
+        <a class="fake-nav-link">
+    {% else %}
+        <a href="/extras/resources.html">
+    {% endif %}
+        Resources</a>
+    
+    {% if page.title == 'My Favourite Movies and Literature' %}
+        <a class="fake-nav-link">
+    {% else %}
+        <a href="/extras/literature.html">
+    {% endif %}
+        Literature</a>
+    
+    {% if page.title == 'Testing Some Fancy Features' %}
+        <a class="fake-nav-link">
+    {% else %}
+        <a href="/extras/testing.html">
+    {% endif %}
+        Testing</a>
+
+</nav>

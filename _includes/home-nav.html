@@ -1,1 +1,38 @@
+<nav>
 
+    {% if page.title == 'Zhao-Ze Albert Hong' %}
+        <a class="fake-nav-link">
+    {% else %}
+        <a href="/">
+    {% endif %}
+        Home</a>
+    
+    {% if page.title == 'Profile' %}
+        <a class="fake-nav-link">
+    {% else %}
+        <a href="/profile/">
+    {% endif %}
+        Profile</a>
+    
+    {% if page.title == 'Courses' %}
+        <a class="fake-nav-link">
+    {% else %}
+        <a href="/courses/">
+    {% endif %}
+        Courses</a>
+    
+    {% if page.title == 'Blog' %}
+        <a class="fake-nav-link">
+    {% else %}
+        <a href="/blog/">
+    {% endif %}
+        Blog</a>
+    
+    {% if page.title == 'Extras' %}
+        <a class="fake-nav-link">
+    {% else %}
+        <a href="/extras/">
+    {% endif %}
+        Extras</a>
+
+</nav>
