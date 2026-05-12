@@ -13,7 +13,7 @@ zzalbert-hong.github.io/
    │
    ├─── _includes/   # Reusable modules or complex self-contained components
    │      ├─── ...
-   │      ├─── og-tags.html
+   │      ├─── trolling-og-tags.html
    │      ├─── navbar.html
    │      └─── page-heading.html
    │
