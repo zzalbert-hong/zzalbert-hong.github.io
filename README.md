@@ -51,10 +51,10 @@ zzalbert-hong.github.io/
    ├─── index.html                   # Main pages of my website
    ├─── profile/
    │      ├─── index.html
-   │      ├─── education.html        # Maybe I will add this later
-   │      ├─── experiences.html      # Maybe I will add this later
-   │      ├─── ...                   # Maybe I will add more stuff later
-   │      └─── projects.html
+   │      ├─── education.html
+   │      ├─── experiences.html
+   │      ├─── projects.html
+   │      └─── ...                   # Maybe I will add more stuff later
    ├─── courses/
    │      ├─── index.html
    │      ├─── mathematics.html
@@ -69,8 +69,8 @@ zzalbert-hong.github.io/
    │      ├─── index.html
    │      ├─── resources.html
    │      ├─── literature.html
-   │      ├─── ...                   # Maybe I will add more stuff later
-   │      └─── fancy-features.html
+   │      ├─── fancy-features.html
+   │      └─── ...                   # Maybe I will add more stuff later
    │
    └─── 404.html   # The page that is shown when there is a 404 error
 ```
