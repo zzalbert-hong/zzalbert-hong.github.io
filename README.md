@@ -2,31 +2,34 @@ This repository contains the source code for my personal website, built using Je
 
 ```text
 zzalbert-hong.github.io/
-   ├─── .gitignore    # Prevents Jekyll-generated files being shown in my repo
+   ├─── .gitignore    # Prevents Jekyll-generated files appearing in my repo
    ├─── README.md     # About this repo
    ├─── CNAME         # Specifies my custom domain
    ├─── _config.yml   # Specifies Jekyll's main configuration options
-   │
+   ├─── Gemfile       # To my understanding this is not very necessary but prevents
+   │                    the unlikely case that the website breaks when GitHub Pages
+   │                    updates its Jekyll environment
    ├─── _latouts/
    │      ├─── default.html   # Layout of every page except standalone pages
    │      └─── plain.html     # Layout of standalone pages
    │
    ├─── _includes/   # Reusable modules or complex self-contained components
    │      ├─── ...
-   │      ├─── trolling-og-tags.html
+   │      ├─── og-tags.html
    │      ├─── navbar.html
-   │      └─── page-heading.html
+   │      ├─── page-heading.html
+   │      └─── page-closing.html
    │
    ├─── _data/                  # Data structures such as lists and dictionaries
-   │      ├─── ...                referred to in html documents
+   │      ├─── ...                that are referred to in html documents
    │      ├─── navigation.yml   # Structure of the site and key info about each page
    │      ├─── variables.yml    # Page variables for each of my custom collections
    │      └─── 404quotes.yml    # Fun quotes to display on the  404 error page
    │
-   ├─── _standalones/   # My custom collection of standalone pages
-   ├─── _projects/      # My custom collection of project documents
-   ├─── _courses/       # My custom collection of course info documents
-   ├─── _myposts/       # My custom collection of blog posts
+   ├─── _standalones/   # My (custom) collection of standalone pages
+   ├─── _projects/      # My (custom) collection of project documents
+   ├─── _courses/       # My (custom) collection of course info documents
+   ├─── _myposts/       # My (custom) collection of blog posts
    │      ├─── ...
    │      └─── [file-name].md
    │
@@ -69,5 +72,5 @@ zzalbert-hong.github.io/
    │      ├─── ...                   # Maybe I will add more stuff later
    │      └─── fancy-features.html
    │
-   └─── 404.html   # The page clients see when there is a 404 error
+   └─── 404.html   # The page that is shown when there is a 404 error
 ```
