@@ -6,9 +6,8 @@ zzalbert-hong.github.io/
    ├─── README.md     # About this repo
    ├─── CNAME         # Specifies my custom domain
    ├─── _config.yml   # Specifies Jekyll's main configuration options
-   ├─── Gemfile       # To my understanding this is not very necessary but prevents
-   │                    the unlikely case that the website breaks when GitHub Pages
-   │                    updates its Jekyll environment
+   ├─── Gemfile       # Documents the intended Jekyll environment (GitHub Pages)
+   │
    ├─── _latouts/
    │      ├─── default.html   # Layout of every page except standalone pages
    │      └─── plain.html     # Layout of standalone pages
