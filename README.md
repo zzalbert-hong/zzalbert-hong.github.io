@@ -24,8 +24,9 @@ zzalbert-hong.github.io/
    │
    ├─── _data/                  # Data structures such as lists and dictionaries
    │      ├─── ...                that are referred to in html documents
-   │      ├─── navigation.yml   # Structure of the site and key info about each page
    │      ├─── variables.yml    # Page variables for each of my custom collections
+   │      ├─── navigation.yml   # Structure of the site and key info about each page
+   │      ├─── socials.yml      # List of social media links and contact info
    │      └─── 404quotes.yml    # Fun quotes to display on the  404 error page
    │
    ├─── _privates/   # My (custom) collection of private pages
