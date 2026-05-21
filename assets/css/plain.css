@@ -5,15 +5,12 @@ body {
     margin: 0;
     font-family: 'Times New Roman', serif;
     width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 main {
     max-width: 800px;
+    margin: auto;
     padding: 1em;
     text-align: justify;
-    flex: 1;
 }
 h1, h3 {
     text-align: center;
