@@ -1,0 +1,41 @@
+{% if page.collection == "courses" %}
+
+    {% if page.links %}
+        <section>
+            <h2>Links and resources</h2>
+            <ul>
+            {% for item in page.links %}
+                <li><a href="{{ item.url }}">{{ item.text }}</a></li>
+            {% endfor %}
+            </ul>
+        </section>
+    {% endif %}
+
+{% elsif page.collection == "myposts" %}
+
+    <div class="content-closure">
+        <p class="content-meta" style="text-align:right;">
+            &mdash; <a href="/profile/"><i>Albert Hong</i></a>
+        </p>
+        <div class="mybox">
+            <section>
+                <ul>
+                    <li>Related:</li>
+                    <ul>
+                    {% for filename in page.related %}
+                        {% assign mypost = site.myposts | where: "slug", filename | first %}
+                        {% if mypost %}
+                            <li><a href="{{ mypost.url }}">{{ mypost.title }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                    {% for tag in page.tags %}
+                        <li><a href="/blog/{{ site.data.blogListing.tag.group }}/#{{ tag }}">
+                            {{ site.data.blogListing.tag.title }}</a> articles</li>
+                    {% endfor %}
+                    </ul>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+{% endif %}

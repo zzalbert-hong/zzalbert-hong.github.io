@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <title>{{ page.title }}</title>
+        
+        <meta name="description" content="{{ page.description | default: site.description }}"/>
+        <meta name="author" content="Albert Hong"/>
+
+    {% if page.ogTags %}
+        <meta property="og:title" content="{{ page.ogTags.title | default: page.title }}"/>
+        <meta property="og:image"
+            content="{{ page.ogTags.image | default: '/assets/images/black.png' }}"/>
+        <meta property="og:description"
+            content="{{ page.ogTags.description | default: page.description }}" />
+        <meta property="og:type" content="{{ page.ogTags.type | default: 'website' }}" />
+        <meta property="og:url" content="{{ page.ogTags.url | default: page.url }}" />
+    {% endif %}
+
+        <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
+        <link rel="stylesheet" href="/assets/css/plain.css">
+
+        <script src="/assets/js/basic.js" defer></script>
+
+    </head>
+
+    <body>
+
+        <main>
+
+            {{ content }}
+
+        </main>
+
+    </body>
+
+</html>

@@ -1,0 +1,19 @@
+email:
+  title: Email
+  text: albert.hong@mail.utoronto.ca
+  url: mailto:albert.hong@mail.utoronto.ca
+
+linkedin:
+  title: LinkedIn
+  text: linkedin.com/in/zzalbert/
+  url: https://www.linkedin.com/in/zzalbert/
+
+github:
+  title: GitHub
+  text: github.com/zzalbert-hong
+  url: https://github.com/zzalbert-hong
+
+youtube:
+  title: YouTube Channel
+  text: youtube.com/@ZZAlbert-Hong
+  url: https://www.youtube.com/@ZZAlbert-Hong

@@ -1,0 +1,154 @@
+{% if include.option == "header nav" %}
+
+    <nav>
+
+        <a class="{% if page.title == 'Zhao-Ze Albert Hong' %}nav-muted{% endif %}"
+            href="/">Home</a>
+        
+        <a class="{% if page.url contains '/profile/' %}nav-muted{% endif %}"
+            href="/profile/">Profile</a>
+        
+        <a class="{% if page.url contains '/courses/' %}nav-muted{% endif %}"
+            href="/courses/">Courses</a>
+        
+        <a class="{% if page.url contains '/blog/' %}nav-muted{% endif %}"
+            href="/blog/">Blog</a>
+        
+        <a class="{% if page.url contains '/extras/' %}nav-muted{% endif %}"
+            href="/extras/">Extras</a>
+
+    </nav>
+
+{% elsif include.option == "sub nav" %}
+
+    {% if page.url contains '/profile/' %}
+
+        <div class="subnav">
+
+            <p>
+
+                <a class="{% if page.url == '/profile/' %}plain{% endif %}"
+                    href="/profile/">Bio</a> |
+                
+                <a class="{% if page.url == '/profile/education/' %}plain{% endif %}"
+                    href="/profile/education/">Education</a> |
+                
+                <a class="{% if page.url == '/profile/experiences/' %}plain{% endif %}"
+                    href="/experiences/">Experiences</a> |
+                
+                <a class="{% if page.url == '/profile/projects/' %}plain{% endif %}"
+                    href="/projects/">Projects</a>
+            
+            </p>
+
+        </div>
+
+    {% elsif page.url contains '/courses/' %}
+
+        <div class="subnav">
+
+            <p>
+
+                <a class="{% if page.url == '/courses/' %}plain{% endif %}"
+                    href="/courses/">All</a> |
+
+                <a class="{% if page.url == '/courses/mathematics/' %}plain{% endif %}"
+                    href="/courses/mathematics/">Mathematics</a> |
+
+                <a class="{% if page.url == '/courses/philosophy/' %}plain{% endif %}"
+                    href="/courses/philosophy/">Philosophy</a> |
+
+                <a class="{% if page.url == '/courses/other/' %}plain{% endif %}"
+                    href="/courses/other/">Other</a>
+            
+            </p>
+
+        </div>
+
+    {% elsif page.url contains '/blog/' %}
+
+        <div class="subnav">
+
+            <p>
+
+                <a class="{% if page.url == '/blog/' %}plain{% endif %}"
+                    href="/blog/">All</a> |
+
+                <a class="{% if page.url == '/blog/mathematics/' %}plain{% endif %}"
+                    href="/blog/mathematics/">Mathematics</a> |
+
+                <a class="{% if page.url == '/blog/philosophy/' %}plain{% endif %}"
+                    href="/blog/philosophy/">Philosophy</a> |
+
+                <a class="{% if page.url == '/blog/other/' %}plain{% endif %}"
+                    href="/blog/other/">Other</a>
+            
+            </p>
+
+        </div>
+
+    {% elsif page.url contains '/extras/' %}
+
+        <div class="subnav">
+
+            <ul>
+
+                <li><a class="{% if page.url == '/extras/' %}plain{% endif %}"
+                    href="/extras/">Extras</a></li>
+
+                <ul>
+                    
+                    {% for item in site.extras %}
+
+                        <li><a class="{% if page.url == item.url %}plain{% endif %}"
+                            href="{{ item.url }}">{{ item.title }}</a></li>
+                    
+                    {% endfor %}
+                    
+                </ul>
+
+            </ul>
+
+        </div>
+
+    {% endif %}
+
+{% elsif include.option == "full list nav" %}
+
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/profile/">Profile</a></li>
+        <ul>
+            <li><a href="/profile/education/">Education</a></li>
+            <li><a href="/profile/experiences/">Experiences</a></li>
+            <li><a href="/profile/projects/">Projects</a></li>
+        </ul>
+        <li><a href="/courses/">Courses</a></li>
+        <ul>
+            <li><a href="/courses/mathematics/">Mathematics Courses</a></li>
+            <li><a href="/courses/philosophy/">Philosophy Courses</a></li>
+            <li><a href="/courses/other/">Other Courses</a></li>
+        </ul>
+        <li><a href="/blog/">Blog</a></li>
+        <ul>
+            <li><a href="/blog/mathematics/">Mathematics Articles</a></li>
+            <li><a href="/blog/philosophy/">Philosophy Articles</a></li>
+            <li><a href="/blog/other/">Other Articles</a></li>
+        </ul>
+        <li><a href="/extras/">Extras</a></li>
+        <ul>
+        {% for item in site.extras %}
+            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+        {% endfor %}
+        </ul>
+    </ul>
+
+{% elsif include.option == "footer nav" %}
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/profile/">Profile</a>
+        <a href="{{ site.data.socials.email.url }}">Contact</a>
+    </nav>
+
+{% endif %}

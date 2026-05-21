@@ -1,17 +1,15 @@
 ---
-layout: main-pages
-nav-bar: home-nav
+layout: main
 title: Zhao-Ze Albert Hong
 ---
 
 <h2>About me</h2>
 <p>
     I am a third year undergraduate student at the University of Toronto specializing
-    in <i>mathematics</i> and minoring in <i>philosophy</i> and <i>economics</i>.
+    in <b>mathematics</b> and minoring in <b>philosophy</b> and <b>economics</b>.
     I enjoy problem solving, proofs, writing, as well as teaching.
-    I am particularly interested in <i>game theory</i>, <i>logic</i>, and the
-    <i>philosophical foundations of mathematics</i>.
-    (See my <a href="/profile/">profile</a>.)
+    I am particularly interested in game theory, logic, and the philosophical
+    foundations of mathematics. (See my <a href="/profile/">profile</a>.)
 </p>
 <p>
     I am also a TA for <i>MAT188H1 Linear Algebra for Engineers</i>.
@@ -30,29 +28,4 @@ title: Zhao-Ze Albert Hong
     my exposition and reflection articles on mathematics and philosophy,
     external resources I find useful, etc. Below is the structure of the website:
 </p>
-<ul>
-    <li><a href="">Home</a></li>
-    <li><a href="/profile/">Profile</a></li>
-    <ul>
-        <!-- <li><a href="">Resume or Timeline</a></li>
-        <li><a href="">Research</a></li> -->
-        <li><a href="/profile/projects.html">Projects</a></li>
-    </ul>
-    <li><a href="/courses/">Courses</a></li>
-    <ul>
-        <li><a href="/courses/mathematics.html">Mathematics Courses</a></li>
-        <li><a href="/courses/philosophy.html">Philosophy Courses</a></li>
-        <li><a href="/courses/other.html">Other Courses</a></li>
-    </ul>
-    <li><a href="/blog/">Blog</a></li>
-    <ul>
-        <li><a href="/blog/mathematics.html">Mathematics Articles</a></li>
-        <li><a href="/blog/philosophy.html">Philosophy Articles</a></li>
-        <li><a href="/blog/other.html">Other Articles</a></li>
-    </ul>
-    <li><a href="/extras/">Extras</a></li>
-    <ul>
-        <li><a href="/extras/resources.html">Resources</a></li>
-        <li><a href="/extras/literature.html">Movies And Literature</a></li>
-    </ul>
-</ul>
+{% include nav.html option="full list nav" %}

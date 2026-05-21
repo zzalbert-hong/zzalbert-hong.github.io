@@ -1,0 +1,167 @@
+pages:
+  layout: default # Specify in frontmatter if not using default
+  title: # Specify in frontmatter
+    - (title format with proper capitalizations)
+  description: # Specify in frontmatter
+    - (sentences with proper punctuations)
+  showTitle: # Specify in frontmatter if true
+    - true
+    - nil
+
+privates:
+  layout: plain # Specify in frontmatter if not using plain
+  title: # Specify in frontmatter
+    - (title format with proper capitalizations)
+  description: # Specify in frontmatter
+    - (sentences with proper punctuations)
+  ogTags: # Specify in frontmatter if applicable
+    - (dictionary of open graph tags)
+    - title: (title of open graph)
+      image: (filename of open graph image)
+      description: (sentences with proper punctuations)
+      type: (website/article/video/etc.)
+      url: (url to show in open graph)
+    - nil
+
+projects:
+  layout: default
+  title: # Specify in frontmatter
+    - (title format with proper capitalizations)
+  description: # Specify in frontmatter
+    - (sentences with proper punctuations)
+  tilePicture:
+    - (file name of the image to put in the tile picture)
+  date: # Specify in frontmatter
+    - (project start date in yyyy-mm-dd for sorting)
+  duration: # Specify in frontmatter
+    - (Month Year - Month Year)
+    - (Month - Month Year)
+    - (Year - Year)
+    - (Month Year)
+    - (Season Year)
+    - (Month Year - Ongoing)
+    - "Summer 2026 (Paused)"
+    - etc.
+  association: # Specify in frontmatter
+    - "Personal Project"
+    - "CIV102H1 Structures and Materials"
+    - etc.
+  location: # Specify in frontmatter if applicable
+    - "Toronto, ON, Canada"
+    - "Taipei, Taiwan"
+    - etc.
+    - nil
+  collaborators: # Specify in frontmatter if applicable
+    - (list of names)
+    - nil
+  tags: # Specify in frontmatter
+    - (list of tags the project is listed under)
+    - [ "engineeringDesign", "programming", ]
+    - etc.
+  topics: # Specify in frontmatter
+    - (list of skills or technologies related to the project)
+    - [ "engineering design", "civil engineering", "Python", ]
+    - etc.
+  links: # Specify in frontmatter if applicable
+    - (list of dictionaries of urls and texts)
+    - - url: (full url to github repo)
+        text: GitHub repo
+      - url: (full url)
+        text: demo
+      - url: (full url)
+        text: video walkthrough
+      - etc.
+    - nil
+  # # Consider adding the following if there are many projects later
+  # featured: # Specify in frontmatter if true
+  #   - true
+  #   - nil
+  # archived: # Specify in frontmatter if true
+  #   - true
+  #   - nil
+
+courses:
+  layout: default
+  title: # Specify in frontmatter
+    - (title format with proper capitalizations)
+  description: # Specify in frontmatter
+    - (sentences with proper punctuations)
+  teaching: # Specify in frontmatter if true
+    - true
+    - nil
+  subject: # Specify in frontmatter
+    - mathematics
+    - philosophy
+    - economics
+    - engineering
+    - electives (for grouping when listing)
+  semester: # Specify in frontmatter
+    - Fall 2025 - Winter 2026
+    - Fall 2025
+    - Winter 2026
+    - Summer 2026
+    - Summer 2026 Subsession 1
+    - Summer 2026 Subsession 2
+    - etc.
+  institution: University of Toronto # Specify in frontmatter if not UofT
+  instructor: # Specify in frontmatter
+    - (instructor's full name just for my own reference)
+  difficulty: # Specify in frontmatter
+    - (a number out of 10 and up to one dec place)
+    - (difficulty of material independent of workload)
+  interest: # Specify in frontmatter
+    - (a number out of 10 and up to one dec place)
+    - (very subjective but also kind of captures content's richness)
+  workload: # Specify in frontmatter
+    - heavy
+    - medium
+    - light
+    - (measured by volume of assignments and dependent on the instructor)
+    - (somewhat subjective and biased by my background)
+  topics: # Specify in frontmatter
+    - (list of topics related to the course)
+    - [ "manifolds", "Fubini's theorem", "Stoke's theorem", ]
+    - etc.
+  calendar: # Specify in frontmatter
+    - (full url to academic calendar)
+  links: # Specify in frontmatter if applicable
+    - (list of dictionaries of urls and texts)
+    - - url: (url to Xue QiLin's notes)
+        text: Xue QiLin's notes
+      - etc.
+    - nil
+
+myposts:
+  layout: default
+  title: # Specify in frontmatter
+    - (title format with proper capitalizations)
+  description: # Specify in frontmatter
+    - (sentences with proper punctuations)
+  featured: # Specify in frontmatter if true
+    - true
+    - nil
+  date: # Specify in frontmatter
+    - (date in yyyy-mm-dd for sorting)
+  wordcount: # Specify in frontmatter
+    - (an integer approximation)
+  tags: # Specify in frontmatter
+    - (list of tags the article is listed under)
+    - [ "ethicsAndAesthetics", ]
+    - etc.
+  context: # Specify in frontmatter if applicable
+    - (prerequisites and why I wrote the article)
+    - nil
+  alsoAt: # Specify in frontmatter if applicable
+    - (full url to where the article is published)
+    - nil
+  related: # Specify in frontmatter
+    - (list of related articles in the :slug format)
+
+extras:
+  layout: default
+  title: # Specify in frontmatter
+    - (title format with proper capitalizations)
+  description: # Specify in frontmatter
+    - (sentences with proper punctuations)
+  date: # Specify in frontmatter
+    - (date in yyyy-mm-dd for sorting)

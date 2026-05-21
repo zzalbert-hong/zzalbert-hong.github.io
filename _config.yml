@@ -14,40 +14,66 @@ author: Albert Hong
 permalink: pretty
 
 collections:
+  privates:
+    output: true
+
   projects:
     output: true
-    permalink: /notes/:slug/
+    sort_by: date
+    reverse: true
 
-  course-info:
+  courses:
     output: true
-    permalink: /courses/:slug/
+    sort_by: path
 
-  blog-posts:
+  myposts:
     output: true
-    permalink: /blog/:slug/
+    sort_by: date
+    reverse: true
+
+  extras:
+    output: true
+    sort_by: date
 
 defaults:
   - scope:
       path: ""
+    values:
+      layout: default
+
+  - scope:
+      path: ""
+      type: "privates"
+    values:
+      permalink: /:slug/
+      layout: plain
+
+  - scope:
+      path: ""
       type: "projects"
     values:
-      layout: "projects-posts"
-      nav-bar: "profile-nav"
+      permalink: /profile/projects/:slug/
 
   - scope:
       path: ""
-      type: "course-info"
+      type: "courses"
     values:
-      layout: "courses-posts"
-      nav-bar: "courses-nav"
+      permalink: /courses/:slug/
+      institution: University of Toronto
 
   - scope:
       path: ""
-      type: "blog-posts"
+      type: "myposts"
     values:
-      layout: "blog-posts"
-      nav-bar: "blog-nav"
+      permalink: /blog/:slug/
 
-# plugins:
-#   - jekyll-feed
-#   - jekyll-sitemap
+  - scope:
+      path: ""
+      type: "extras"
+    values:
+      permalink: /extras/:slug/
+      showTitle: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap

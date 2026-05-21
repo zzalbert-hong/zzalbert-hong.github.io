@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    {% if page.title == 'Zhao-Ze Albert Hong' %}
+        <title>Zhao-Ze Albert Hong</title>
+    {% else %}
+        <title>{{ page.title }} | ZZAlbert</title>
+    {% endif %}
+        
+        <meta name="description" content="{{ page.description | default: site.description }}"/>
+        <meta name="author" content="Albert Hong"/>
+
+        <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
+        <link rel="stylesheet" href="/assets/css/default.css">
+
+        <script src="/assets/js/basic.js" defer></script>
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="container">
+
+                <h2 class="site-heading"><a href="/">Zhao-Ze Albert Hong</a></h2>
+                
+                {% include nav.html option="header nav" %}
+
+            </div>
+
+        </header>
+
+            <div class="container">
+
+                {% include nav.html option="sub nav" %}
+
+            </div>
+
+        <main>
+
+            {% include content-heading.html %}
+
+            {{ content }}
+
+            {% include content-closure.html %}
+
+        </main>
+
+        <footer>
+
+            <div class="container">
+
+                {% include nav.html option="footer nav" %}
+                
+                <p class="copyright">
+                    Copyright &copy; {{ "now" | date: "%Y" }}, Zhao-Ze Albert Hong
+                </p>
+            
+            </div>
+            
+        </footer>
+
+        <button onclick="topFunction()" id="myBtn" aria-label="Go to top">Top</button>
+
+    </body>
+
+</html>
