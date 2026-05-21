@@ -45,7 +45,7 @@
                 {% for item in page.links %}
                     {% if forloop.last %}
                         <a href="{{ item.url }}">{{ item.text }}</a>
-                    {% endif %}
+                    {% else %}
                         <a href="{{ item.url }}">{{ item.text }}</a>,
                     {% endif %}
                 {% endfor %}
