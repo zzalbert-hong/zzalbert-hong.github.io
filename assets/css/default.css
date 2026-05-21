@@ -22,7 +22,7 @@ header {
 main {
     max-width: 800px;
     padding: 0 0.6em;
-    margin: 1.6em 0 2.4em;
+    margin: 1.6em auto 2.4em;
     text-align: justify;
     flex: 1;
 }
