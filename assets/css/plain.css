@@ -29,7 +29,7 @@ a.normal:visited {
 
 
 blockquote {
-    display: inline-block;
+    display: table;
     max-width: 90%;
     margin: 1em auto;
     padding: 1.5em;

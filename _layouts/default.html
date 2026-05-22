@@ -36,21 +36,21 @@
 
         </header>
 
-            <div class="container">
+        <div class="container" style="flex: 1;">
 
-                {% include nav.html option="sub nav" %}
+            {% include nav.html option="sub nav" %}
 
-            </div>
+            <main>
 
-        <main>
+                {% include content-heading.html %}
 
-            {% include content-heading.html %}
+                {{ content }}
 
-            {{ content }}
+                {% include content-closure.html %}
 
-            {% include content-closure.html %}
+            </main>
 
-        </main>
+        </div>
 
         <footer>
 
