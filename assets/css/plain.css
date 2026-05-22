@@ -7,6 +7,7 @@ body {
     width: 100%;
 }
 main {
+    width: 100%;
     max-width: 800px;
     margin: auto;
     padding: 1em;
@@ -24,27 +25,16 @@ a.normal:link {
 a.normal:visited {
     color: #3f59ff;
 }
-.external-link::after, .file-link::after {
-    font-size: 0.75em;
-    margin-left: 4px;
-    display: inline-block;
-    vertical-align: super;
-}
-.external-link::after {
-    content: "\2197"; 
-}
-.file-link::after {
-    content: "\2913"; 
-}
 
 
 
 blockquote {
+    display: inline-block;
+    max-width: 90%;
+    margin: 1em auto;
+    padding: 1.5em;
     border-left: 12px solid #555555;
     background-color: #aaaaaa;
-    padding: 1.5em;
-    margin: 1em auto;
-    max-width: 100%;
 }
 
 

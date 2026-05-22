@@ -129,10 +129,11 @@ if (quoteDiv) {
 
 
 
-// Find each <a> link on the page
+// Find each <a> link on the page except those with class="plain"
 document.querySelectorAll('a').forEach(link => {
     const url = link.getAttribute('href');
-    if (!url) return;
+    const isPlain = link.getAttribute('class') == 'plain';
+    if (!url || isPlain) return;
 
     // Check if external
     // const isExternal =
