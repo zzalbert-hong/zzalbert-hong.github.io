@@ -22,10 +22,10 @@ main {
 h1, h3 {
     text-align: center;
 }
-a:link, a:visited {
+a {
     color: black;
 }
-a.normal:link {
+a.normal {
     color: #1559ff;
 }
 a.normal:visited {

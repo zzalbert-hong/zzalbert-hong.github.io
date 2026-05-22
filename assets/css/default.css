@@ -6,12 +6,13 @@
 
 html {
     margin: 0;
+    min-height: 100%;
 }
 body {
     margin: 0;
     font-family: 'Times New Roman', serif;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     min-width: 0;
@@ -51,7 +52,7 @@ nav {
     display: flex;
     flex-direction: row;
 }
-header a:link, footer a:link, header a:visited, footer a:visited {
+header a, footer a {
     text-decoration: none;
     color: #ffffff;
 }
@@ -111,7 +112,7 @@ h1 {
     font-size: 0.9em;
     color: #424242;
 }
-.content-meta a:link, p.content-meta a:visited {
+.content-meta a, p.content-meta a {
     color: #424242;
 }
 .content-meta a:hover {
