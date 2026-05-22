@@ -121,9 +121,9 @@ if (quoteDiv) {
     const randomQuote =
         quotes[Math.floor(Math.random() * quotes.length)];
 
-    quoteDiv.innerHTML = `"${randomQuote.text}"<br>
-        &mdash; <b>${randomQuote.author}</b>,
-        <i>${randomQuote.source}</i> (${randomQuote.year})`;
+    quoteDiv.innerHTML = `<p>"${randomQuote.text}"</p>
+        <p>&mdash; <b>${randomQuote.author}</b>,
+        <i>${randomQuote.source}</i> (${randomQuote.year})</p>`;
 
 }
 
