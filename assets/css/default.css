@@ -267,14 +267,13 @@ figcaption {
     bottom: 20px;
     right: 20px;
     z-index: 99;
-    font-size: 18px;
     border: none;
     outline: none;
     background-color: black;
     color: white;
     opacity: 0.5;
     cursor: pointer;
-    padding: 15px;
+    padding: 0.6em;
     border-radius: 3px;
 }
 #myBtn:hover {
