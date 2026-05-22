@@ -1,7 +1,7 @@
 ---
 title: Profile
 description: |-
-    My academic background, expriences, and interests.
+    My bio.
 ---
 
 <div class="flip-box">
@@ -17,7 +17,9 @@ description: |-
     </div>
 </div>
 <p> 
-    200 to 700 words
+    200 to
+    <a class="plain" href="/assets/pdfs/Notes_Python-Basics.pdf"
+    target="_blank">700</a> words
 </p>
 <!-- <p> I am an undergraduate student at the University of Toronto. I began my studies
     in Engineering Science (2023), but later transferred to the Faculty of
@@ -35,9 +37,9 @@ description: |-
 <p> Outside of academics, I enjoy watching films and reading and writing about
     mathematics and philosophy. I also play chess, sudoku, calligraphy, and badminton.
 </p> -->
-<h2>Contact</h2>
-<p> 
-    Email: <a href="mailto:albert.hong@mail.utoronto.ca">albert.hong@mail.utoronto.ca</a><br>
-    <a class="plain" href="/assets/pdfs/Resume.pdf" target="_blank">LinkedIn:</a>
-    <a href="https://www.linkedin.com/in/zzalbert/">www.linkedin.com/in/zzalbert/</a> <br>
-</p>
+<h2><a class="plain" href="/assets/pdfs/Resume.pdf">C</a>ontact</h2>
+<ul>
+{% for item in site.data.socials %}
+    <li>{{ item[1].title }}: <a href="{{ item[1].url }}">{{ item[1].text }}</a></li>
+{% endfor %}
+</ul>

@@ -8,12 +8,12 @@ linkedin:
   text: linkedin.com/in/zzalbert/
   url: https://www.linkedin.com/in/zzalbert/
 
-github:
-  title: GitHub
-  text: github.com/zzalbert-hong
-  url: https://github.com/zzalbert-hong
+# github:
+#   title: GitHub
+#   text: github.com/zzalbert-hong
+#   url: https://github.com/zzalbert-hong
 
-youtube:
-  title: YouTube Channel
-  text: youtube.com/@ZZAlbert-Hong
-  url: https://www.youtube.com/@ZZAlbert-Hong
+# youtube:
+#   title: YouTube Channel
+#   text: youtube.com/@ZZAlbert-Hong
+#   url: https://www.youtube.com/@ZZAlbert-Hong

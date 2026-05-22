@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
 html {
     margin: 0;
 }
@@ -30,11 +36,11 @@ a.normal:visited {
 
 blockquote {
     display: table;
-    max-width: 90%;
-    margin: 1em auto;
+    max-width: 84%;
+    margin: 4em auto;
     padding: 1.5em;
-    border-left: 12px solid #555555;
-    background-color: #aaaaaa;
+    border-left: 12px solid #aaaaaa;
+    background-color: #cccccc;
 }
 
 
