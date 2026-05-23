@@ -140,6 +140,9 @@ myposts:
   featured: # Specify in frontmatter if true
     - true
     - nil
+  hidden: # Specify in frontmatter if true
+    - true
+    - nil
   date: # Specify in frontmatter
     - (date in yyyy-mm-dd for sorting)
   wordcount: # Specify in frontmatter

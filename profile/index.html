@@ -16,30 +16,16 @@ description: |-
         </div>
     </div>
 </div>
-<p> 
-    200 to
-    <a class="plain" href="/assets/pdfs/Notes_Python-Basics.pdf"
-    target="_blank">700</a> words
-</p>
-<!-- <p> I am an undergraduate student at the University of Toronto. I began my studies
-    in Engineering Science (2023), but later transferred to the Faculty of
-    Arts and Science (2024), where I now major in Mathematics and minor in Philosophy
-    and Economics. My academic interests lie especially in Real Analysis, Logic,
-    and the Philosophy of Mathematics.
-</p>
-<p> The transfer was prompted by a deeper realization: I am most engaged not by
-    building systems that simply work, but by understanding why they work.
-    I am drawn to reasoning, structure, and explanation.
-    I enjoy forming rigorous arguments for practical claims and value clear,
-    coherent derivations over shortcuts. While I recognize the importance of practical
-    outcomes, I believe they are best supported by careful, foundational thinking.
-</p>
-<p> Outside of academics, I enjoy watching films and reading and writing about
-    mathematics and philosophy. I also play chess, sudoku, calligraphy, and badminton.
-</p> -->
-<h2><a class="plain" href="/assets/pdfs/Resume.pdf">C</a>ontact</h2>
-<ul>
-{% for item in site.data.socials %}
-    <li>{{ item[1].title }}: <a href="{{ item[1].url }}">{{ item[1].text }}</a></li>
-{% endfor %}
-</ul>
+<section>
+    <p>
+        
+    </p>
+</section>
+<section>
+    <h2><a class="plain" href="/assets/pdfs/Resume.pdf">S</a>ocials</h2>
+    <ul>
+    {% for item in site.data.socials %}
+        <li>{{ item[1].title }}: <a href="{{ item[1].url }}">{{ item[1].text }}</a></li>
+    {% endfor %}
+    </ul>
+</section>

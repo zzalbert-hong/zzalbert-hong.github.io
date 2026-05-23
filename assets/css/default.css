@@ -76,7 +76,7 @@ header a:hover, footer a:hover {
     max-height: 400px;
     overflow: auto;
     padding: 0 0.6em;
-    margin: 1.6em 0 0;
+    margin: 1.2em 0 0;
     background-color: #efefef;
     border: 1px solid #000000;
     border-radius: 3px;
@@ -98,7 +98,8 @@ hr {
 
 
 .content-heading {
-    margin: 1.6em 0;
+    margin: 1.6em auto;
+    width: 84%;
     text-align: center;
 }
 h1 {
@@ -191,11 +192,11 @@ img {
 }
 figcaption {
     text-align: center;
-    width: 80%;
+    width: 84%;
     margin-top: 0.6em;
     margin-bottom: 0.8em;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 8%;
+    margin-right: 8%;
     color: #a4a4a4;
     font-size: 0.9em;
 }
@@ -264,8 +265,8 @@ figcaption {
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 3%;
+    right: 3%;
     z-index: 99;
     border: none;
     outline: none;
@@ -273,7 +274,7 @@ figcaption {
     color: white;
     opacity: 0.5;
     cursor: pointer;
-    padding: 0.6em;
+    padding: 0.1em;
     border-radius: 3px;
 }
 #myBtn:hover {
@@ -289,7 +290,10 @@ figcaption {
 }
 @media (max-width: 600px) {
     html {
-        font-size: 90%;
+        font-size: 95%;
+    }
+    main {
+        text-align: left;
     }
     .tile {
         flex-direction: column;

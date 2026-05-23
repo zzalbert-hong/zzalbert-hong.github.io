@@ -47,6 +47,9 @@ blockquote {
 
 @media (max-width: 600px) {
     html {
-        font-size: 90%;
+        font-size: 95%;
+    }
+    main {
+        text-align: left;
     }
 }
