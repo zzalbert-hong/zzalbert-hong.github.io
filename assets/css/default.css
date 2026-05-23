@@ -265,8 +265,8 @@ figcaption {
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 3%;
-    right: 3%;
+    bottom: 0.6em;
+    right: 0.6em;
     z-index: 99;
     border: none;
     outline: none;
@@ -274,7 +274,7 @@ figcaption {
     color: white;
     opacity: 0.5;
     cursor: pointer;
-    padding: 0.1em;
+    padding: 0.3em;
     border-radius: 3px;
 }
 #myBtn:hover {
