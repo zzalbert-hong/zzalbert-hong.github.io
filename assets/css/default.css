@@ -90,9 +90,8 @@ header a:hover, footer a:hover {
 }
 hr {
     margin: 1.2em auto 1.2em;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 1px;
+    border: 0;
+    border-top: 1px solid #000000;
 }
 
 
