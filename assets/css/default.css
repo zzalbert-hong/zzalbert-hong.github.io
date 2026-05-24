@@ -105,15 +105,13 @@ hr {
 h1 {
     font-size: 1.16em;
     margin: 0.8em 0 0.8em 0;
-    text-align: center;
 }
 .content-meta {
     margin: 0.8em 0;
-    text-align: center;
     font-size: 0.9em;
     color: #424242;
 }
-.content-meta a, p.content-meta a {
+.content-meta a {
     color: #424242;
 }
 .content-meta a:hover {
@@ -125,14 +123,6 @@ h1 {
 
 
 
-h2 {
-    font-size: 1.08em;
-    margin: 1em 0 0.8em 0;
-}
-h3 {
-    font-size: 1em;
-    margin: 0.8em 0 0.8em 0;
-}
 p, ul, ol {
     margin-top: 0.8em;
     margin-bottom: 0.8em;
@@ -140,6 +130,19 @@ p, ul, ol {
 ul ul, ul ol, ol ul, ol ol {
     margin-top: 0;
     margin-bottom: 0;
+}
+h2 {
+    font-size: 1.08em;
+    margin: 1em 0 0.8em 0;
+}
+h3 {
+    font-size: 1em;
+    margin: 0.8em 0 0.8em 0;
+    display: inline;
+}
+h3 + p {
+    display: inline;
+    margin: 0;
 }
 
 
@@ -204,14 +207,12 @@ figcaption {
 
 
 .tile {
+    position: relative; /* Essential: contains the absolute child */
     display: flex;
     flex-direction: row;
     background-color: #f9f9f9;
     margin: 0.8em 0;
     padding: 0.6em;
-}
-.tile:hover {
-    background-color: #f0f4fa;
 }
 .tile-picture {
     padding: 0 0.6em 0 0;
@@ -229,6 +230,23 @@ figcaption {
 }
 .tile-text p {
     margin: 0;
+}
+.tile:hover {
+    background-color: #f0f4fa;
+    cursor: pointer;
+}
+.main-link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; /* Stretches the link to all corners of the .tile */
+    z-index: 1; /* Ensures it stays on a layer that covers the tile */
+}
+.secondary-link { /* Optional: If you have other links inside */
+    position: relative;
+    z-index: 2; /* Lifts the link above the stretched link overlay */
 }
 
 
@@ -266,7 +284,7 @@ figcaption {
     display: none;
     position: fixed;
     bottom: 0.6em;
-    right: 0.6em;
+    right: 0.8em;
     z-index: 99;
     border: none;
     outline: none;
@@ -274,7 +292,7 @@ figcaption {
     color: white;
     opacity: 0.5;
     cursor: pointer;
-    padding: 0.3em;
+    padding: 0.4em;
     border-radius: 3px;
 }
 #myBtn:hover {

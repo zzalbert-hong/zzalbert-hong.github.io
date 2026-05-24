@@ -29,8 +29,10 @@ projects:
     - (title format with proper capitalizations)
   description: # Specify in frontmatter
     - (sentences with proper punctuations)
-  tilePicture:
+  tilePic:
     - (file name of the image to put in the tile picture)
+  tilePicAlt:
+    - (alternative text for the tile pic image)
   date: # Specify in frontmatter
     - (project start date in yyyy-mm-dd for sorting)
   duration: # Specify in frontmatter
@@ -106,13 +108,13 @@ courses:
   institution: University of Toronto # Specify in frontmatter if not UofT
   instructor: # Specify in frontmatter
     - (instructor's full name just for my own reference)
-  difficulty: # Specify in frontmatter
+  difficulty: # Specify in frontmatter if applicable
     - (a number out of 10 and up to one dec place)
     - (difficulty of material independent of workload)
-  interest: # Specify in frontmatter
+  interest: # Specify in frontmatter if applicable
     - (a number out of 10 and up to one dec place)
     - (very subjective but also kind of captures content's richness)
-  workload: # Specify in frontmatter
+  workload: # Specify in frontmatter if applicable
     - heavy
     - medium
     - light
@@ -137,12 +139,6 @@ myposts:
     - (title format with proper capitalizations)
   description: # Specify in frontmatter
     - (sentences with proper punctuations)
-  featured: # Specify in frontmatter if true
-    - true
-    - nil
-  hidden: # Specify in frontmatter if true
-    - true
-    - nil
   date: # Specify in frontmatter
     - (date in yyyy-mm-dd for sorting)
   wordcount: # Specify in frontmatter
@@ -150,6 +146,8 @@ myposts:
   tags: # Specify in frontmatter
     - (list of tags the article is listed under)
     - [ "ethicsAndAesthetics", ]
+    - (add the "featured" tag for particularly good posts)
+    - (use [] for posts that should not be listed anywhere)
     - etc.
   context: # Specify in frontmatter if applicable
     - (prerequisites and why I wrote the article)

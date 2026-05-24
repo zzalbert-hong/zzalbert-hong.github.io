@@ -15,6 +15,15 @@
         <meta name="description" content="{{ page.description | default: site.description }}"/>
         <meta name="author" content="Albert Hong"/>
 
+    {% if page.title == 'Zhao-Ze Albert Hong' %}
+        <meta property="og:title" content="Zhao-Ze Albert Hong"/>
+    {% else %}
+        <meta property="og:title" content="{{ page.title }} | ZZAlbert"/>
+    {% endif %}
+        <meta property="og:description" content="{{ page.description }}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="{{ page.url }}" />
+
         <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
         <link rel="stylesheet" href="/assets/css/default.css">
 
@@ -67,7 +76,7 @@
         </footer>
 
         <button onclick="topFunction()" id="myBtn" aria-label="Go to top"
-            title="Go to top">&#65085; Top</button>
+            title="Go to top">&#65085;Top</button>
 
     </body>
 

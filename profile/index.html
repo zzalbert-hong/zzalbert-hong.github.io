@@ -1,7 +1,9 @@
 ---
 title: Profile
 description: |-
-    My bio.
+  My academic interests lie in game theory, logic, and the philosophical
+  foundations of mathematics. I enjoy problem solving, mathematical reasoning,
+  and the communication of abstract ideas...
 ---
 
 <div class="flip-box">
@@ -18,14 +20,48 @@ description: |-
 </div>
 <section>
     <p>
-        
+        I am a third year undergraduate student at the University of Toronto,
+        specializing in mathematics and minoring in philosophy and economics. I am also
+        a teaching assistant for first year algebra courses. My academic interests lie
+        in game theory, logic, and the philosophical foundations of mathematics.
+    </p>
+    <p>
+        I enjoy analytical problem solving, mathematical reasoning (i.e. proofs), and
+        the communication of abstract ideas, which includes teaching and writing.
+        For problem solving, I enjoy the process of breaking difficult problems into
+        smaller pieces, identifying patterns, and finding&mdash;or building&mdash;elegant,
+        precise models to analyze structures and optimize decision-making.
+        <!-- Maybe include math competition results here if applicable -->
+    </p>
+    <p>
+        For mathematical reasoning, teaching, and writing, I enjoy the process of
+        constructing arguments and answering questions of “why.” I see them as
+        closely connected activities as they all require careful organization of ideas
+        and clear step-by-step thinking. I find these tasks deeply satisfying because
+        they resonate with my naturally careful, detail-oriented, and considerate way
+        of thinking and communicating.
+    </p>
+    <!-- <p>
+        Maybe include things and topics I am recently working on here
+        (such as making YouTube videos or blogging)
+    </p> -->
+    <p>
+        In my free time, I love watching movies and solving jigsaw puzzles.
+        I also like reading, calligraphy, sudoku, chess, and badminton.
     </p>
 </section>
 <section>
     <h2><a class="plain" href="/assets/pdfs/Resume.pdf">S</a>ocials</h2>
     <ul>
     {% for item in site.data.socials %}
-        <li>{{ item[1].title }}: <a href="{{ item[1].url }}">{{ item[1].text }}</a></li>
+        <li>{{ item[1].title }}:
+            <a href="{{ item[1].url }}">{{ item[1].text }}</a></li>
     {% endfor %}
     </ul>
 </section>
+<!-- <section>
+    <h2>Honours</h2>
+    <ul>
+        <li>Texts perhaps with hyperlinks</li>
+    </ul>
+</section> -->
