@@ -89,7 +89,7 @@ header a:hover, footer a:hover {
     margin: 1em 0;
 }
 hr {
-    margin: 1.2em auto 1.2em;
+    margin: 1.4em auto;
     border: 0;
     border-top: 1px solid #000000;
 }
@@ -136,7 +136,7 @@ h2 {
 }
 h3 {
     font-size: 1em;
-    margin: 0.8em 0 0.8em 0;
+    margin-inline: 0 1em;
     display: inline;
 }
 h3 + p {
@@ -191,6 +191,9 @@ img {
     margin:auto;
     max-width: 100%;
     height: auto;
+}
+figure img + img {
+    margin-top: 0.6em;
 }
 figcaption {
     text-align: center;
