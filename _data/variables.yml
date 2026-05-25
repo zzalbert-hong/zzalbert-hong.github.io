@@ -4,6 +4,8 @@ pages:
     - (title format with proper capitalizations)
   description: # Specify in frontmatter
     - (sentences with proper punctuations)
+  ogImage: # Specify in frontmatter if not 'logo.png'
+    - (filename of open graph image)
   showTitle: # Specify in frontmatter if true
     - true
     - nil
@@ -20,7 +22,6 @@ privates:
       image: (filename of open graph image)
       description: (sentences with proper punctuations)
       type: (website/article/video/etc.)
-      url: (url to show in open graph)
     - nil
 
 projects:
