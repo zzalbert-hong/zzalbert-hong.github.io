@@ -1,5 +1,5 @@
 // Display randomly selected quote
-// <blockquote id="randomExistenceQuote"></blockquote> in html
+// `<blockquote id="randomExistenceQuote"></blockquote>` in html
 const quoteDiv = document.getElementById("randomExistenceQuote");
 
 if (quoteDiv) {
@@ -126,6 +126,43 @@ if (quoteDiv) {
         <i>${randomQuote.source}</i> (${randomQuote.year})</p>`;
 
 }
+
+
+
+// Generate TOC with <h2> tags only
+// `<div class="mybox" id="tocBox"></div>` in html
+document.addEventListener("DOMContentLoaded", () => {
+    const tocContainer = document.getElementById("tocBox");
+    
+    // Stop immediately if page has no TOC container
+    if (!tocContainer) return;
+    // Otherwise set up the TOC
+    tocContainer.innerHTML = `<ul><li>Jump to:</li>
+        <ul id="tocList"></ul></ul>`
+    const toc = document.getElementById("tocList");
+    
+    const headings = document.querySelectorAll("h2");
+    
+    headings.forEach((h2, i) => {
+        if (h2.id == "siteHeading") return;
+        if (!h2.id) {
+        h2.id = `section${i}`;
+        }
+
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+
+        a.href = "#" + h2.id;
+        a.textContent = h2.textContent;
+
+        li.appendChild(a);
+        toc.appendChild(li);
+    });
+    
+    // Only display the TOC after everything is done
+    // (in case some browser has JavaScript disabled)
+    tocContainer.style.display = "block";
+});
 
 
 

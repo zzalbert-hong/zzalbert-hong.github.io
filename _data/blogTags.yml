@@ -1,0 +1,59 @@
+mathematicalLogic:
+  group: mathematics
+  title: Mathematical Logic
+
+precalculus:
+  group: mathematics
+  title: Precalculus
+
+analysis:
+  group: mathematics
+  title: Analysis
+
+mathematicalProblems:
+  group: mathematics
+  title: Mathematical Problems
+
+mathematicalNews:
+  group: mathematics
+  title: Mathematical News
+
+logic:
+  group: philosophy
+  title: Logic
+
+foundationsOfMathematics:
+  group: philosophy
+  title: Foundations Of Mathematics
+
+knowledgeAndReality:
+  group: philosophy
+  title: Knowledge and Reality
+
+aestheticsAndEthics:
+  group: philosophy
+  title: Aesthetics and Ethics
+
+puzzlesAndParadoxes:
+  group: philosophy
+  title: Puzzles and Paradoxes
+
+economics:
+  group: other
+  title: Economics
+
+myWorkflows:
+  group: other
+  title: My Workflows
+
+myOpinions:
+  group: other
+  title: My Opinions
+
+myReflections: # Such as movie reflections
+  group: other
+  title: My Reflections
+
+myJournal: # Such as travel memoirs
+  group: other
+  title: My Journal

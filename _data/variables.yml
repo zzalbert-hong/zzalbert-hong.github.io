@@ -30,6 +30,8 @@ projects:
     - (title format with proper capitalizations)
   description: # Specify in frontmatter
     - (sentences with proper punctuations)
+  ogImage: # Specify in frontmatter if not 'logo.png'
+    - (filename of open graph image)
   tilePic:
     - (file name of the image to put in the tile picture)
   tilePicAlt:
@@ -89,6 +91,8 @@ courses:
     - (title format with proper capitalizations)
   description: # Specify in frontmatter
     - (sentences with proper punctuations)
+  ogImage: # Specify in frontmatter if not 'logo.png'
+    - (filename of open graph image)
   teaching: # Specify in frontmatter if true
     - true
     - nil
@@ -140,13 +144,15 @@ myposts:
     - (title format with proper capitalizations)
   description: # Specify in frontmatter
     - (sentences with proper punctuations)
+  ogImage: # Specify in frontmatter if not 'logo.png'
+    - (filename of open graph image)
   date: # Specify in frontmatter
     - (date in yyyy-mm-dd for sorting)
   wordcount: # Specify in frontmatter
     - (an integer approximation)
   tags: # Specify in frontmatter
     - (list of tags the article is listed under)
-    - [ "ethicsAndAesthetics", ]
+    - [ "aestheticsAndEthics", ]
     - (add the "featured" tag for particularly good posts)
     - (use [] for posts that should not be listed anywhere)
     - etc.
@@ -155,6 +161,9 @@ myposts:
     - nil
   alsoAt: # Specify in frontmatter if applicable
     - (full url to where the article is published)
+    - nil
+  updatedAt: # Specify in frontmatter if applicable
+    - (the :slug of the blog post where I have updated my views)
     - nil
   related: # Specify in frontmatter
     - (list of related articles in the :slug format)
@@ -165,5 +174,7 @@ extras:
     - (title format with proper capitalizations)
   description: # Specify in frontmatter
     - (sentences with proper punctuations)
+  ogImage: # Specify in frontmatter if not 'logo.png'
+    - (filename of open graph image)
   date: # Specify in frontmatter
     - (date in yyyy-mm-dd for sorting)

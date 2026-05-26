@@ -40,7 +40,7 @@ footer {
 
 
 
-.site-heading {
+#siteHeading {
     font-size: 2em;
     margin: 0.69em 0 0.67em 0;
     text-align: center;
@@ -88,6 +88,9 @@ header a:hover, footer a:hover {
     padding: 0 0.6em;
     margin: 1em 0;
 }
+#tocBox {
+    display: none;
+}
 hr {
     margin: 1.4em auto;
     border: 0;
@@ -116,8 +119,8 @@ h1 {
 .content-meta a:hover {
     background-color: #f5f5f5;
 }
-.content-heading + .mybox {
-    margin-bottom: 1.2em;
+#metaBox {
+    margin-bottom: 1em;
 }
 .content-closure {
     margin: 1.2em 0;
@@ -181,6 +184,9 @@ a.plain:hover {
 .file-link::after {
     content: "\1f4c4"; 
 }
+a {
+    overflow-wrap: break-word;
+}
 
 
 
@@ -226,7 +232,7 @@ figure.multi img {
     border-radius: 3px;
 }
 .tile-picture {
-    padding: 0 0.6em 0 0;
+    padding: 0 0.4em 0 0;
     flex: 22%;
 }
 .tile-picture img {
@@ -239,8 +245,8 @@ figure.multi img {
     padding: 0;
     flex: 78%;
 }
-.tile-text p {
-    margin: 0;
+.tile-text p + p {
+    margin-top: 0.2em;
 }
 .tile:hover {
     background-color: #f0f4fa;
@@ -294,16 +300,16 @@ figure.multi img {
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 0.8em;
-    right: 0.6em;
-    z-index: 99;
+    bottom: 0.8rem;
+    right: 0.6rem;
+    z-index: 10;
     border: none;
     outline: none;
     background-color: black;
     color: white;
     opacity: 0.5;
     cursor: pointer;
-    padding: 0.4em;
+    padding: 0.4rem;
     border-radius: 3px;
 }
 #myBtn:hover {
@@ -325,23 +331,24 @@ figure.multi img {
         text-align: left;
     }
     .tile {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .tile-picture {
-        padding: 0 0 0.4em 0;
+        padding: 0.4em 0 0 0;
     }
     .tile-picture img {
         max-width: 200px;
         max-height: 160px;
         width: auto;
         height: auto;
-        margin-right: 0;
-        margin-left: auto;
+    }
+    .tile-text {
+        text-align: left;
     }
 }
 @media (min-width: 1200px) {
     #myBtn {
-        font-size: 32px;
-        padding: 1.2em;
+        font-size: 20px;
+        padding: 0.6rem;
     }
 }

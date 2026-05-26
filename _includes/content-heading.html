@@ -15,7 +15,7 @@
         {% endif %}
         </p>
     </div>
-    <div class="mybox">
+    <div class="mybox" id="metaBox">
         <ul>
         {% if page.collaborators %}
             <li>
@@ -62,7 +62,7 @@
             {{ page.institution }} &middot; {{ page.semester }}
         </p>
     </div>
-    <div class="mybox">
+    <div class="mybox" id="metaBox">
         <ul>
             <li>Academic calendar: <a href="{{ page.calendar }}">{{ page.calendar }}</a></li>
         {% if page.workload %}
@@ -104,14 +104,22 @@
             {{ page.date | date: "%B %d, %Y" }} &middot; {{ page.wordcount }} words
         </p>
     </div>
-    {% if page.context or page.alsoAt %}
-        <div class="mybox">
-        {% if page.context %}
-            <p>{{ page.context }}</p>
+    {% if page.context or page.alsoAt or page.updatedAt %}
+        <div class="mybox" id="metaBox">
+            <ul>
+            {% if page.context %}
+                <li>{{ page.context }}</li>
+            {% endif %}
+            {% if page.alsoAt %}
+                <li>Also at: <a href="{{ page.alsoAt }}">{{ page.alsoAt }}</a></li>
+            {% endif %}
+        {% if page.updatedAt %}
+            {% assign mypost = site.myposts | where: "slug", page.updatedAt | first %}
+            {% if mypost %}
+                <li>Updated at: <a href="{{ mypost.url }}">{{ mypost.title }}</a></li>
+            {% endif %}
         {% endif %}
-        {% if page.alsoAt %}
-            <p>Also at: <a href="{{ page.alsoAt }}">{{ page.alsoAt }}</a></p>
-        {% endif %}
+            </ul>
         </div>
     {% endif %}
 
