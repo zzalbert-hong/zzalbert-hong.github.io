@@ -176,7 +176,7 @@ a.plain:hover {
     font-size: 0.75em;
     margin-left: 4px;
     display: inline-block;
-    vertical-align: super;
+    vertical-align: text-top;
 }
 .external-link::after {
     content: "\2197"; 
@@ -245,6 +245,9 @@ figure.multi img {
     padding: 0;
     flex: 78%;
 }
+.tile-text p {
+    margin: 0;
+}
 .tile-text p + p {
     margin-top: 0.2em;
 }
@@ -272,6 +275,8 @@ figure.multi img {
     background-color: transparent;
     width: 202px;
     height: 202px;
+    max-width: 75vw;
+    max-height: 75vw;
     margin: auto;
 }
 .flip-box-inner {
