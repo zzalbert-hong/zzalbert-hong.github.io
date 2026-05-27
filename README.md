@@ -29,12 +29,12 @@ zzalbert-hong.github.io/
    │      ├─── socials.yml      # List of social media links and contact info
    │      └─── 404quotes.yml    # Fun quotes to display on the  404 error page
    │
-   ├─── _privates/   # My (custom) collection of private pages
-   ├─── _projects/   # My (custom) collection of project documents
-   ├─── _courses/    # My (custom) collection of course info documents
-   ├─── _myposts/    # My (custom) collection of blog posts
-   │      ├─── ...
-   │      └─── [file-name].md
+   ├─── _privates/                # My (custom) collection of private pages
+   ├─── _projects/                # My (custom) collection of project documents
+   ├─── _courses/                 # My (custom) collection of course info documents
+   ├─── _myposts/                 # My (custom) collection of blog posts
+   │      ├─── [file-name].html   # For privates and extras
+   │      └─── [file-name].md     # For all other collections
    │
    ├─── assets/
    │      ├─── css/
