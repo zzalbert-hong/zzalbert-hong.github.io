@@ -33,7 +33,7 @@ zzalbert-hong.github.io/
    ├─── _projects/                # My (custom) collection of project documents
    ├─── _courses/                 # My (custom) collection of course info documents
    ├─── _myposts/                 # My (custom) collection of blog posts
-   │      ├─── [file-name].html   # For privates and extras
+   │      ├─── [file-name].html   # For "privates" and "extras"
    │      └─── [file-name].md     # For all other collections
    │
    ├─── assets/
