@@ -29,8 +29,9 @@
                         {% endif %}
                     {% endfor %}
                     {% for tag in page.tags %}
-                        <li><a href="/blog/{{ site.data.blogTags.tag.group }}/#{{ tag }}">
-                            {{ site.data.blogTags.tag.title }}</a> articles</li>
+                        <li>Articles on
+                            <a href="/blog/{{ site.data.blogTags.tag.group }}/#{{ tag }}">
+                            {{ site.data.blogTags.tag.title }}</a></li>
                     {% endfor %}
                     </ul>
                 </ul>

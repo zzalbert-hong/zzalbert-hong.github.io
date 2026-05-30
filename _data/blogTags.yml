@@ -42,6 +42,10 @@ economics:
   group: other
   title: Economics
 
+creativeWriting:
+  group: other
+  title: Creative Writing
+
 myWorkflows:
   group: other
   title: My Workflows

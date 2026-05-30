@@ -1,67 +1,69 @@
 ---
-title: Profile
+title: Blog
 description: |-
-  My academic interests lie in game theory, logic, and the philosophical
-  foundations of mathematics. I enjoy problem solving, mathematical reasoning,
-  and the communication of abstract ideas...
+  On this page I list my recently posted and featured articles.
+  To see full lists of my mathematics, philosophy, and other articles,
+  use the links in the sub-navigation bar above.
 ---
 
-<div class="flip-box">
-    <div class="flip-box-inner">
-        <div class="flip-box-front">
-            <img src="/assets/images/portrait.jpg" alt="My portrait"
-                style="border-radius:50%; width:100%;">
-        </div>
-        <div class="flip-box-back">
-            <img src="/assets/images/me-on-tree.JPG" alt="Me on the tree"
-                style="border-radius:50%; width:100%;">
-        </div>
+<p>
+    On this page I list my recently posted and featured articles.
+    To see full lists of my mathematics, philosophy, and other articles,
+    use the links in the sub-navigation bar above. An article can be listed
+    in multiple sections if it fits in multiple sections.
+</p>
+<div class="mybox" id="tocBox"></div>
+<p>
+    I started this blog (in fact, this entire website) in summer 2025 wanting
+    to write expository articles on mathematical ideas, inspired by
+    <!-- <a href="/resources/#youtubeChannels">educational content creators</a> -->
+    educational content creators I learned from over the years.
+    <!-- Yet very soon I realized how little I know about mathematics. -->
+    But over time, it naturally evolved into a broader collection of essays on
+    mathematics, philosophy, and other topics I found myself thinking about.
+</p>
+<p>
+    Some of my articles are written primarily to explain ideas to others, while
+    others are closer to public notes&mdash;attempts to organize and refine my
+    own understanding of a topic. I do not claim expertise on most of the subjects
+    discussed here, and many posts reflect an ongoing process of learning and
+    thinking aloud. If you happen to read something and have comments, corrections,
+    or criticism, feel free to shoot me an
+    <a href="{{ site.data.socials.email.url }}">email</a>.
+    I would genuinely appreciate hearing from you.
+</p>
+<p>
+    A few of my posts assume a bit of introductory university-level background,
+    particularly in mathematics or philosophy. However, I generally try to write
+    in a way that is accessible to readers at all levels. And when possible,
+    I include background material or intuitive explanations along the way.
+</p>
+
+<h2>Recently posted</h2>
+
+{% for post in site.myposts reversed limit:6 %}
+
+    <div class="h3-p-box">
+        <h3><a href="{{ post.url }}">{{ post.title }} ({{ post.date | %Y.%m.%d }})</a></h3>
+        <p>{{ post.description }}</p>
     </div>
-</div>
-<section>
-    <p>
-        I am a third year undergraduate student at the University of Toronto,
-        specializing in mathematics and minoring in philosophy and economics. I am also
-        a teaching assistant for first year algebra courses. My academic interests lie
-        in game theory, logic, and the philosophical foundations of mathematics.
-    </p>
-    <p>
-        I enjoy analytical problem solving, mathematical reasoning (i.e. proofs), and
-        the communication of abstract ideas, including teaching and writing.
-        For problem solving, I enjoy the process of breaking difficult problems into
-        smaller pieces, identifying patterns, and finding (or building) elegant,
-        precise models to analyze structures and optimize decision-making.
-        <!-- Maybe include math competition results here if applicable -->
-    </p>
-    <p>
-        For mathematical reasoning, teaching, and writing, I enjoy the process of
-        constructing arguments and answering questions of “why.” I see those as
-        closely connected activities as they all require careful organization of ideas
-        and clear step-by-step thinking. I find these tasks deeply satisfying because
-        they resonate with my naturally careful and detail-oriented way of thinking
-        and communicating.
-    </p>
-    <!-- <p>
-        Maybe include things and topics I am recently working on here
-        (such as making YouTube videos or blogging)
-    </p> -->
-    <p>
-        In my free time, I love watching movies and solving jigsaw puzzles.
-        I also like reading, calligraphy, sudoku, chess, and badminton.
-    </p>
-</section>
-<section>
-    <h2><a class="plain" href="/assets/pdfs/Resume.pdf">S</a>ocials</h2>
-    <ul>
-    {% for item in site.data.socials %}
-        <li>{{ item[1].title }}:
-            <a href="{{ item[1].url }}">{{ item[1].text }}</a></li>
-    {% endfor %}
-    </ul>
-</section>
-<!-- <section>
-    <h2>Honours</h2>
-    <ul>
-        <li>Texts perhaps with hyperlinks</li>
-    </ul>
-</section> -->
+
+{% endfor %}
+
+<h2>Featured</h2>
+<p>
+    These are blog posts that I find especially representative
+    or personally meaningful to me.
+</p>
+
+{% assign featuredPosts = site.myposts
+    | where_exp: "post", "post.tags contains 'featured'" %}
+
+{% for post in featuredPosts %}
+
+    <div class="h3-p-box">
+        <h3><a href="{{ post.url }}">{{ post.title }} ({{ post.date | %Y.%m.%d }})</a></h3>
+        <p>{{ post.description }}</p>
+    </div>
+
+{% endfor %}

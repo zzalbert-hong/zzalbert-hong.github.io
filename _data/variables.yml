@@ -39,12 +39,12 @@ projects:
   date: # Specify in frontmatter
     - (project start date in yyyy-mm-dd for sorting)
   duration: # Specify in frontmatter
-    - (Month Year - Month Year)
-    - (Month - Month Year)
-    - (Year - Year)
+    - (Month Year-Month Year)
+    - (Month-Month Year)
+    - (Year-Year)
     - (Month Year)
     - (Season Year)
-    - (Month Year - Ongoing)
+    - (Month Year-Ongoing)
     - "Summer 2026 (Paused)"
     - etc.
   association: # Specify in frontmatter
@@ -103,7 +103,7 @@ courses:
     - engineering
     - electives (for grouping when listing)
   semester: # Specify in frontmatter
-    - Fall 2025 - Winter 2026
+    - Fall 2025-Winter 2026
     - Fall 2025
     - Winter 2026
     - Summer 2026
@@ -157,7 +157,10 @@ myposts:
     - (use [] for posts that should not be listed anywhere)
     - etc.
   context: # Specify in frontmatter if applicable
-    - (prerequisites and why I wrote the article)
+    - (sentences explaining the original context of writing the article)
+    - nil
+  prerequisites: # Specify in frontmatter if applicable
+    - (sentences explaining the background knowledge the article assumes)
     - nil
   alsoAt: # Specify in frontmatter if applicable
     - (full url to where the article is published)

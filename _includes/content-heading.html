@@ -104,11 +104,14 @@
             {{ page.date | date: "%B %d, %Y" }} &middot; {{ page.wordcount }} words
         </p>
     </div>
-    {% if page.context or page.alsoAt or page.updatedAt %}
+    {% if page.context or page.prerequisites or page.alsoAt or page.updatedAt %}
         <div class="mybox" id="metaBox">
             <ul>
             {% if page.context %}
                 <li>{{ page.context }}</li>
+            {% endif %}
+            {% if page.prerequisites %}
+                <li>{{ page.prerequisites }}</li>
             {% endif %}
             {% if page.alsoAt %}
                 <li>Also at: <a href="{{ page.alsoAt }}">{{ page.alsoAt }}</a></li>

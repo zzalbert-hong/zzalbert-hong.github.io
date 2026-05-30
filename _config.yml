@@ -29,7 +29,6 @@ collections:
   myposts:
     output: true
     sort_by: date
-    reverse: true
 
   extras:
     output: true
