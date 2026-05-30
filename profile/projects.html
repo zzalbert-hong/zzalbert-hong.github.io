@@ -11,7 +11,7 @@ description: My past projects. Mostly programming or engineering design.
 <div class="mybox" id="tocBox"></div>
 {% for tag in site.data.projectTags %}
     <section>
-        <h2 id="{{ tag[0] }}">{{ tag[1] }}</h2>
+        <h2 id="{{ tag[0] }}">{{ tag[1] | markdownify }}</h2>
         {% assign taggedProjects = site.projects
             | where_exp: "project", "project.tags contains tag[0]" %}
         {% for project in taggedProjects %}
@@ -20,15 +20,15 @@ description: My past projects. Mostly programming or engineering design.
                     <img src="/assets/images/{{ project.tilePic }}" alt="{{ project.tilePicAlt }}">
                 </div>
                 <div class="tile-text">
-                    <h3><a href="{{ project.url }}" class="main-link">{{ project.title }}</a></h3>
-                    <p>{{ project.description }}</p>
+                    <h3><a href="{{ project.url }}" class="main-link">{{ project.title | markdownify }}</a></h3>
+                    <p>{{ project.description | markdownify }}</p>
                     <p class="content-meta">
                         Topics:
                         {% for topic in project.topics %}
                             {% if forloop.last %}
-                                {{ topic }}
+                                {{ topic | markdownify }}
                             {% else %}
-                                {{ topic }},
+                                {{ topic | markdownify }},
                             {% endif %}
                         {% endfor %}
                     </p>

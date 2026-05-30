@@ -101,7 +101,7 @@
                     {% for item in site.extras %}
 
                         <li><a class="{% if page.url == item.url %}plain{% endif %}"
-                            href="{{ item.url }}">{{ item.title }}</a></li>
+                            href="{{ item.url }}">{{ item.title | markdownify }}</a></li>
                     
                     {% endfor %}
                     
@@ -138,7 +138,7 @@
         <li><a href="/extras/">Extras</a></li>
         <ul>
         {% for item in site.extras %}
-            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+            <li><a href="{{ item.url }}">{{ item.title | markdownify }}</a></li>
         {% endfor %}
         </ul>
     </ul>

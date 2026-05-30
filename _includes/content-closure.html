@@ -5,7 +5,7 @@
             <h2>Links and resources</h2>
             <ul>
             {% for item in page.links %}
-                <li><a href="{{ item.url }}">{{ item.text }}</a></li>
+                <li><a href="{{ item.url }}">{{ item.text | markdownify }}</a></li>
             {% endfor %}
             </ul>
         </section>
@@ -25,13 +25,13 @@
                     {% for filename in page.related %}
                         {% assign mypost = site.myposts | where: "slug", filename | first %}
                         {% if mypost %}
-                            <li><a href="{{ mypost.url }}">{{ mypost.title }}</a></li>
+                            <li><a href="{{ mypost.url }}">{{ mypost.title | markdownify }}</a></li>
                         {% endif %}
                     {% endfor %}
                     {% for tag in page.tags %}
                         <li>Articles on
-                            <a href="/blog/{{ site.data.blogTags.tag.group }}/#{{ tag }}">
-                            {{ site.data.blogTags.tag.title }}</a></li>
+                            <a href="/blog/{{ site.data.blogTags[tag].group }}/#{{ tag }}">
+                            {{ site.data.blogTags[tag].title | markdownify }}</a></li>
                     {% endfor %}
                     </ul>
                 </ul>

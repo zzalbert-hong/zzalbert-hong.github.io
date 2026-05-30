@@ -1,6 +1,6 @@
 ---
 title: Dedekind Cuts, Big Picture
-# description: ............................................................................
+description: Just testing. $\forall x\in\mathbb{R}$
 date: 2025-04-04
 wordcount: 500
 tags: [ "analysis", "foundationsOfMathematics", ]
