@@ -7,33 +7,41 @@ description: |-
 ---
 
 <p>
-    Below I have listed (most of) the courses I have taken or taught as a TA.
+    On this page I listed (most of) the courses I have taken or taught as a TA.
     For each, I try to provide an overview as well as my studying tips, notes,
-    etc. for those who are taking or deciding whether to take the course.
+    etc., for those who are taking or deciding whether to take the course.
 </p>
 <p>
     (Or at least this is what I aimed to do. I have not actually had the time
     so right now you probably only see MAT188H1.)
 </p>
-<!-- <p>
-    <i>Disclaimer: There can be mistakes in my stuff.
-    Be sure to verify things by yourself.</i>
-</p> -->
-<h2>Teaching</h2>
-
-<div class="mybox">
-    <p>
-        Below are the courses I have taken, sorted by semesters.
-        For courses sorted by subject, see:
-    </p>
-</div>
-<hr>
-<h2>Mathematics</h2>
-<p> 
-    <a href="/">Dedekind Cuts, Big Picture (webpage; 2025.04.04)</a>:
-    ...
+<p>
+    To filter by subject, use the links in the sub-navigation bar above.
 </p>
 <p>
-    <a href="/">Invertible But Not Continuous (PDF; 2025.04.26)</a>:
-    In MAT157, we proved that continuous bijections have continuous inverses. ...
+    <i>Disclaimer: There can be mistakes in my stuff.
+    Be sure to verify things by yourself.</i>
 </p>
+
+<h2>Teaching</h2>
+{% assign taughtCourses = site.courses | where: "teaching", true %}
+<ul>
+    {% for course in taughtCourses %}
+        <li><a href="{{ course.url }}">{{ course.title }}</a></li>
+    {% endfor %}
+</ul>
+
+<hr>
+<!-- Grouped by semesters "for now" -->
+
+{% for item in site.data.courseGroups %}
+<h2>{{ item.title }}</h2>
+<ul>
+    {% for sem in item.semesters %}
+        {% assign semCourses = site.courses | where: "semester", sem %}
+        {% for course in semCourses %}
+            <li><a href="{{ course.url }}">{{ course.title }}</a></li>
+        {% endfor %}
+    {% endfor %}
+</ul>
+{% endfor %}

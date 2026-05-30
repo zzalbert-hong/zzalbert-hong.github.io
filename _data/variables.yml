@@ -1,6 +1,6 @@
 pages:
   layout: default # Specify in frontmatter if not using default
-  title: # Specify in frontmatter in html syntax
+  title: # Specify in frontmatter
     - (title format with proper capitalizations)
   description: # Specify in frontmatter
     - (sentences with proper punctuations)
@@ -26,9 +26,9 @@ privates:
 
 projects:
   layout: default
-  title: # Specify in frontmatter in md syntax
+  title: # Specify in frontmatter
     - (title format with proper capitalizations)
-  description: # Specify in frontmatter in md syntax
+  description: # Specify in frontmatter
     - (sentences with proper punctuations)
   ogImage: # Specify in frontmatter if not 'logo.png'
     - (filename of open graph image)
@@ -38,37 +38,37 @@ projects:
     - (alternative text for the tile pic image)
   date: # Specify in frontmatter
     - (project start date in yyyy-mm-dd for sorting)
-  duration: # Specify in frontmatter in md syntax
-    - (Month Year--Month Year)
-    - (Month--Month Year)
-    - (Year--Year)
+  duration: # Specify in frontmatter in
+    - (Month Year&ndash;Month Year)
+    - (Month&ndash;Month Year)
+    - (Year&ndash;Year)
     - (Month Year)
     - (Season Year)
-    - (Month Year--Ongoing)
+    - (Month Year&ndash;Ongoing)
     - "Summer 2026 (Paused)"
     - etc.
-  association: # Specify in frontmatter in md syntax
+  association: # Specify in frontmatter
     - "Personal Project"
     - "CIV102H1 Structures and Materials"
     - etc.
-  location: # Specify in frontmatter in md syntax if applicable
+  location: # Specify in frontmatter if applicable
     - "Toronto, ON, Canada"
     - "Taipei, Taiwan"
     - etc.
     - nil
-  collaborators: # Specify in frontmatter in md syntax if applicable
+  collaborators: # Specify in frontmatter if applicable
     - (list of names)
     - nil
   tags: # Specify in frontmatter
     - (list of tags the project is listed under)
     - [ "engineeringDesign", "programming", ]
     - etc.
-  topics: # Specify in frontmatter in md syntax
+  topics: # Specify in frontmatter
     - (list of skills or technologies related to the project)
     - [ "engineering design", "civil engineering", "Python", ]
     - etc.
   links: # Specify in frontmatter if applicable
-    - (list of dictionaries of urls and texts in md syntax)
+    - (list of dictionaries of urls and texts)
     - - url: (full url to github repo)
         text: GitHub repo
       - url: (full url)
@@ -87,9 +87,9 @@ projects:
 
 courses:
   layout: default
-  title: # Specify in frontmatter in md syntax
+  title: # Specify in frontmatter
     - (title format with proper capitalizations)
-  description: # Specify in frontmatter in md syntax
+  description: # Specify in frontmatter
     - (sentences with proper punctuations)
   ogImage: # Specify in frontmatter if not 'logo.png'
     - (filename of open graph image)
@@ -102,8 +102,8 @@ courses:
     - economics
     - engineering
     - electives (for grouping when listing)
-  semester: # Specify in frontmatter in md syntax
-    - Fall 2025--Winter 2026
+  semester: # Specify in frontmatter only for courses taken
+    - Fall 2025&ndash;Winter 2026
     - Fall 2025
     - Winter 2026
     - Summer 2026
@@ -125,14 +125,14 @@ courses:
     - light
     - (measured by volume of assignments and dependent on the instructor)
     - (somewhat subjective and biased by my background)
-  topics: # Specify in frontmatter in md syntax
+  topics: # Specify in frontmatter
     - (list of topics related to the course)
     - [ "manifolds", "Fubini's theorem", "Stoke's theorem", ]
     - etc.
   calendar: # Specify in frontmatter
     - (full url to academic calendar)
   links: # Specify in frontmatter if applicable
-    - (list of dictionaries of urls and texts in md syntax)
+    - (list of dictionaries of urls and texts)
     - - url: (url to Xue QiLin's notes)
         text: Xue QiLin's notes
       - etc.
@@ -140,9 +140,9 @@ courses:
 
 myposts:
   layout: default
-  title: # Specify in frontmatter in md syntax
+  title: # Specify in frontmatter
     - (title format with proper capitalizations)
-  description: # Specify in frontmatter in md syntax
+  description: # Specify in frontmatter
     - (sentences with proper punctuations)
   ogImage: # Specify in frontmatter if not 'logo.png'
     - (filename of open graph image)
@@ -156,10 +156,10 @@ myposts:
     - (add the "featured" tag for particularly good posts)
     - (use [] for posts that should not be listed anywhere)
     - etc.
-  context: # Specify in frontmatter in md syntax if applicable
+  context: # Specify in frontmatter if applicable
     - (sentences explaining the original context of writing the article)
     - nil
-  prerequisites: # Specify in frontmatter in md syntax if applicable
+  prerequisites: # Specify in frontmatter if applicable
     - (sentences explaining the background knowledge the article assumes)
     - nil
   alsoAt: # Specify in frontmatter if applicable

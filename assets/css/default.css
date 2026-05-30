@@ -160,7 +160,7 @@ main a:link, .subnav a:link {
     color: #1559ff;
 }
 main a:visited, .subnav a:visited {
-    color: #3f59ff;
+    color: #3859ff;
 }
 main a:hover, .subnav a:hover {
     background-color: #f0f4fa;
@@ -191,7 +191,7 @@ a.plain:hover {
 a {
     overflow-wrap: break-word;
 }
-.content-meta a {
+.content-meta a:link, .content-meta a:visited {
     color: #999999;
 }
 .content-meta a:hover {

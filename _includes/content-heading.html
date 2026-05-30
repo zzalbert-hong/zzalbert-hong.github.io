@@ -1,17 +1,17 @@
 {% if page.showTitle %}
 
     <div class="content-heading">
-        <h1>{{ page.title | markdownify }}</h1>
+        <h1>{{ page.title }}</h1>
     </div>
 
 {% elsif page.collection == "projects" %}
 
     <div class="content-heading">
-        <h1>{{ page.title | markdownify }}</h1>
+        <h1>{{ page.title }}</h1>
         <p class="content-meta">
-            {{ page.duration | markdownify }} &middot; {{ page.association | markdownify }}
+            {{ page.duration }} &middot; {{ page.association }}
         {% if page.location %}
-            &middot; {{ page.location | markdownify }}
+            &middot; {{ page.location }}
         {% endif %}
         </p>
     </div>
@@ -22,9 +22,9 @@
                 Collaborators:
                 {% for name in page.collaborators %}
                     {% if forloop.last %}
-                        {{ name | markdownify }}
+                        {{ name }}
                     {% else %}
-                        {{ name | markdownify }},
+                        {{ name }},
                     {% endif %}
                 {% endfor %}
             </li>
@@ -33,9 +33,9 @@
                 Topics:
                 {% for topic in page.topics %}
                     {% if forloop.last %}
-                        {{ topic | markdownify }}
+                        {{ topic }}
                     {% else %}
-                        {{ topic | markdownify }},
+                        {{ topic }},
                     {% endif %}
                 {% endfor %}
             </li>
@@ -44,9 +44,9 @@
                 Links:
                 {% for item in page.links %}
                     {% if forloop.last %}
-                        <a href="{{ item.url }}">{{ item.text | markdownify }}</a>
+                        <a href="{{ item.url }}">{{ item.text }}</a>
                     {% else %}
-                        <a href="{{ item.url }}">{{ item.text | markdownify }}</a>,
+                        <a href="{{ item.url }}">{{ item.text }}</a>,
                     {% endif %}
                 {% endfor %}
             </li>
@@ -57,9 +57,9 @@
 {% elsif page.collection == "courses" %}
 
     <div class="content-heading">
-        <h1>{{ page.title | markdownify }}</h1>
+        <h1>{{ page.title }}</h1>
         <p class="content-meta">
-            {{ page.institution | markdownify }} &middot; {{ page.semester | markdownify }}
+            {{ page.institution }} &middot; {{ page.semester }}
         </p>
     </div>
     <div class="mybox" id="metaBox">
@@ -78,9 +78,9 @@
                 Topics:
                 {% for topic in page.topics %}
                     {% if forloop.last %}
-                        {{ topic | markdownify }}
+                        {{ topic }}
                     {% else %}
-                        {{ topic | markdownify }},
+                        {{ topic }},
                     {% endif %}
                 {% endfor %}
             </li>
@@ -90,11 +90,11 @@
 {% elsif page.collection == "myposts" %}
 
     <div class="content-heading">
-        <h1>{{ page.title | markdownify }}</h1>
+        <h1>{{ page.title }}</h1>
         <p class="content-meta">
             {% for tag in page.tags %}
                 <a href="/blog/{{ site.data.blogTags[tag].group }}/#{{ tag }}">
-                    {{ site.data.blogTags[tag].title | markdownify }}</a>
+                    {{ site.data.blogTags[tag].title }}</a>
                 {% if forloop.last == false %}
                     &middot;
                 {% endif %}
@@ -108,10 +108,10 @@
         <div class="mybox" id="metaBox">
             <ul>
             {% if page.context %}
-                <li>{{ page.context | markdownify }}</li>
+                <li>{{ page.context }}</li>
             {% endif %}
             {% if page.prerequisites %}
-                <li>{{ page.prerequisites | markdownify }}</li>
+                <li>{{ page.prerequisites }}</li>
             {% endif %}
             {% if page.alsoAt %}
                 <li>Also at: <a href="{{ page.alsoAt }}">{{ page.alsoAt }}</a></li>
@@ -119,7 +119,7 @@
         {% if page.updatedAt %}
             {% assign mypost = site.myposts | where: "slug", page.updatedAt | first %}
             {% if mypost %}
-                <li>Updated at: <a href="{{ mypost.url }}">{{ mypost.title | markdownify }}</a></li>
+                <li>Updated at: <a href="{{ mypost.url }}">{{ mypost.title }}</a></li>
             {% endif %}
         {% endif %}
             </ul>
@@ -128,6 +128,6 @@
 
 {% else %}
 
-    <h1 style="display:none;">{{ page.title | markdownify }}</h1>
+    <h1 style="display:none;">{{ page.title }}</h1>
 
 {% endif %}
