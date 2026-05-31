@@ -27,11 +27,8 @@ date: 2007-06-25
     {% endif %}
     <ul>
     {% for m in section.movies %}
-        <li><a href="{{ m.url }}">
-            {{ m.en }}
-            (<span lang="zh-Hant">{{ m.zh }}</span>)
-            ({{ m.year }})
-        </a></li>
+        <li><a href="{{ m.url }}">{{ m.en }} ({{ m.year }})</a>
+            <span lang="zh-Hant">{{ m.zh }}</span></li>
     {% endfor %}
     </ul>
 {% endfor %}
