@@ -9,7 +9,7 @@
     - en: The Legend of 1900
       zh: 海上鋼琴師
       year: 1998
-      url: https://www.google.com/search?q=The+Legend+of+1900+(1990)
+      url: https://www.google.com/search?q=The+Legend+of+1900+(1998)
     - en: The Truman Show
       zh: 楚門的世界
       year: 1998
@@ -41,8 +41,8 @@
 - title: About Love
   id: aboutLove
   comments: |-
-    Not necessarily about romance, but "love" in general, also including
-    family, friends, or even the environment.
+    Not necessarily about romance, but about "love" in general, also including
+    family, friends, or even nature.
   movies:
     - en: Princess Mononoke
       zh: 魔法公主
@@ -179,8 +179,8 @@
 - title: Horror and Suspense
   id: horrorAndSuspense
   comments: |-
-    WARNING. THERE CAN BE SCARY IMAGES WHEN YOU CLICK ON THESE LINKS.
-    ONLY LOOK INTO THEM IF YOU ACTUALLY ENJOY HORROR FILMS.
+    <strong style="color:red">THERE CAN BE SCARY IMAGES WHEN YOU CLICK ON
+    THESE LINKS. ONLY LOOK INTO THEM IF YOU ACTUALLY ENJOY HORROR FILMS.</strong>
   movies:
     - en: The Shining
       zh: 鬼店
