@@ -24,7 +24,7 @@ logic:
 
 foundationsOfMathematics:
   group: philosophy
-  title: Foundations Of Mathematics
+  title: Foundations of Mathematics
 
 knowledgeAndReality:
   group: philosophy
@@ -46,17 +46,17 @@ creativeWriting:
   group: other
   title: Creative Writing
 
-myWorkflows:
+myHowTos:
   group: other
-  title: My Workflows
+  title: My How-Tos
 
-myOpinions:
+opinions:
   group: other
-  title: My Opinions
+  title: Opinions
 
-myReflections: # Such as movie reflections
+movieReflections:
   group: other
-  title: My Reflections
+  title: Movie Reflections
 
 myJournal: # Such as travel memoirs
   group: other

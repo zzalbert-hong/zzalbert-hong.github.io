@@ -1,0 +1,139 @@
+---
+title: Movie Recommendations
+description: Movies I have watched and liked, sectioned by moods and themes.
+date: 2007-06-25
+movieLists:
+  - title: About Identity
+    id: aboutIdentity
+    movies:
+      - text: Good Will Hunting (1997)
+        url: 
+      - text: The Legend of 1900 (1998)
+        url: 
+      - text: The Truman Show (1998)
+        url: 
+      - text: A Beautiful Mind (2001)
+        url: 
+      - text: Catch Me if You Can (2002)
+        url: 
+      - text: The Dark Knight (2008)
+        url: 
+      - text: 3 Idiots (2009)
+        url: 
+      - text: The Secret Life of Walter Mitty (2013)
+        url: 
+      - text: Oppenheimer (2023)
+        url: 
+  - title: About Love
+    id: aboutLove
+    comments: |-
+      Not necessarily about romance, but "love" in general, also including
+      family, friends, or even the environment.
+    movies:
+      - text: Princess Mononoke (1997)
+        url:
+      - text: Pay It Forward (2000)
+        url:
+      - text: Spirited Away (2001)
+        url:
+      - text: Before Sunset (2004)
+        url:
+      - text: Front of the Class (2008)
+        url:
+      - text: Avatar (2009)
+        url:
+      - text: My Sister's Keeper (2009)
+        url:
+      - text: You Are the Apple of My Eye (2011)
+        url:
+      - text: Have a Song on Your Lips (2015)
+        url:
+      - text: Arrival (2016)
+        url:
+      - text: A Silent Voice (2016)
+        url:
+      - text: Your Name (2016)
+        url:
+      - text: Instant Family (2018)
+        url:
+      - text: We Made a Beautiful Bouquet (2021)
+        url: 
+      - text: Suzume (2022)
+        url: 
+      - text: LeMis
+        url: 
+  - title: Motivational
+    id: motivational
+    movies:
+      - text: The Shawshank Redemption (1994)
+        url:
+      - text: Gladiator (2000)
+        url: 
+      - text: Homeless to Harvard: The Liz Murray Story (2003)
+        url: 
+  - title: Inspirational
+    id: inspirational
+    movies:
+      - text: The Intouchables (2011)
+        url:
+  - title: About Justice
+    id: aboutJustice
+    movies:
+      - text: 
+        url:
+  - title: Thriller and Mystery
+    id: thrillerAndMystery
+    movies:
+      - text: Outbreak (1995)
+        url: 
+      - text: Memento (2000)
+        url:
+      - text: The Prestige (2006)
+        url: 
+      - text: 21 (2008)
+        url: 
+      - text: Game of Thrones (2011)
+        url: 
+      - text: The Devotion of Suspect X (2017)
+        url: 
+      - text: Conclave (2024)
+        url: 
+  - title: Horror and Suspense
+    id: horrorAndSuspense
+    comments: |-
+      WARNING. THERE CAN BE SCARY IMAGES WHEN YOU CLICK ON THESE LINKS.
+      ONLY LOOK INTO THEM IF YOU ACTUALLY ENJOY HORROR FILMS.
+    movies:
+      - text: The Shining (1980)
+        url: https://www.imdb.com/title/tt0081505/
+      - text: Hokum (2026)
+        url: https://www.imdb.com/title/tt35672862/
+---
+
+<p>
+    As someone who <em>loves</em> watching movies, I always appreciate finding
+    people's movie recommendation lists. As such, I present mine below,
+    sectioned by moods and themes.
+</p>
+<div class="mybox" id="tocBox"></div>
+<p>
+    (There are <em>many</em> others not listed here yet.
+    I am trying to make an exhaustive list of movies I have watched and liked,
+    but there are only so many I can think of right now.)
+</p>
+<p>
+    (Oh and if I were to choose my <em>one</em> favourite movie, it would be
+    <a href="https://www.imdb.com/title/tt0120731/">The Legend of 1900 (1998)</a>.)
+</p>
+
+{% for section in page.movieLists %}
+    <h2 id="{{ section.id }}">{{ section.title }}</h2>
+    {% if section.comments %}
+        <p>{{ section.comments }}</p>
+    {% endif %}
+    <ul>
+    {% for m in section.movies %}
+        <li><a href="{{ m.url }}">{{ m.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% endfor %}

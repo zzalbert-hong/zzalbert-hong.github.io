@@ -7,8 +7,8 @@ tags: [ "analysis", "foundationsOfMathematics", ]
 context: |-
   This is a revision of an MAT157 Piazza post that I wrote after our lecture on
   Dedekind cuts. I found many of my classmates struggling to understand the point
-  of proving $a + b = b + a$, etc. in such a complicated way, and so I tried to
-  explain the big picture behind it by providing some philosophical context.
+  of proving $a+b=b+a$, $a\cdot b=b\cdot a$, etc. in such a complicated way, and so
+  I tried to explain the big picture behind it by providing some philosophical context.
   (And for what it is worth, my Piazza post received 16 "good note" reactions and
   was endorsed by the professor, which I am very proud of. &#128512;)
 prerequisites:

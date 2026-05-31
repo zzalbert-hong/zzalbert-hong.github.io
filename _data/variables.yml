@@ -2,13 +2,13 @@ pages:
   layout: default # Specify in frontmatter if not using default
   title: # Specify in frontmatter
     - (title format with proper capitalizations)
+  showTitle: # Specify in frontmatter if true
+    - true
+    - nil
   description: # Specify in frontmatter
     - (sentences with proper punctuations)
   ogImage: # Specify in frontmatter if not 'logo.png'
     - (filename of open graph image)
-  showTitle: # Specify in frontmatter if true
-    - true
-    - nil
 
 privates:
   layout: plain # Specify in frontmatter if not using plain
@@ -175,6 +175,7 @@ extras:
   layout: default
   title: # Specify in frontmatter in html format
     - (title format with proper capitalizations)
+  showTitle: true
   description: # Specify in frontmatter
     - (sentences with proper punctuations)
   ogImage: # Specify in frontmatter if not 'logo.png'

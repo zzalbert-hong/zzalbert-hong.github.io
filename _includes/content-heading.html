@@ -106,23 +106,21 @@
     </div>
     {% if page.context or page.prerequisites or page.alsoAt or page.updatedAt %}
         <div class="mybox" id="metaBox">
-            <ul>
             {% if page.context %}
-                <li>{{ page.context }}</li>
+                <p>{{ page.context }}</p>
             {% endif %}
             {% if page.prerequisites %}
-                <li>{{ page.prerequisites }}</li>
+                <p>{{ page.prerequisites }}</p>
             {% endif %}
             {% if page.alsoAt %}
-                <li>Also at: <a href="{{ page.alsoAt }}">{{ page.alsoAt }}</a></li>
+                <p>Also at: <a href="{{ page.alsoAt }}">{{ page.alsoAt }}</a></p>
             {% endif %}
         {% if page.updatedAt %}
             {% assign mypost = site.myposts | where: "slug", page.updatedAt | first %}
             {% if mypost %}
-                <li>Updated at: <a href="{{ mypost.url }}">{{ mypost.title }}</a></li>
+                <p>Updated at: <a href="{{ mypost.url }}">{{ mypost.title }}</a></p>
             {% endif %}
         {% endif %}
-            </ul>
         </div>
     {% endif %}
 

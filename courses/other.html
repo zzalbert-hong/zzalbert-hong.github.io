@@ -1,0 +1,26 @@
+---
+title: Other Courses
+showTitle: true
+description: |-
+  Resources and course reviews for economics, engineering, and other courses
+  I have taken. For those who are taking or deciding whether to take these courses.
+---
+
+<p>
+    <i>Disclaimer: There can be mistakes in my stuff.
+    Be sure to verify things by yourself.</i>
+</p>
+
+{% for item in site.data.courseGroups %}
+<h2>{{ item.title }}</h2>
+<ul>
+    {% for sem in item.semesters %}
+        {% assign semCourses = site.courses
+            | where_exp: "course", "course.subject != 'mathematics' and
+            course.subject != 'philosophy' and course.semester == sem" %}
+        {% for course in semCourses %}
+            <li><a href="{{ course.url }}">{{ course.title }}</a></li>
+        {% endfor %}
+    {% endfor %}
+</ul>
+{% endfor %}

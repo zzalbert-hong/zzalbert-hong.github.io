@@ -1,0 +1,53 @@
+---
+title: Mathematics Resources
+description: Books I have read and liked, .......................................
+date: 2005-06-25
+movieLists:
+  - title: About Identity
+    id: aboutIdentity
+    movies:
+      - text: Good Will Hunting (1997)
+        url: 
+      - text: The Legend of 1900 (1998)
+        url: 
+      - text: The Truman Show (1998)
+        url: 
+  - title: About Love
+    id: aboutLove
+    comments: |-
+      Not necessarily about romance, but "love" in general, also including
+      family, friends, or even the environment.
+    movies:
+      - text: Princess Mononoke (1997)
+        url:
+      - text: Pay It Forward (2000)
+        url:
+      - text: Spirited Away (2001)
+        url:
+      - text: My Sister's Keeper (2009)
+        url:
+---
+
+<p>
+    As someone who <em>loves</em> watching movies, I always appreciate finding
+    people's movie recommendation lists. As such, I present mine below,
+    sectioned by moods and themes.
+</p>
+<div class="mybox" id="tocBox"></div>
+<p>
+    (There are <em>many</em> others not listed here yet.
+    I am trying to make an exhaustive list of movies I have watched and liked,
+    but there are only so many I can think of right now.)
+</p>
+
+{% for section in page.movieLists %}
+    <h2 id="{{ section.id }}">{{ section.title }}</h2>
+    {% if section.comments %}
+        <p>{{ section.comments }}</p>
+    {% endif %}
+    <ul>
+    {% for m in section.movies %}
+        <li><a href="{{ m.url }}">{{ m.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% endfor %}
