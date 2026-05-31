@@ -1,0 +1,196 @@
+
+- title: About Identity
+  id: aboutIdentity
+  movies:
+    - en: Good Will Hunting
+      zh: 心靈捕手
+      year: 1997
+      url: https://www.google.com/search?q=Good+Will+Hunting+(1997)
+    - en: The Legend of 1900
+      zh: 海上鋼琴師
+      year: 1998
+      url: https://www.google.com/search?q=The+Legend+of+1900+(1990)
+    - en: The Truman Show
+      zh: 楚門的世界
+      year: 1998
+      url: https://www.google.com/search?q=The+Truman+Show+(1998)
+    - en: A Beautiful Mind
+      zh: 美麗境界
+      year: 2001
+      url: https://www.google.com/search?q=A+Beautiful+Mind+(2001)
+    - en: Catch Me if You Can
+      zh: 神鬼交鋒
+      year: 2002
+      url: https://www.google.com/search?q=Catch+Me+if+You+Can+(2002)
+    - en: The Dark Knight
+      zh: 黑暗騎士
+      year: 2008
+      url: https://www.google.com/search?q=The+Dark+Knight+(2008)
+    - en: 3 Idiots
+      zh: 三個傻瓜
+      year: 2009
+      url: https://www.google.com/search?q=3+Idiots+(2009)
+    - en: The Secret Life of Walter Mitty
+      zh: 白日夢冒險王
+      year: 2013
+      url: https://www.google.com/search?q=The+Secret+Life+of+Walter+Mitty+(2013)
+    - en: Oppenheimer
+      zh: 奧本海默
+      year: 2023
+      url: https://www.google.com/search?q=Oppenheimer+(2023)
+- title: About Love
+  id: aboutLove
+  comments: |-
+    Not necessarily about romance, but "love" in general, also including
+    family, friends, or even the environment.
+  movies:
+    - en: Princess Mononoke
+      zh: 魔法公主
+      year: 1997
+      url: https://www.google.com/search?q=Princess+Mononoke+(1997)
+    - en: Pay It Forward
+      zh: 讓愛傳出去
+      year: 2000
+      url: https://www.google.com/search?q=Pay+It+Forward+(2000)
+    - en: Spirited Away
+      zh: 神隱少女
+      year: 2001
+      url: https://www.google.com/search?q=Spirited+Away+(2001)
+    - en: Before Sunset
+      zh: 愛在日落巴黎時
+      year: 2004
+      url: https://www.google.com/search?q=Before+Sunset+(2004)
+    - en: Front of the Class
+      zh: 叫我第一名
+      year: 2008
+      url: https://www.google.com/search?q=Front+of+the+Class+(2008)
+    - en: Avatar
+      zh: 阿凡達
+      year: 2009
+      url: https://www.google.com/search?q=Avatar+(2009)
+    - en: My Sister's Keeper
+      zh: 姊姊的守護者
+      year: 2009
+      url: https://www.google.com/search?q=My+Sister%27s+Keeper+(2009)
+    - en: You Are the Apple of My Eye
+      zh: 那些年，我們一起追的女孩
+      year: 2011
+      url: https://www.google.com/search?q=You+Are+the+Apple+of+My+Eye+(2011)
+    - en: Les Mis&eacute;rables
+      zh: 悲慘世界
+      year: 2012
+      url: https://www.google.com/search?q=Les+Miserables+(2012)
+    - en: Have a Song on Your Lips
+      zh: 再會吧！青春小鳥
+      year: 2015
+      url: https://www.google.com/search?q=Have+a+Song+on+Your+Lips+(2015)
+    - en: Arrival
+      zh: 異星入境
+      year: 2016
+      url: https://www.google.com/search?q=Arrival+(2016)
+    - en: A Silent Voice
+      zh: 聲之形
+      year: 2016
+      url: https://www.google.com/search?q=A+Silent+Voice+(2016)
+    - en: Your Name
+      zh: 你的名字
+      year: 2016
+      url: https://www.google.com/search?q=Your+Name+(2016)
+    - en: Instant Family
+      zh: 速成家庭
+      year: 2018
+      url: https://www.google.com/search?q=Instant+Family+(2018)
+    - en: We Made a Beautiful Bouquet
+      zh: 花束般的戀愛
+      year: 2021
+      url: https://www.google.com/search?q=We+Made+a+Beautiful+Bouquet+(2021)
+    - en: Suzume
+      zh: 鈴芽之旅
+      year: 2022
+      url: https://www.google.com/search?q=Suzume+(2022)
+- title: Motivational
+  id: motivational
+  movies:
+    - en: The Shawshank Redemption
+      zh: 刺激1995
+      year: 1994
+      url: https://www.google.com/search?q=The+Shawshank+Redemption+(1994)
+    - en: Gladiator
+      zh: 神鬼戰士
+      year: 2000
+      url: https://www.google.com/search?q=Gladiator+(2000)
+    - en: "Homeless to Harvard: The Liz Murray Story"
+      zh: 最貧窮的哈佛女孩
+      year: 2003
+      url: https://www.google.com/search?q=Homeless+to+Harvard%3A+The+Liz+Murray+Story+(2003)
+- title: Inspirational
+  id: inspirational
+  movies:
+    - en: The Intouchables
+      zh: 逆轉人生
+      year: 2011
+      url: https://www.google.com/search?q=The+Intouchables+(2011)
+- title: About Justice
+  id: aboutJustice
+  movies:
+    - en: Erin Brockovich
+      zh: 永不妥協
+      year: 2000
+      url: https://www.google.com/search?q=Erin+Brockovich+(2000)
+    - en: The People vs. Fritz Bauer
+      zh: 大審判家
+      year: 2015
+      url: https://www.google.com/search?q=The+People+vs.+Fritz+Bauer+(2015)
+    - en: Just Mercy
+      zh: 不完美的正義
+      year: 2019
+      url: https://www.google.com/search?q=Just+Mercy+(2019)
+- title: Thriller and Mystery
+  id: thrillerAndMystery
+  movies:
+    - en: Outbreak
+      zh: 危機總動員
+      year: 1995
+      url: https://www.google.com/search?q=Outbreak+(1995)
+    - en: Memento
+      zh: 記憶拼圖
+      year: 2000
+      url: https://www.google.com/search?q=Memento+(2000)
+    - en: The Prestige
+      zh: 頂尖對決
+      year: 2006
+      url: https://www.google.com/search?q=The+Prestige+(2006)
+    - en: 21
+      zh: 決勝21點
+      year: 2008
+      url: https://www.google.com/search?q=21+(2008)
+    - en: Suspect X
+      zh: 嫌疑犯X的獻身
+      year: 2008
+      url: https://www.google.com/search?q=Suspect+X+(2008)
+    - en: Game of Thrones
+      zh: "冰與火之歌：權力遊戲"
+      year: 2011
+      url: https://www.google.com/search?q=Game+of+Thrones+(2011)
+    - en: Conclave
+      zh: 秘密會議
+      year: 2024
+      url: https://www.google.com/search?q=Conclave+(2024)
+- title: Horror and Suspense
+  id: horrorAndSuspense
+  comments: |-
+    WARNING. THERE CAN BE SCARY IMAGES WHEN YOU CLICK ON THESE LINKS.
+    ONLY LOOK INTO THEM IF YOU ACTUALLY ENJOY HORROR FILMS.
+  movies:
+    - en: The Shining
+      zh: 鬼店
+      year: 1980
+      url: https://www.google.com/search?q=The+Shining+(1980)
+    - en: Until Dawn
+      zh: 直到黎明
+      year: 2025
+      url: https://www.google.com/search?q=Until+Dawn+(2025)
+    - en: Hokum
+      zh: 陰魂旅社
+      year: 2026
+      url: https://www.google.com/search?q=Hokum+(2026)
