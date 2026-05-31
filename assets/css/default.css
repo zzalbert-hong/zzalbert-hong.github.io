@@ -193,7 +193,7 @@ a.plain:hover {
 }
 .external-link::after, .file-link::after {
     font-size: 0.75em;
-    margin-left: 1px;
+    display: inline-block;
     vertical-align: text-top;
 }
 .external-link::after {
@@ -351,7 +351,7 @@ button {
 
 
 :lang(zh-Hant) {
-    font-size: 78%; /* Scales the text down slightly to match Latin text */
+    font-size: 90%; /* Scales the text down slightly to match Latin text */
 }
 
 
