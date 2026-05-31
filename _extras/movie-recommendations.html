@@ -44,8 +44,10 @@ movieLists:
         url:
       - text: My Sister's Keeper (2009)
         url:
-      - text: You Are the Apple of My Eye (2011)
-        url:
+      - text: <span lang="zh-Hant">那些年，我們一起追的女孩</span> (You Are the Apple of My Eye) (2011)
+        url: https://www.imdb.com/title/tt2036416/
+      - text: Les Mis&eacute;rables (2012)
+        url: 
       - text: Have a Song on Your Lips (2015)
         url:
       - text: Arrival (2016)
@@ -59,8 +61,6 @@ movieLists:
       - text: We Made a Beautiful Bouquet (2021)
         url: 
       - text: Suzume (2022)
-        url: 
-      - text: LeMis
         url: 
   - title: Motivational
     id: motivational
@@ -79,8 +79,12 @@ movieLists:
   - title: About Justice
     id: aboutJustice
     movies:
-      - text: 
-        url:
+      - text: Erin Brockovich (2000)
+        url: https://www.imdb.com/title/tt0195685/
+      - text: The People vs. Fritz Bauer (2015)
+        url: https://www.imdb.com/title/tt4193400/
+      - text: Just Mercy (2019)
+        url: https://www.imdb.com/title/tt4916630/
   - title: Thriller and Mystery
     id: thrillerAndMystery
     movies:
@@ -106,6 +110,8 @@ movieLists:
     movies:
       - text: The Shining (1980)
         url: https://www.imdb.com/title/tt0081505/
+      - text: Until Dawn (2025)
+        url: https://www.imdb.com/title/tt30955489/
       - text: Hokum (2026)
         url: https://www.imdb.com/title/tt35672862/
 ---
@@ -133,7 +139,8 @@ movieLists:
     {% endif %}
     <ul>
     {% for m in section.movies %}
-        <li><a href="{{ m.url }}">{{ m.title }}</a></li>
+        <!-- <li><a href="{{ m.url }}">{{ m.text }}</a></li> -->
+        <li>{{ m.text }}</li>
     {% endfor %}
     </ul>
 {% endfor %}

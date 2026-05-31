@@ -27,8 +27,8 @@ description: |-
 <ul>
     {% for sem in item.semesters %}
         {% assign semCourses = site.courses
-            | where: "subject", "mathematics"
-            | where: "semester", sem %}
+            | where: "semester", sem
+            | where: "subject", "mathematics" %}
         {% for course in semCourses %}
             <li><a href="{{ course.url }}">{{ course.title }}</a></li>
         {% endfor %}

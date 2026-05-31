@@ -1,72 +1,24 @@
 ---
-title: Blog
+title: Other Articles
 showTitle: true
-description: |-
-  On this page I list my recently posted and featured articles.
-  To see full lists of my mathematics, philosophy, and other articles,
-  use the links in the sub-navigation bar above.
+description: These are my miscellaneous expository and reflective articles.
 ---
 
-<p>
-    On this page I list my recently posted and featured articles.
-    To see full lists of my mathematics, philosophy, and other articles,
-    use the links in the sub-navigation bar above. An article can be listed
-    in multiple sections if it fits in multiple sections.
-</p>
 <div class="mybox" id="tocBox"></div>
-<p>
-    I started this blog (in fact, this entire website) in summer 2025 wanting
-    to write expository articles on mathematical ideas, inspired by
-    <!-- <a href="/resources/#youtubeChannels">educational content creators</a> -->
-    educational content creators I learned from over the years.
-    <!-- Yet very soon I realized how little I know about mathematics. -->
-    But over time, it naturally evolved into a broader collection of essays on
-    mathematics, philosophy, and other topics I found myself thinking about.
-</p>
-<p>
-    Some of my articles are written primarily to explain ideas to others, while
-    others are closer to public notes&mdash;attempts to organize and refine my
-    own understanding of a topic. I do not claim expertise on most of the subjects
-    discussed here, and many posts reflect an ongoing process of learning and
-    thinking aloud. If you happen to read something and have comments, corrections,
-    or criticism, feel free to shoot me an
-    <a href="{{ site.data.socials.email.url }}">email</a>.
-    I would genuinely appreciate hearing from you.
-</p>
-<p>
-    A few of my posts assume a bit of introductory university-level background,
-    particularly in mathematics or philosophy. However, I generally try to write
-    in a way that is accessible to readers at all levels. And when possible,
-    I include background material or intuitive explanations along the way.
-</p>
 
-<h2>Recently posted</h2>
-
-{% for post in site.myposts reversed limit:6 %}
-
-    <div class="h3-p-box">
-        <h3><a href="{{ post.url }}">{{ post.title }}
-            ({{ post.date | date: "%Y.%m.%d" }})</a></h3>
-        <p>{{ post.description }}</p>
-    </div>
-
-{% endfor %}
-
-<h2>Featured</h2>
-<p>
-    These are blog posts that I find especially representative
-    or personally meaningful to me.
-</p>
-
-{% assign featuredPosts = site.myposts
-    | where_exp: "post", "post.tags contains 'featured'" %}
-
-{% for post in featuredPosts %}
-
-    <div class="h3-p-box">
-        <h3><a href="{{ post.url }}">{{ post.title }}
-            ({{ post.date | date: "%Y.%m.%d" }})</a></h3>
-        <p>{{ post.description }}</p>
-    </div>
-
+{% for tag in site.data.blogTags %}
+    {% if tag[1].group == "other" %}
+        <section>
+            <h2 id="{{ tag[0] }}">{{ tag[1].title }}</h2>
+            {% assign taggedPosts = site.myposts
+                | where_exp: "post", "post.tags contains tag[0]" %}
+            {% for post in taggedPosts %}
+                <div class="h3-p-box">
+                    <h3><a href="{{ post.url }}">{{ post.title }}
+                        ({{ post.date | date: "%Y.%m.%d" }})</a></h3>
+                    <p>{{ post.description }}</p>
+                </div>
+            {% endfor %}
+        </section>
+    {% endif %}
 {% endfor %}
