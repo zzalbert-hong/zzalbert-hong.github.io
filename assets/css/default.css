@@ -81,12 +81,17 @@ header a:hover, footer a:hover {
     padding: 0 0.6em;
     margin: 1em 0;
 }
-#subnav {
+.subnav {
+    background-color: #efefef;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    padding: 0 0.6em;
+    margin: 1em 0;
     max-height: 200px;
     overflow: auto;
     text-align: left;
 }
-#subnav + main {
+.subnav + main {
     margin-top: 1em;
 }
 #tocBox {
@@ -174,10 +179,10 @@ h3 + p {
 
 
 
-main a:link, #subnav a:link {
+main a:link, .subnav a:link {
     color: #1559ff;
 }
-main a:visited, #subnav a:visited {
+main a:visited, .subnav a:visited {
     color: #3859ff;
 }
 main a:hover, .subnav a:hover {
@@ -196,6 +201,7 @@ a.plain:hover {
 }
 .external-link::after, .file-link::after {
     font-size: 0.75em;
+    margin-left: 1px;
     display: inline-block;
     vertical-align: text-top;
 }
