@@ -136,7 +136,7 @@ ul, ol {
     padding-left: 2em;
 }
 li {
-    margin: 0.2em auto;
+    margin: 0.1em auto;
 }
 h2 {
     font-size: 1.08em;
@@ -174,10 +174,10 @@ h3 + p {
 
 
 
-main a:link, .subnav a:link {
+main a:link, #subnav a:link {
     color: #1559ff;
 }
-main a:visited, .subnav a:visited {
+main a:visited, #subnav a:visited {
     color: #3859ff;
 }
 main a:hover, .subnav a:hover {
@@ -196,7 +196,6 @@ a.plain:hover {
 }
 .external-link::after, .file-link::after {
     font-size: 0.75em;
-    margin-left: 1px;
     display: inline-block;
     vertical-align: text-top;
 }
@@ -355,10 +354,10 @@ button {
 
 
 
-/* :lang(zh-Hant) {
-    font-size: 90%;
+:lang(zh-Hant) {
+    font-size: 95%;
 }
-[lang="zh-Hant"] {
+/* [lang="zh-Hant"] {
     font-size: 90%;
 } */
 
