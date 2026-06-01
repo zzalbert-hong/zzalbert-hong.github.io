@@ -3,15 +3,6 @@ title: Book Recommendations
 description: Books I have read and liked, .......................................
 date: 2008-06-25
 movieLists:
-  - title: About Identity
-    id: aboutIdentity
-    movies:
-      - text: Good Will Hunting (1997)
-        url: 
-      - text: The Legend of 1900 (1998)
-        url: 
-      - text: The Truman Show (1998)
-        url: 
   - title: About Love
     id: aboutLove
     comments: |-
@@ -47,7 +38,11 @@ movieLists:
     {% endif %}
     <ul>
     {% for m in section.movies %}
-        <li><a href="{{ m.url }}">{{ m.title }}</a></li>
+        <li>
+            <a href="{{ m.url }}">{{ m.author }} ({{ m.year }}).
+                {% if m.lang %}[{{ m.lang }}]{% endif %}
+            </a>&ensp;<span lang="zh-Hant">{{ m.zh }}</span>
+        </li>
     {% endfor %}
     </ul>
 {% endfor %}

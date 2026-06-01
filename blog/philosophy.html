@@ -13,8 +13,8 @@ description: These are my expository and reflective articles on philosophical id
             {% assign taggedPosts = site.myposts
                 | where_exp: "post", "post.tags contains tag[0]" %}
             {% for post in taggedPosts %}
-                <div class="h3-p-box">
-                    <h3><a href="{{ post.url }}">{{ post.title }}
+                <div class="blog-card">
+                    <h3><a href="{{ post.url }}" class="main-link">{{ post.title }}
                         ({{ post.date | date: "%Y.%m.%d" }})</a></h3>
                     <p>{{ post.description }}</p>
                 </div>

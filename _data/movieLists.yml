@@ -46,6 +46,7 @@
   movies:
     - en: Princess Mononoke
       zh: 魔法公主
+      lang: Japanese
       year: 1997
       url: https://www.google.com/search?q=Princess+Mononoke+(1997)
     - en: Pay It Forward
@@ -54,6 +55,7 @@
       url: https://www.google.com/search?q=Pay+It+Forward+(2000)
     - en: Spirited Away
       zh: 神隱少女
+      lang: Japanese
       year: 2001
       url: https://www.google.com/search?q=Spirited+Away+(2001)
     - en: Before Sunset
@@ -74,6 +76,7 @@
       url: https://www.google.com/search?q=My+Sister%27s+Keeper+(2009)
     - en: You Are the Apple of My Eye
       zh: 那些年，我們一起追的女孩
+      lang: Mandarin
       year: 2011
       url: https://www.google.com/search?q=You+Are+the+Apple+of+My+Eye+(2011)
     - en: Les Mis&eacute;rables
@@ -82,6 +85,7 @@
       url: https://www.google.com/search?q=Les+Miserables+(2012)
     - en: Have a Song on Your Lips
       zh: 再會吧！青春小鳥
+      lang: Japanese
       year: 2015
       url: https://www.google.com/search?q=Have+a+Song+on+Your+Lips+(2015)
     - en: Arrival
@@ -90,10 +94,12 @@
       url: https://www.google.com/search?q=Arrival+(2016)
     - en: A Silent Voice
       zh: 聲之形
+      lang: Japanese
       year: 2016
       url: https://www.google.com/search?q=A+Silent+Voice+(2016)
     - en: Your Name
       zh: 你的名字
+      lang: Japanese
       year: 2016
       url: https://www.google.com/search?q=Your+Name+(2016)
     - en: Instant Family
@@ -102,10 +108,12 @@
       url: https://www.google.com/search?q=Instant+Family+(2018)
     - en: We Made a Beautiful Bouquet
       zh: 花束般的戀愛
+      lang: Japanese
       year: 2021
       url: https://www.google.com/search?q=We+Made+a+Beautiful+Bouquet+(2021)
     - en: Suzume
       zh: 鈴芽之旅
+      lang: Japanese
       year: 2022
       url: https://www.google.com/search?q=Suzume+(2022)
 - title: Motivational
@@ -166,6 +174,7 @@
       url: https://www.google.com/search?q=21+(2008)
     - en: Suspect X
       zh: 嫌疑犯X的獻身
+      lang: Japanese
       year: 2008
       url: https://www.google.com/search?q=Suspect+X+(2008)
     - en: Game of Thrones
@@ -179,8 +188,8 @@
 - title: Horror and Suspense
   id: horrorAndSuspense
   comments: |-
-    <strong style="color:red">THERE CAN BE SCARY IMAGES WHEN YOU CLICK ON
-    THESE LINKS. ONLY LOOK INTO THEM IF YOU ACTUALLY ENJOY HORROR FILMS.</strong>
+    <span class="warning">THERE CAN BE SCARY IMAGES WHEN YOU CLICK ON
+    THESE LINKS. ONLY LOOK INTO THEM IF YOU ACTUALLY ENJOY HORROR FILMS.</span>
   movies:
     - en: The Shining
       zh: 鬼店

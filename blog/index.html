@@ -42,8 +42,8 @@ description: |-
 
 {% for post in site.myposts reversed limit:6 %}
 
-    <div class="h3-p-box">
-        <h3><a href="{{ post.url }}">{{ post.title }}
+    <div class="blog-card">
+        <h3><a href="{{ post.url }}" class="main-link">{{ post.title }}
             ({{ post.date | date: "%Y.%m.%d" }})</a></h3>
         <p>{{ post.description }}</p>
     </div>
@@ -61,8 +61,8 @@ description: |-
 
 {% for post in featuredPosts %}
 
-    <div class="h3-p-box">
-        <h3><a href="{{ post.url }}">{{ post.title }}
+    <div class="blog-card">
+        <h3><a href="{{ post.url }}" class="main-link">{{ post.title }}
             ({{ post.date | date: "%Y.%m.%d" }})</a></h3>
         <p>{{ post.description }}</p>
     </div>

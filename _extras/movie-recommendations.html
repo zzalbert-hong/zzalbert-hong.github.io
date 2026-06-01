@@ -26,12 +26,15 @@ date: 2007-06-25
     {% if section.comments %}
         <p>{{ section.comments }}</p>
     {% endif %}
-    <!-- <ul> -->
+    <ul>
     {% for m in section.movies %}
-        <p>
-            <a href="{{ m.url }}">{{ m.en }} ({{ m.year }})</a>&emsp;
-            <span lang="zh-Hant">{{ m.zh }}</span>
-        </p>
+        <li>
+            <a href="{{ m.url }}">
+                {{ m.en }}
+                ({% if m.lang %}{{ m.lang }}, {% endif %}{{ m.year }})
+            </a>
+            &ensp;<span lang="zh-Hant">{{ m.zh }}</span>
+        </li>
     {% endfor %}
-    <!-- </ul> -->
+    </ul>
 {% endfor %}
