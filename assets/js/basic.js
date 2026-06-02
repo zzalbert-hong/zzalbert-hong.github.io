@@ -180,17 +180,17 @@ document.querySelectorAll('a').forEach(link => {
         url.startsWith('http') &&
         !url.includes('zzalbert.com');
 
-    // Check for files
-    const isFile = url.startsWith('/assets/');
+    // Check for (my) files
+    const isMyFile = url.startsWith('/assets/');
 
     // Apply attributes and CSS classes
     if (isExternal) {
         link.target = '_blank';
+        // link.rel = 'noopener noreferrer nofollow';
         link.rel = 'noopener noreferrer';
         link.classList.add('external-link');
-    } else if (isFile) {
+    } else if (isMyFile) {
         link.target = '_blank';
-        link.rel = 'noopener noreferrer';
         link.classList.add('file-link');
     }
 });

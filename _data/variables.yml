@@ -22,6 +22,7 @@ privates:
       image: (filename of open graph image)
       description: (sentences with proper punctuations)
       type: (website/article/video/etc.)
+      url: (absolute url if specified)
     - nil
 
 projects:

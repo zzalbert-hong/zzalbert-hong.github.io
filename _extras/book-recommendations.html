@@ -2,44 +2,40 @@
 title: Book Recommendations
 description: Books I have read and liked, .......................................
 date: 2008-06-25
-movieLists:
-  - title: About Love
-    id: aboutLove
-    comments: |-
-      Not necessarily about romance, but "love" in general, also including
-      family, friends, or even the environment.
-    movies:
-      - text: Princess Mononoke (1997)
-        url:
-      - text: Pay It Forward (2000)
-        url:
-      - text: Spirited Away (2001)
-        url:
-      - text: My Sister's Keeper (2009)
-        url:
 ---
 
 <p>
-    As someone who <em>loves</em> watching movies, I always appreciate finding
-    people's movie recommendation lists. As such, I present mine below,
-    sectioned by moods and themes.
+    For books not originally in English but <em>do</em> have English
+    translations, I included both the English and the original title.
+    For those that do <em>not</em> have an English translation,
+    I simply listed the original title.
+    Also, where relevant, I included the Taiwanese title
+    for some books as well, just for my own reference.
 </p>
 <div class="mybox" id="tocBox"></div>
-<p>
-    (There are <em>many</em> others not listed here yet.
-    I am trying to make an exhaustive list of movies I have watched and liked,
-    but there are only so many I can think of right now.)
-</p>
 
-{% for section in page.movieLists %}
+{% for section in site.data.bookLists %}
     <h2 id="{{ section.id }}">{{ section.title }}</h2>
-    {% if section.comments %}
-        <p>{{ section.comments }}</p>
-    {% endif %}
+    <!-- {% if section.intro %}
+        <p>{{ section.intro }}</p>
+    {% endif %} -->
     <ul>
-    {% for m in section.movies %}
+    {% for b in section.books %}
         <li>
-            <a href="{{ m.url }}">{{ m.author }} ({{ m.year }}).
+            {% if b.title and b.latOrTitle %}
+                {{ b.title }} (<i>{{ b.latOrTitle }}</i>) &mdash; Author (Year)
+            {% elsif b.title and b.zhOrTitle %}
+            {% elsif b.title %}
+            {% elsif b.latOrTitle %}
+            {% elsif b.zhOrTitle %}
+            {% endif %}
+            {% if b.zhTitle %}
+            {% endif %}
+
+
+
+
+            <a href="{{ b.url }}">{{ m.author }} ({{ m.year }}).
                 {% if m.lang %}[{{ m.lang }}]{% endif %}
             </a>&ensp;<span lang="zh-Hant">{{ m.zh }}</span>
         </li>
@@ -48,9 +44,22 @@ movieLists:
 {% endfor %}
 
 
+- has english version
+-   has lat original title
+-   has zh original title
+-   no original title
+- no english version
+-   originally in latin characters
+-   originally in hant characters
 
-There are a few books neither in english or chinese.
-In that case I use english or chinese translation depending on which on I read.
+- always: zhAuthor (could be nil)
+- if applicable (only when no zhOrTitle): [zhTitle]
+
+- English Title (<i>Original Title</i>) &mdash; Author (Year) Zhong Wen Author&#12298;Zhong Wen Title&#12299;
+- <i>Original Title</i> &mdash; Author (Year) Zhong Wen Author&#12298;Zhong Wen Title&#12299;
+- <i>Zhong Wen Title</i> &mdash; Zhong Wen Author (Year)
+
+
 
 <h2 id="eastern-literature">Eastern Literature</h2>
 <ul>

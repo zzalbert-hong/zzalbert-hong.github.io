@@ -1,6 +1,9 @@
 
-- title: About Identity
-  id: aboutIdentity
+- title: Identity and Purpose
+  id: identityAndPurpose
+  intro: |-
+    These are movies that, in my opinion, explore questions like:
+    Who am I? What is my purpose? What is the point of life?
   movies:
     - en: Good Will Hunting
       zh: 心靈捕手
@@ -40,9 +43,9 @@
       url: https://www.google.com/search?q=Oppenheimer+(2023)
 - title: About Love
   id: aboutLove
-  comments: |-
-    Not necessarily about romance, but about "love" in general, also including
-    family, friends, or even nature.
+  intro: |-
+    These are movies not necessarily about romance, but "love" in general,
+    also including family, friends, or even nature.
   movies:
     - en: Princess Mononoke
       zh: 魔法公主
@@ -120,7 +123,7 @@
   id: motivational
   movies:
     - en: The Shawshank Redemption
-      zh: 刺激1995
+      zh: 'a href="https://flipermag.com/2016/02/16/1995/">刺激1995</a>'
       year: 1994
       url: https://www.google.com/search?q=The+Shawshank+Redemption+(1994)
     - en: Gladiator
@@ -138,6 +141,10 @@
       zh: 逆轉人生
       year: 2011
       url: https://www.google.com/search?q=The+Intouchables+(2011)
+    - en: Hidden Figures
+      zh: 關鍵少數
+      year: 2016
+      url: https://www.google.com/search?q=Hidden+Figures+(2016)
 - title: About Justice
   id: aboutJustice
   movies:
@@ -185,10 +192,10 @@
       zh: 秘密會議
       year: 2024
       url: https://www.google.com/search?q=Conclave+(2024)
-- title: Horror and Suspense
-  id: horrorAndSuspense
-  comments: |-
-    <span class="warning">THERE CAN BE SCARY IMAGES WHEN YOU CLICK ON
+- title: Horror
+  id: horror
+  intro: |-
+    <span class="warning">WARNING: THERE CAN BE HORRIFYING IMAGES WHEN YOU CLICK ON
     THESE LINKS. ONLY LOOK INTO THEM IF YOU ACTUALLY ENJOY HORROR FILMS.</span>
   movies:
     - en: The Shining

@@ -171,7 +171,7 @@ h3 + p {
     margin: 0.8em 0;
     display: grid;
     grid-template-columns: 2.5em auto;
-    column-gap: 0.3em;
+    gap: 0.1em 0.3em;
 }
 .mylist > :nth-child(odd) {
     text-align: right;
@@ -245,7 +245,7 @@ figure.multi {
     justify-content: center;
     gap: 0.6em;
 }
-figure.multi img {
+figure.multi img, figure.multi figcaption {
     margin: 0;
 }
 
