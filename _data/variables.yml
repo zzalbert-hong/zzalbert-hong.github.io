@@ -114,6 +114,10 @@ courses:
   institution: University of Toronto # Specify in frontmatter if not UofT
   instructor: # Specify in frontmatter
     - (instructor's full name just for my own reference)
+  textbook: # Specify in frontmatter
+    - [ "Linear Algebra", "Friedberg, Insel, and Spence" ]
+    - [ "Calculus", "Michael Spivak" ]
+    - etc.
   difficulty: # Specify in frontmatter if applicable
     - (a number out of 10 and up to one dec place)
     - (difficulty of material independent of workload)
@@ -157,14 +161,14 @@ myposts:
     - (add the "featured" tag for particularly good posts)
     - (use [] for posts that should not be listed anywhere)
     - etc.
-  context: # Specify in frontmatter if applicable
-    - (sentences explaining the original context of writing the article)
-    - nil
-  prerequisites: # Specify in frontmatter if applicable
-    - (sentences explaining the background knowledge the article assumes)
+  # context: # Specify in frontmatter if applicable
+  #   - (sentences explaining the original context of writing the article)
+  #   - nil
+  # prerequisites: # Specify in frontmatter if applicable
+  #   - (sentences explaining the background knowledge the article assumes)
     - nil
   alsoAt: # Specify in frontmatter if applicable
-    - (full url to where the article is published)
+    - [ (full url to where the article is published), (text) ]
     - nil
   updatedAt: # Specify in frontmatter if applicable
     - (the :slug of the blog post where I have updated my views)

@@ -1,4 +1,3 @@
-
 - title: Identity and Purpose
   id: identityAndPurpose
   intro: |-
@@ -44,7 +43,7 @@
 - title: About Love
   id: aboutLove
   intro: |-
-    These are movies not necessarily about romance, but "love" in general,
+    These are movies not necessarily about romance, but about "love" in general,
     also including family, friends, or even nature.
   movies:
     - en: Princess Mononoke
@@ -86,6 +85,10 @@
       zh: 悲慘世界
       year: 2012
       url: https://www.google.com/search?q=Les+Miserables+(2012)
+    - en: The Great Gatsby
+      zh: 大亨小傳
+      year: 2013
+      url: https://www.google.com/search?q=The+Great+Gatsby+(2013)
     - en: Have a Song on Your Lips
       zh: 再會吧！青春小鳥
       lang: Japanese
@@ -123,7 +126,7 @@
   id: motivational
   movies:
     - en: The Shawshank Redemption
-      zh: 'a href="https://flipermag.com/2016/02/16/1995/">刺激1995</a>'
+      zh: '<a href="https://flipermag.com/2016/02/16/1995/">刺激1995</a>'
       year: 1994
       url: https://www.google.com/search?q=The+Shawshank+Redemption+(1994)
     - en: Gladiator

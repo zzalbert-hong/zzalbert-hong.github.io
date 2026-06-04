@@ -4,15 +4,19 @@ description: Books I have read and liked, ......................................
 date: 2008-06-25
 ---
 
+<div class="mybox" id="tocBox"></div>
 <p>
-    For books not originally in English but <em>do</em> have English
-    translations, I included both the English and the original title.
+    For books not originally in English but <em>do</em> have English translations,
+    I included both the English and the original title.
     For those that do <em>not</em> have an English translation,
     I simply listed the original title.
-    Also, where relevant, I included the Taiwanese title
-    for some books as well, just for my own reference.
+    Also, for some books I included the Taiwanese title as well,
+    just for my own reference.
 </p>
-<div class="mybox" id="tocBox"></div>
+<p>
+    (Again, there are <em>many</em> others not listed here yet.
+    These are just the ones I can think of right now.)
+</p>
 
 {% for section in site.data.bookLists %}
     <h2 id="{{ section.id }}">{{ section.title }}</h2>
@@ -23,13 +27,26 @@ date: 2008-06-25
     {% for b in section.books %}
         <li>
             {% if b.title and b.latOrTitle %}
-                {{ b.title }} (<i>{{ b.latOrTitle }}</i>) &mdash; Author (Year)
+                <a href="{{ b.url }}">{{ b.title }} (<i>{{ b.latOrTitle }}</i>)
+                    &mdash; {{ b.author }} ({{ b.year }})</a>
             {% elsif b.title and b.zhOrTitle %}
+                <a href="{{ b.url }}">{{ b.title }} (<i>{{ b.zhOrTitle }}</i>)
+                    &mdash; {{ b.author }} ({{ b.year }})</a>
             {% elsif b.title %}
+                <a href="{{ b.url }}">{{ b.title }}
+                    &mdash; {{ b.author }} ({{ b.year }})</a>
             {% elsif b.latOrTitle %}
+                <a href="{{ b.url }}"><i>{{ b.latOrTitle }}</i>
+                    &mdash; {{ b.author }} ({{ b.year }})</a>
             {% elsif b.zhOrTitle %}
+                <a href="{{ b.url }}"><i>{{ b.zhOrTitle }}</i>
+                    &mdash; {{ b.zhAuthor }} ({{ b.year }})</a>
+            {% endif %}
+            {% if b.author and b.zhAuthor %}
+                <span lang="zh-Hant">{{ b.zhAuthor }}</span>
             {% endif %}
             {% if b.zhTitle %}
+                <span lang="zh-Hant">&#12298;{{ b.zhTitle }}&#12299;</span>
             {% endif %}
 
 
@@ -43,22 +60,27 @@ date: 2008-06-25
     </ul>
 {% endfor %}
 
-
 - has english version
 -   has lat original title
 -   has zh original title
 -   no original title
 - no english version
 -   originally in latin characters
--   originally in hant characters
-
-- always: zhAuthor (could be nil)
-- if applicable (only when no zhOrTitle): [zhTitle]
+-   originally in zh characters
 
 - English Title (<i>Original Title</i>) &mdash; Author (Year) Zhong Wen Author&#12298;Zhong Wen Title&#12299;
-- <i>Original Title</i> &mdash; Author (Year) Zhong Wen Author&#12298;Zhong Wen Title&#12299;
+- English Title (<i>Original Title</i>) &mdash; Author (Year)
+- <i>Original Title</i> &mdash; (Original) Author (Year) Zhong Wen Author&#12298;Zhong Wen Title&#12299;
+- <i>Original Title</i> &mdash; (Original) Author (Year)
 - <i>Zhong Wen Title</i> &mdash; Zhong Wen Author (Year)
 
+- title
+- latOrTitle
+- zhOrTitle
+- zhTitle (no zhTitle if there is already zhOrTitle)
+- author (always romanized)
+- zhAuthor
+- year
 
 
 <h2 id="eastern-literature">Eastern Literature</h2>

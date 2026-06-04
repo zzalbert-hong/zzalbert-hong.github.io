@@ -74,6 +74,9 @@
         {% if page.interest %}
             <li>Interest: {{ page.interest }} /10</li>
         {% endif %}
+        {% if page.textbook %}
+            <li>Textbook: <i>{{ page.textbook[0] }}</i> by {{ page.textbook[1] }}</li>
+        {% endif %}
             <li>
                 Topics:
                 {% for topic in page.topics %}
@@ -104,25 +107,27 @@
             {{ page.date | date: "%B %d, %Y" }} &middot; {{ page.wordcount }} words
         </p>
     </div>
-    {% if page.context or page.prerequisites or page.alsoAt or page.updatedAt %}
+    {% if page.alsoAt or page.updatedAt %}
         <div class="mybox" id="metaBox">
-            {% if page.context %}
-                <p>{{ page.context }}</p>
-            {% endif %}
-            {% if page.prerequisites %}
-                <p>{{ page.prerequisites }}</p>
-            {% endif %}
-            {% if page.alsoAt %}
-                <p>Also at: <a href="{{ page.alsoAt }}">{{ page.alsoAt }}</a></p>
-            {% endif %}
-        {% if page.updatedAt %}
-            {% assign mypost = site.myposts | where: "slug", page.updatedAt | first %}
-            {% if mypost %}
-                <p>Updated at: <a href="{{ mypost.url }}">{{ mypost.title }}</a></p>
-            {% endif %}
-        {% endif %}
+            <ul>
+                {% if page.alsoAt %}
+                    <li>Also at: <a href="{{ page.alsoAt[0] }}">{{ page.alsoAt[1] }}</a></li>
+                {% endif %}
+                {% if page.updatedAt %}
+                    {% assign mypost = site.myposts | where: "slug", page.updatedAt | first %}
+                    {% if mypost %}
+                        <p>Updated at: <a href="{{ mypost.url }}">{{ mypost.title }}</a></p>
+                    {% endif %}
+                {% endif %}
+            </ul>
         </div>
     {% endif %}
+    <!-- {% if page.context %}
+        <div class="mybox"><p>{{ page.context }}</p></div>
+    {% endif %}
+    {% if page.prerequisites %}
+        <div class="mybox"><p>{{ page.prerequisites }}</p></div>
+    {% endif %} -->
 
 {% else %}
 
