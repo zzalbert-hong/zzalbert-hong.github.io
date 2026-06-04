@@ -7,15 +7,44 @@
 #     zhTitle: (no zhTitle if there is already zhOrTitle)
 #     author: (always romanized)
 #     zhAuthor: ...
-#     year: ...
+#     url: https://www.google.com/search?q=
 
 - title: Mathematics
   id: mathematics
   books:
-  - title: ...
-    latOrTitle: ...
-    zhOrTitle: ...
-    zhTitle: (no zhTitle if there is already zhOrTitle)
-    author: (always romanized)
-    zhAuthor: ...
-    year: ...
+  - title: Crimes and Mathdemeanors
+    zhTitle: 數學偵探物語
+    author: Leith Hathout
+    url: https://www.google.com/search?q=Crimes+and+Mathdemeanors
+  - title: "The Man who Counted: A Collection of Mathematical Adventures"
+    latOrTitle: O Homem que Calculava
+    zhTitle: 數學天方夜譚：撒米爾的奇幻之旅
+    author: J&uacute;lio C&eacute;sar de Mello e Souza
+    url: https://www.google.com/search?q=The+Man+who+Counted%3A+A+Collection+of+Mathematical+Adventures
+  - zhOrTitle: 有關數學的100個觀念
+    zhAuthor: 邢豔
+    url: https://www.google.com/search?q=有關數學的100個觀念
+# 德國一流大學教你數學家的22個思考工具
+# 用數學的語言看世界：一位博士爸爸送給女兒的數學之書，發現數學真正的趣味、價值與美
+# 數學大觀念
+# 數學大歷史
+  - title: Proofs from THE BOOK
+    zhTitle: 數學天書中的證明
+    author: Martin Aigner and G&uuml;nter M. Ziegler
+    url: https://www.google.com/search?q=Proofs+from+THE+BOOK
+  - title: "G&ouml;del, Escher, Bach: an Eternal Golden Braid"
+    author: Douglas Hofstadter
+    url: https://www.google.com/search?q=Godel%2C+Escher%2C+Bach%3A+an+Eternal+Golden+Braid
+- title: Eastern Literature
+  id: easternLiterature
+  books:
+  - latOrTitle: Kokoro
+    zhTitle: 心
+    author: Natsume S&omacr;seki
+    zhAuthor: 夏目漱石
+    url: https://www.google.com/search?q=Kokoro
+  - latOrTitle: Kokoro
+    zhTitle: 心
+    author: Natsume S&omacr;seki
+    zhAuthor: 夏目漱石
+    url: https://www.google.com/search?q=Kokoro

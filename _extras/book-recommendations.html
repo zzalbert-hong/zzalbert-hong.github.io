@@ -6,8 +6,13 @@ date: 2008-06-25
 
 <div class="mybox" id="tocBox"></div>
 <p>
+    Within each section, the order in which the books appear in the list is roughly
+    the order in which I read them. In some cases, this also roughly corresponds to
+    the order of difficulty&mdash;from easy to advanced, e.g. for the math books.
+</p>
+<p>
     For books not originally in English but <em>do</em> have English translations,
-    I included both the English and the original title.
+    I listed the English title and only included the original title when relevant.
     For those that do <em>not</em> have an English translation,
     I simply listed the original title.
     Also, for some books I included the Taiwanese title as well,
@@ -28,19 +33,19 @@ date: 2008-06-25
         <li>
             {% if b.title and b.latOrTitle %}
                 <a href="{{ b.url }}">{{ b.title }} (<i>{{ b.latOrTitle }}</i>)
-                    &mdash; {{ b.author }} ({{ b.year }})</a>
+                    &mdash; {{ b.author }}</a>
             {% elsif b.title and b.zhOrTitle %}
                 <a href="{{ b.url }}">{{ b.title }} (<i>{{ b.zhOrTitle }}</i>)
-                    &mdash; {{ b.author }} ({{ b.year }})</a>
+                    &mdash; {{ b.author }}</a>
             {% elsif b.title %}
                 <a href="{{ b.url }}">{{ b.title }}
-                    &mdash; {{ b.author }} ({{ b.year }})</a>
+                    &mdash; {{ b.author }}</a>
             {% elsif b.latOrTitle %}
                 <a href="{{ b.url }}"><i>{{ b.latOrTitle }}</i>
-                    &mdash; {{ b.author }} ({{ b.year }})</a>
+                    &mdash; {{ b.author }}</a>
             {% elsif b.zhOrTitle %}
                 <a href="{{ b.url }}"><i>{{ b.zhOrTitle }}</i>
-                    &mdash; {{ b.zhAuthor }} ({{ b.year }})</a>
+                    &mdash; {{ b.zhAuthor }}</a>
             {% endif %}
             {% if b.author and b.zhAuthor %}
                 <span lang="zh-Hant">{{ b.zhAuthor }}</span>
@@ -48,19 +53,12 @@ date: 2008-06-25
             {% if b.zhTitle %}
                 <span lang="zh-Hant">&#12298;{{ b.zhTitle }}&#12299;</span>
             {% endif %}
-
-
-
-
-            <a href="{{ b.url }}">{{ m.author }} ({{ m.year }}).
-                {% if m.lang %}[{{ m.lang }}]{% endif %}
-            </a>&ensp;<span lang="zh-Hant">{{ m.zh }}</span>
         </li>
     {% endfor %}
     </ul>
 {% endfor %}
 
-- has english version
+<!-- - has english version
 -   has lat original title
 -   has zh original title
 -   no original title
@@ -80,17 +78,4 @@ date: 2008-06-25
 - zhTitle (no zhTitle if there is already zhOrTitle)
 - author (always romanized)
 - zhAuthor
-- year
-
-
-<h2 id="eastern-literature">Eastern Literature</h2>
-<ul>
-    <li>Natsume S&omacr;seki (1914). <i>Kokoro.</i></li>
-    <li>...</li>
-</ul>
-
-<h2 id="western-literature">Western Literature</h2>
-<ul>
-    <li>Proofs from THE BOOK</li>
-    <li>...</li>
-</ul>
+- url -->
