@@ -1,13 +1,25 @@
 # - title: ...
 #   id: ...
 #   books:
-#   - title: ...
-#     latOrTitle: ...
-#     zhOrTitle: ...
-#     zhTitle: (no zhTitle if there is already zhOrTitle)
+#   - title: (English title)
+#     orTitle: (with span lang)
+#     zhTitle: (only if orTitle not in zh-Hant)
 #     author: (always romanized)
 #     zhAuthor: ...
+#     year: ...
+#     url: https://www.google.com/search?q= (only characters I can type from my keyboard)
+#
+# - title: 
+#   id: 
+#   books:
+#   - title: 
+#     orTitle: <span lang=""></span>
+#     zhTitle: 
+#     author: 
+#     zhAuthor: 
+#     year: 
 #     url: https://www.google.com/search?q=
+#     
 
 - title: Mathematics
   id: mathematics
@@ -15,36 +27,189 @@
   - title: Crimes and Mathdemeanors
     zhTitle: 數學偵探物語
     author: Leith Hathout
+    year: 2007
     url: https://www.google.com/search?q=Crimes+and+Mathdemeanors
+
   - title: "The Man who Counted: A Collection of Mathematical Adventures"
-    latOrTitle: O Homem que Calculava
-    zhTitle: 數學天方夜譚：撒米爾的奇幻之旅
+    orTitle: <span lang="pt">O Homem que Calculava</span>
+    zhTitle: "數學天方夜譚：撒米爾的奇幻之旅"
     author: J&uacute;lio C&eacute;sar de Mello e Souza
+    year: 1938
     url: https://www.google.com/search?q=The+Man+who+Counted%3A+A+Collection+of+Mathematical+Adventures
-  - zhOrTitle: 有關數學的100個觀念
+
+  - zhTitle: 有關數學的100個觀念
     zhAuthor: 邢豔
+    year: 2011
     url: https://www.google.com/search?q=有關數學的100個觀念
-# 德國一流大學教你數學家的22個思考工具
-# 用數學的語言看世界：一位博士爸爸送給女兒的數學之書，發現數學真正的趣味、價值與美
-# 數學大觀念
-# 數學大歷史
+
+  - orTitle: '<span lang="de">Das kleine Einmaleins des klaren Denkens: 22 Denkwerkzeuge f&uuml;r ein besseres Leben</span>'
+    zhTitle: 德國一流大學教你數學家的22個思考工具
+    author: Christian Hesse
+    year: 2009
+    url: https://www.google.com/search?q=德國一流大學教你數學家的22個思考工具
+
+  - orTitle: <span lang="ja">数学の言葉で世界を見たら：父から娘に贈る数学</span>
+    zhTitle: "用數學的語言看世界：一位博士爸爸送給女兒的數學之書，發現數學真正的趣味、價值與美"
+    zhAuthor: 大栗博司
+    year: 2015
+    url: 'https://www.google.com/search?q=用數學的語言看世界：一位博士爸爸送給女兒的數學之書，發現數學真正的趣味、價值與美'
+
+  - title: "The Magic of Math: Solving for x and Figuring Out Why"
+    zhTitle: 數學大觀念：全面理解從數字到微積分的12大觀念
+    author: Arthur T. Benjamin
+    year: 2015
+    url: https://www.google.com/search?q=The+Magic+of+Math%3A+Solving+for+x+and+Figuring+Out+Why
+
+  - zhTitle: 數學大歷史
+    zhAuthor: 蔡天新
+    year: 2018
+    url: https://www.google.com/search?q=數學大歷史
+    
   - title: Proofs from THE BOOK
     zhTitle: 數學天書中的證明
     author: Martin Aigner and G&uuml;nter M. Ziegler
+    year: 1998
     url: https://www.google.com/search?q=Proofs+from+THE+BOOK
+
   - title: "G&ouml;del, Escher, Bach: an Eternal Golden Braid"
     author: Douglas Hofstadter
+    year: 1979
     url: https://www.google.com/search?q=Godel%2C+Escher%2C+Bach%3A+an+Eternal+Golden+Braid
+
+- title: Philosophy
+  id: philosophy
+  books:
+  # - title: Small Intro Books
+  #   orTitle: <span lang=""></span>
+  #   zhTitle: 
+  #   author: 
+  #   zhAuthor: 
+  #   year: 
+  #   url: https://www.google.com/search?q=
+    
+  - title: The Foundations of Arithmetic
+    orTitle: <span lang="de">Die Grundlagen der Arithmetik</span>
+    author: Gottlob Frege
+    year: 1884
+    url: https://www.google.com/search?q=Foundations+of+Arithmetic+%28Austin+Translation%29
+    
+  - title: Tractatus Logico-Philosophicus
+    orTitle: <span lang="de">Logisch-Philosophische Abhandlung</span>
+    author: Ludwig Wittgenstein
+    year: 1921
+    url: https://www.google.com/search?q=Tractatus+Logico-Philosophicus
+    
+  # - title: Concept-Writing
+  #   orTitle: <span lang="de">Begriffsschrift</span>
+  #   author: Gottlob Frege
+  #   year: 1879
+  #   url: https://www.google.com/search?q=Begriffsschrift
+    
+  # - title: Basic Laws of Arithmetic
+  #   orTitle: <span lang="de">Grundgesetze der Arithmetik</span>
+  #   author: Gottlob Frege
+  #   year: 1893
+  #   url: https://www.google.com/search?q=Basic+Laws+of+Arithmetic
+
+- title: Western Literature
+  id: westernLiterature
+  books:
+  - title: Brave New World
+    zhTitle: 美麗新世界
+    author: Aldous Huxley
+    year: 1932
+    url: https://www.google.com/search?q=Brave+New+World
+    
+  - title: The Kite Runner
+    zhTitle: 追風箏的孩子
+    author: Khaled Hosseini
+    year: 2003
+    url: https://www.google.com/search?q=The+Kite+Runner
+    
 - title: Eastern Literature
   id: easternLiterature
   books:
-  - latOrTitle: Kokoro
+  # - title: Journey to the West Modern Version
+  #   orTitle: <span lang=""></span>
+  #   zhTitle: 
+  #   author: 
+  #   zhAuthor: 
+  #   year: 
+  #   url: https://www.google.com/search?q=
+    
+  - title: Journey to the West
+    orTitle: <span lang="zh-Hant">西遊記</span>
+    author: Wu Cheng'en
+    zhAuthor: 吳承恩
+    year: 1592
+    url: https://www.google.com/search?q=Journey+to+the+West
+    
+  - zhTitle: 三國人物攻略（叢書）
+    zhAuthor: 天衛文化出版
+    year: 2002
+    url: https://www.google.com/search?q=三國人物攻略
+    
+  - title: Romance of the Three Kingdoms
+    orTitle: <span lang="zh-Hant">三國演義</span>
+    author: Luo Guanzhong
+    zhAuthor: 羅貫中
+    year: 1522
+    url: https://www.google.com/search?q=三國演義
+    
+  - title: Jin Yong Novels (Series)
+    zhTitle: 金庸小說（系列）
+    author: Jin Yong
+    year: 1955&ndash;1969
+    url: https://www.google.com/search?q=Jin+Yong+Books
+    
+  - title: Liang Yusheng Novels (Series)
+    zhTitle: 梁羽生小說（系列）
+    author: Liang Yusheng
+    year: 1954&ndash;1983
+    url: https://www.google.com/search?q=Liang+Yusheng+Books
+    
+  - title: Lang Ya Bang
+    orTitle: <span lang="zh-Hant">瑯琊榜</span>
+    author: Hai Yan
+    zhAuthor: 海宴
+    year: 2007
+    url: https://www.google.com/search?q=Lang+Ya+Bang+Book
+    
+  - zhTitle: 體膚小事
+    zhAuthor: 黃信恩
+    year: 2013
+    url: https://www.google.com/search?q=體膚小事
+    
+  - title: Diary of a Madman
+    orTitle: <span lang="zh-Hant">狂人日記</span>
+    author: Lu Xun
+    zhAuthor: 魯迅
+    year: 1918
+    url: https://www.google.com/search?q=Diary+of+a+Madman
+    
+  - title: Kokoro
+    orTitle: <span lang="ja">こころ</span>
     zhTitle: 心
     author: Natsume S&omacr;seki
     zhAuthor: 夏目漱石
+    year: 1914
     url: https://www.google.com/search?q=Kokoro
-  - latOrTitle: Kokoro
-    zhTitle: 心
+
+  - title: Botchan
+    orTitle: <span lang="ja">坊っちゃん</span>
+    zhTitle: 少爺
     author: Natsume S&omacr;seki
     zhAuthor: 夏目漱石
-    url: https://www.google.com/search?q=Kokoro
+    year: 1906
+    url: https://www.google.com/search?q=Botchan
+
+# - title: Finances
+#   id: finances
+#   books:
+#   - title: 
+#     orTitle: <span lang=""></span>
+#     zhTitle: 
+#     author: 
+#     zhAuthor: 
+#     year: 
+#     url: https://www.google.com/search?q=

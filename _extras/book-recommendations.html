@@ -1,26 +1,24 @@
 ---
 title: Book Recommendations
-description: Books I have read and liked, .......................................
+description: Books I have read and liked.
 date: 2008-06-25
 ---
 
-<div class="mybox" id="tocBox"></div>
 <p>
     Within each section, the order in which the books appear in the list is roughly
     the order in which I read them. In some cases, this also roughly corresponds to
     the order of difficulty&mdash;from easy to advanced, e.g. for the math books.
 </p>
+<div class="mybox" id="tocBox"></div>
 <p>
-    For books not originally in English but <em>do</em> have English translations,
-    I listed the English title and only included the original title when relevant.
-    For those that do <em>not</em> have an English translation,
-    I simply listed the original title.
-    Also, for some books I included the Taiwanese title as well,
-    just for my own reference.
+    There are only a limited number of books presented here because this is a list of
+    books I have read (and that I remember). Certainly there are many other great books.
 </p>
 <p>
-    (Again, there are <em>many</em> others not listed here yet.
-    These are just the ones I can think of right now.)
+    For books that <em>are</em> in English or have English translations, I listed
+    the English title (and sometimes included the Chinese title for my own reference).
+    Whereas for books that do <em>not</em> have an English version&mdash;meaning
+    I must have read them in Chinese&mdash;I listed the Chinese title.
 </p>
 
 {% for section in site.data.bookLists %}
@@ -30,27 +28,26 @@ date: 2008-06-25
     {% endif %} -->
     <ul>
     {% for b in section.books %}
-        <li>
-            {% if b.title and b.latOrTitle %}
-                <a href="{{ b.url }}">{{ b.title }} (<i>{{ b.latOrTitle }}</i>)
-                    &mdash; {{ b.author }}</a>
-            {% elsif b.title and b.zhOrTitle %}
-                <a href="{{ b.url }}">{{ b.title }} (<i>{{ b.zhOrTitle }}</i>)
-                    &mdash; {{ b.author }}</a>
-            {% elsif b.title %}
-                <a href="{{ b.url }}">{{ b.title }}
-                    &mdash; {{ b.author }}</a>
-            {% elsif b.latOrTitle %}
-                <a href="{{ b.url }}"><i>{{ b.latOrTitle }}</i>
-                    &mdash; {{ b.author }}</a>
-            {% elsif b.zhOrTitle %}
-                <a href="{{ b.url }}"><i>{{ b.zhOrTitle }}</i>
-                    &mdash; {{ b.zhAuthor }}</a>
-            {% endif %}
+        <li><a href="{{ b.url }}">
+                {%- if b.title -%}
+                    {{ b.title }}
+                {%- elsif b.zhTitle -%}
+                    <span lang="zh-Hant">{{ b.zhTitle }}</span>
+                {%- endif %}
+                {% if b.orTitle %}
+                    [Originally: <i>{{ b.orTitle }}</i>]
+                {% endif %}
+                &mdash;
+                {% if b.author %}
+                    {{ b.author }}
+                {% elsif b.zhAuthor %}
+                    <span lang="zh-Hant">{{ b.zhAuthor }}</span>
+                {% endif %}
+                ({{ b.year }})</a>
             {% if b.author and b.zhAuthor %}
                 <span lang="zh-Hant">{{ b.zhAuthor }}</span>
-            {% endif %}
-            {% if b.zhTitle %}
+            {%- endif -%}
+            {%- if b.title and b.zhTitle -%}
                 <span lang="zh-Hant">&#12298;{{ b.zhTitle }}&#12299;</span>
             {% endif %}
         </li>
@@ -59,23 +56,25 @@ date: 2008-06-25
 {% endfor %}
 
 <!-- - has english version
--   has lat original title
--   has zh original title
+-   has original title (in whatever language)
 -   no original title
 - no english version
 -   originally in latin characters
 -   originally in zh characters
 
-- English Title (<i>Original Title</i>) &mdash; Author (Year) Zhong Wen Author&#12298;Zhong Wen Title&#12299;
-- English Title (<i>Original Title</i>) &mdash; Author (Year)
-- <i>Original Title</i> &mdash; (Original) Author (Year) Zhong Wen Author&#12298;Zhong Wen Title&#12299;
-- <i>Original Title</i> &mdash; (Original) Author (Year)
-- <i>Zhong Wen Title</i> &mdash; Zhong Wen Author (Year)
+- <i>English Title</i> [Originally: <i>Original Title</i>] &mdash; Author (Year) Zhong Wen Author&#12298;Zhong Wen Title&#12299;
+- <i>English Title</i> [Originally: <i>Original Title</i>] &mdash; Author (Year) &#12298;Zhong Wen Title&#12299;
+- <i>English Title</i> [Originally: <i>Original Title</i>] &mdash; Author (Year)
+- <i>English Title</i> &mdash; Author (Year) Zhong Wen Author&#12298;Zhong Wen Title&#12299;
+- <i>English Title</i> &mdash; Author (Year) &#12298;Zhong Wen Title&#12299;
+- <i>English Title</i> &mdash; Author (Year)
+- <i>Zhong Wen Title</i> [Originally: <i>Original Title</i>] &mdash; Author (Year) Zhong Wen Author
+- <i>Zhong Wen Title</i> [Originally: <i>Original Title</i>] &mdash; Zhong Wen Author (Year)
 
-- title
-- latOrTitle
-- zhOrTitle
-- zhTitle (no zhTitle if there is already zhOrTitle)
+- title (English title)
+- orTitle (with span lang)
+- zhTitle (only if orTitle not in zh-Hant)
 - author (always romanized)
 - zhAuthor
+- year
 - url -->
