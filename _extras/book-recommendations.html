@@ -26,9 +26,10 @@ date: 2008-06-25
     <!-- {% if section.intro %}
         <p>{{ section.intro }}</p>
     {% endif %} -->
-    <ul>
+    <!-- <ul> -->
     {% for b in section.books %}
-        <li>
+        <!-- <li> -->
+        <p>
             <a href="{{ b.url }}">
                 {%- if b.title -%}
                     {{ b.title }}
@@ -43,7 +44,7 @@ date: 2008-06-25
                 {% endif %}
                 ({{ b.year }})</a>
             {% if b.orTitle %}
-                <br>Originally: <i>{{ b.orTitle }}</i>
+                <br><i>{{ b.orTitle }}</i>
             {% endif %}
             {% if b.author and b.zhAuthor and b.title and b.zhTitle %}
                 <br><span lang="zh-Hant">{{ b.zhAuthor }}&#12298;{{ b.zhTitle }}&#12299;</span>
@@ -52,9 +53,10 @@ date: 2008-06-25
             {% elsif b.title and b.zhTitle %}
                 <br><span lang="zh-Hant">&#12298;{{ b.zhTitle }}&#12299;</span>
             {% endif %}
-            </li>
+        </p>
+        <!-- </li> -->
     {% endfor %}
-    </ul>
+    <!-- </ul> -->
 {% endfor %}
 
 <!-- - has english version

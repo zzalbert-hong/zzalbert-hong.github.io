@@ -138,7 +138,7 @@
   #   url: https://www.google.com/search?q=
     
   - title: Journey to the West
-    orTitle: <span lang="zh-Hant">西遊記</span>
+    zhTitle: 西遊記
     author: Wu Cheng'en
     zhAuthor: 吳承恩
     year: 1592
@@ -150,7 +150,7 @@
     url: https://www.google.com/search?q=三國人物攻略
     
   - title: Romance of the Three Kingdoms
-    orTitle: <span lang="zh-Hant">三國演義</span>
+    zhTitle: 三國演義
     author: Luo Guanzhong
     zhAuthor: 羅貫中
     year: 1522
@@ -169,7 +169,7 @@
     url: https://www.google.com/search?q=Liang+Yusheng+Books
     
   - title: Lang Ya Bang
-    orTitle: <span lang="zh-Hant">瑯琊榜</span>
+    zhTitle: 瑯琊榜
     author: Hai Yan
     zhAuthor: 海宴
     year: 2007
@@ -181,7 +181,7 @@
     url: https://www.google.com/search?q=體膚小事
     
   - title: Diary of a Madman
-    orTitle: <span lang="zh-Hant">狂人日記</span>
+    zhTitle: 狂人日記
     author: Lu Xun
     zhAuthor: 魯迅
     year: 1918
