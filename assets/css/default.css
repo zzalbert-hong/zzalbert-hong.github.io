@@ -81,6 +81,9 @@ header a:hover, footer a:hover {
     padding: 0 0.6em;
     margin: 1em 0;
 }
+p.mybox {
+    padding: 0.8em 0.6em;
+}
 .subnav {
     background-color: #efefef;
     border: 1px solid #000000;
@@ -255,6 +258,13 @@ figure.multi img, figure.multi figcaption {
     margin: 0.8em 0;
     position: relative;
 }
+.book-card { /* For listing recommended books */
+    margin: 0.8em 0;
+    padding: 0.6em;
+    border-left: 6px solid #aaaaaa;
+    background-color: #f9f9f9;
+    position: relative;
+}
 .tile { /* For listing projects */
     position: relative; /* Essential: contains the absolute child */
     display: flex;
@@ -278,10 +288,10 @@ figure.multi img, figure.multi figcaption {
     padding: 0;
     flex: 78%;
 }
-.tile-text p {
+.tile-text p, .book-card p {
     margin: 0;
 }
-.tile-text p + p {
+.tile-text p + p, .book-card p + p {
     margin-top: 0.2em;
 }
 .tile:hover {

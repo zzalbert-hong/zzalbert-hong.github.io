@@ -47,6 +47,15 @@
     author: Christian Hesse
     year: 2009
     url: https://www.google.com/search?q=德國一流大學教你數學家的22個思考工具
+    note: |-
+      This is actually my favourite math book. It presents 22 "thinking tools"
+      that mathematicians commonly use, such as argument by cases, the principle
+      of invariance, modularity, etc. In terms of developing thinking, proving, and
+      analytical problem-solving skills, this is the most useful book I have ever read,
+      and I genuinely think anyone interested in mathematics should read it.
+      It is very unfortunate that it does not have an English translation.
+      I am sure there are many similar books in English, but still I think this one
+      is the best, for how comprehensive and well organized it is.
 
   - orTitle: <span lang="ja">数学の言葉で世界を見たら：父から娘に贈る数学</span>
     zhTitle: "用數學的語言看世界：一位博士爸爸送給女兒的數學之書，發現數學真正的趣味、價值與美"
@@ -157,13 +166,13 @@
     url: https://www.google.com/search?q=三國演義
     
   - title: Jin Yong Novels (Series)
-    zhAuthor: 金庸小說 (系列)
+    zhAuthor: 金庸小說（系列）
     author: Jin Yong
     year: 1955&ndash;1969
     url: https://www.google.com/search?q=Jin+Yong+Books
     
   - title: Liang Yusheng Novels (Series)
-    zhAuthor: 梁羽生小說 (系列)
+    zhAuthor: 梁羽生小說（系列）
     author: Liang Yusheng
     year: 1954&ndash;1983
     url: https://www.google.com/search?q=Liang+Yusheng+Books

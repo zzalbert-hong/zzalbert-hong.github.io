@@ -16,9 +16,9 @@ date: 2008-06-25
 </p>
 <p>
     For books that <em>are</em> in English or have English translations, I listed
-    the English title (and sometimes included the Chinese title for my own reference).
-    Whereas for books that do <em>not</em> have an English version&mdash;meaning
-    I must have read them in Chinese&mdash;I listed the Chinese title.
+    the English title. Otherwise for books that do <em>not</em> have an English
+    version&mdash;meaning I must have read them in Chinese&mdash;I listed
+    the Chinese title.
 </p>
 
 {% for section in site.data.bookLists %}
@@ -29,31 +29,34 @@ date: 2008-06-25
     <!-- <ul> -->
     {% for b in section.books %}
         <!-- <li> -->
-        <p>
-            <a href="{{ b.url }}">
-                {%- if b.title -%}
-                    {{ b.title }}
-                {%- elsif b.zhTitle -%}
-                    <span lang="zh-Hant">{{ b.zhTitle }}</span>
-                {%- endif %}
-                &mdash;
-                {% if b.author %}
-                    {{ b.author }}
-                {% elsif b.zhAuthor %}
-                    <span lang="zh-Hant">{{ b.zhAuthor }}</span>
+        <div class="book-card">
+            <p>
+                <a href="{{ b.url }}" class="main-link">
+                    {%- if b.title -%}
+                        {{ b.title }}
+                    {%- elsif b.zhTitle -%}
+                        <span lang="zh-Hant">{{ b.zhTitle }}</span>
+                    {%- endif %}
+                    &mdash;
+                    {% if b.author %}
+                        {{ b.author }}
+                    {% elsif b.zhAuthor %}
+                        <span lang="zh-Hant">{{ b.zhAuthor }}</span>
+                    {% endif %}
+                    ({{ b.year }})</a>
+                {% if b.orTitle %}
+                    <br><i>{{ b.orTitle }}</i>
                 {% endif %}
-                ({{ b.year }})</a>
-            {% if b.orTitle %}
-                <br><i>{{ b.orTitle }}</i>
-            {% endif %}
-            {% if b.author and b.zhAuthor and b.title and b.zhTitle %}
-                <br><span lang="zh-Hant">{{ b.zhAuthor }}&#12298;{{ b.zhTitle }}&#12299;</span>
-            {% elsif b.author and b.zhAuthor %}
-                <br><span lang="zh-Hant">{{ b.zhAuthor }}</span>
-            {% elsif b.title and b.zhTitle %}
-                <br><span lang="zh-Hant">&#12298;{{ b.zhTitle }}&#12299;</span>
-            {% endif %}
-        </p>
+                {% if b.author and b.zhAuthor and b.title and b.zhTitle %}
+                    <br><span lang="zh-Hant">{{ b.zhAuthor }}&#12298;{{ b.zhTitle }}&#12299;</span>
+                {% elsif b.author and b.zhAuthor %}
+                    <br><span lang="zh-Hant">{{ b.zhAuthor }}</span>
+                {% elsif b.title and b.zhTitle %}
+                    <br><span lang="zh-Hant">&#12298;{{ b.zhTitle }}&#12299;</span>
+                {% endif %}
+            </p>
+            {% if b.note %}<p class="content-meta">{{ b.note }}</p>{% endif %}
+        </div>
         <!-- </li> -->
     {% endfor %}
     <!-- </ul> -->
