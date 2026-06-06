@@ -144,7 +144,7 @@
     year: 1592
     url: https://www.google.com/search?q=Journey+to+the+West
     
-  - zhTitle: 三國人物攻略（叢書）
+  - zhTitle: 三國人物攻略 (叢書)
     zhAuthor: 天衛文化出版
     year: 2002
     url: https://www.google.com/search?q=三國人物攻略
@@ -157,13 +157,13 @@
     url: https://www.google.com/search?q=三國演義
     
   - title: Jin Yong Novels (Series)
-    zhTitle: 金庸小說（系列）
+    zhAuthor: 金庸小說 (系列)
     author: Jin Yong
     year: 1955&ndash;1969
     url: https://www.google.com/search?q=Jin+Yong+Books
     
   - title: Liang Yusheng Novels (Series)
-    zhTitle: 梁羽生小說（系列）
+    zhAuthor: 梁羽生小說 (系列)
     author: Liang Yusheng
     year: 1954&ndash;1983
     url: https://www.google.com/search?q=Liang+Yusheng+Books

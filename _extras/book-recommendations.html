@@ -28,15 +28,13 @@ date: 2008-06-25
     {% endif %} -->
     <ul>
     {% for b in section.books %}
-        <li><a href="{{ b.url }}">
+        <li>
+            <a href="{{ b.url }}">
                 {%- if b.title -%}
                     {{ b.title }}
                 {%- elsif b.zhTitle -%}
                     <span lang="zh-Hant">{{ b.zhTitle }}</span>
                 {%- endif %}
-                {% if b.orTitle %}
-                    [Originally: <i>{{ b.orTitle }}</i>]
-                {% endif %}
                 &mdash;
                 {% if b.author %}
                     {{ b.author }}
@@ -44,13 +42,17 @@ date: 2008-06-25
                     <span lang="zh-Hant">{{ b.zhAuthor }}</span>
                 {% endif %}
                 ({{ b.year }})</a>
-            {% if b.author and b.zhAuthor %}
-                <span lang="zh-Hant">{{ b.zhAuthor }}</span>
-            {%- endif -%}
-            {%- if b.title and b.zhTitle -%}
-                <span lang="zh-Hant">&#12298;{{ b.zhTitle }}&#12299;</span>
+            {% if b.orTitle %}
+                <br>Originally: <i>{{ b.orTitle }}</i>
             {% endif %}
-        </li>
+            {% if b.author and b.zhAuthor and b.title and b.zhTitle %}
+                <br><span lang="zh-Hant">{{ b.zhAuthor }}&#12298;{{ b.zhTitle }}&#12299;</span>
+            {% elsif b.author and b.zhAuthor %}
+                <br><span lang="zh-Hant">{{ b.zhAuthor }}</span>
+            {% elsif b.title and b.zhTitle %}
+                <br><span lang="zh-Hant">&#12298;{{ b.zhTitle }}&#12299;</span>
+            {% endif %}
+            </li>
     {% endfor %}
     </ul>
 {% endfor %}
