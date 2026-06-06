@@ -261,7 +261,7 @@ figure.multi img, figure.multi figcaption {
 .book-card { /* For listing recommended books */
     margin: 0.8em 0;
     padding: 0.6em;
-    border-left: 6px solid #aaaaaa;
+    border-left: 6px solid #dddddd;
     background-color: #f9f9f9;
     position: relative;
 }
