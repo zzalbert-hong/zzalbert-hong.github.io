@@ -20,10 +20,10 @@
     text: MathTheBeautiful
   - url: https://www.youtube.com/@NumeracyLab
     text: Numeracy Lab
-    mardarin: true
+    mandarin: true
   - url: https://www.youtube.com/@zgxk6246
     text: Math & Logic
-    mardarin: true
+    mandarin: true
   - url: https://www.youtube.com/@ZZAlbert-Hong
     text: ZZAlbert
     note: This is my YouTube channel.
@@ -59,7 +59,7 @@
     text: Professor Dror Bar-Natan's website
   - url: https://math.ntnu.edu.tw/~li/
     text: Professor Hua-Chieh Li's website
-    mardarin: true
+    mandarin: true
 
 - title: GeoGebra and Desmos
   id: geogebraAndDesmos
@@ -86,10 +86,11 @@
     text: GeoGebra Manual
     note: The complete list of commands and tools.
   - url: https://geogebra.github.io/docs/reference/en/GeoGebra_Installation/#_geogebra_classic_5_for_desktop
-    text: GeoGebra Classic 5 for desktop
+    text: GeoGebra installation
     note: |-
-      Installing GeoGebra onto your computer. (You can install
-      whichever version you want, but Classic 5 has the most features.)
+      Use the links on that page to install GeoGebra onto your computer.
+      (You can install whichever version you want,
+      but Classic 5 has the most features.)
   - url: https://www.geogebra.org/classic
     text: GeoGebra Classic Online
     note: |-
@@ -107,10 +108,10 @@
     text: MIT OpenCourseWare
   - url: https://ocw.aca.ntu.edu.tw/courses
     text: NTU OpenCourseWare
-    mardarin: true
+    mandarin: true
   # - url: http://www.mathland.idv.tw/
   #   text: Mathland
-  #   mardarin: true
+  #   mandarin: true
 
 - title: LaTeX
   id: latex

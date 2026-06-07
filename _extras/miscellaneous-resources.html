@@ -7,20 +7,20 @@ date: 2006-06-25
 <div class="mybox" id="tocBox"></div>
 
 {% for section in site.data.resourceLists %}
-    {% if section.group == 'math' %}
+    {% if section.group == 'misc' %}
         <h2 id="{{ section.id }}">{{ section.title }}</h2>
         {% if section.intro %}
             <p>{{ section.intro }}</p>
         {% endif %}
-        <dl>
+        <ul>
         {% for l in section.links %}
-            <dt>
+            <li>
                 <a href="{{ l.url }}">{{ l.text }}</a>
                 {% if l.mandarin %}(Mandarin){% endif %}
-            </dt>
-            {% if l.note %}<dd>{{ l.note }}</dd>{% endif %}
+            </li>
+            {% if l.note %}<ul><li>{{ l.note }}</li></ul>{% endif %}
         {% endfor %}
-        </dl>
+        </ul>
     {% endif %}
 {% endfor %}
 

@@ -12,15 +12,15 @@ date: 2005-06-25
         {% if section.intro %}
             <p>{{ section.intro }}</p>
         {% endif %}
-        <dl>
+        <ul>
         {% for l in section.links %}
-            <dt>
+            <li>
                 <a href="{{ l.url }}">{{ l.text }}</a>
                 {% if l.mandarin %}(Mandarin){% endif %}
-            </dt>
-            {% if l.note %}<dd>{{ l.note }}</dd>{% endif %}
+            </li>
+            {% if l.note %}<ul><li>{{ l.note }}</li></ul>{% endif %}
         {% endfor %}
-        </dl>
+        </ul>
     {% endif %}
 {% endfor %}
 
