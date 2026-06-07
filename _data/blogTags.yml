@@ -14,9 +14,9 @@ mathematicalProblems:
   group: mathematics
   title: Mathematical Problems
 
-mathematicalNews:
-  group: mathematics
-  title: Mathematical News
+# mathematicalNews:
+#   group: mathematics
+#   title: Mathematical News
 
 logic:
   group: philosophy

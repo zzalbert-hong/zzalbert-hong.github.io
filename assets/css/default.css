@@ -132,7 +132,7 @@ h1 {
 
 
 
-p, ul, ol {
+p, ul, ol, dl {
     margin-top: 0.8em;
     margin-bottom: 0.8em;
 }
@@ -143,8 +143,12 @@ ul ul, ul ol, ol ul, ol ol {
 ul, ol {
     padding-left: 2em;
 }
-li {
-    margin: 0.1em auto;
+dd {
+    margin-left: 2em;
+}
+li, dt, dd {
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
 }
 h2 {
     font-size: 1.08em;

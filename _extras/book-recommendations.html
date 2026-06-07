@@ -11,8 +11,8 @@ date: 2008-06-25
 </p>
 <div class="mybox" id="tocBox"></div>
 <p>
-    There are only a limited number of books presented here because this is a list of
-    books I have read (and that I remember). Certainly there are many other great books.
+    There are only a limited number of books presented here because these are just
+    the books I have read (and remember). Certainly there are many other great books.
 </p>
 <p>
     For books that <em>are</em> in English or have English translations, I listed
@@ -30,31 +30,6 @@ date: 2008-06-25
     {% for b in section.books %}
         <!-- <li> -->
         <div class="book-card">
-            <!-- <p>
-                <a href="{{ b.url }}">
-                    {%- if b.title -%}
-                        {{ b.title }}
-                    {%- elsif b.zhTitle -%}
-                        <span lang="zh-Hant">{{ b.zhTitle }}</span>
-                    {%- endif %}
-                    &mdash;
-                    {% if b.author %}
-                        {{ b.author }}
-                    {% elsif b.zhAuthor %}
-                        <span lang="zh-Hant">{{ b.zhAuthor }}</span>
-                    {% endif %}
-                    ({{ b.year }})</a>
-                {% if b.orTitle %}
-                    <br><i>{{ b.orTitle }}</i>
-                {% endif %}
-                {% if b.author and b.zhAuthor and b.title and b.zhTitle %}
-                    <br><span lang="zh-Hant">{{ b.zhAuthor }}&#12298;{{ b.zhTitle }}&#12299;</span>
-                {% elsif b.author and b.zhAuthor %}
-                    <br><span lang="zh-Hant">{{ b.zhAuthor }}</span>
-                {% elsif b.title and b.zhTitle %}
-                    <br><span lang="zh-Hant">&#12298;{{ b.zhTitle }}&#12299;</span>
-                {% endif %}
-            </p> -->
             <p>
                 <a href="{{ b.url }}">
                     {%- if b.title -%}

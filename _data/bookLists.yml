@@ -55,7 +55,7 @@
       and I genuinely think anyone interested in mathematics should read it.
       It is very unfortunate that it does not have an English translation.
       I am sure there are many similar books in English, but still I think this one
-      is the best, for how comprehensive and well organized it is.
+      is the best due to how comprehensive and well organized it is.
 
   - orTitle: <span lang="ja">数学の言葉で世界を見たら：父から娘に贈る数学</span>
     zhTitle: "用數學的語言看世界：一位博士爸爸送給女兒的數學之書，發現數學真正的趣味、價值與美"
@@ -100,7 +100,7 @@
     orTitle: <span lang="de">Die Grundlagen der Arithmetik</span>
     author: Gottlob Frege
     year: 1884
-    url: https://www.google.com/search?q=Foundations+of+Arithmetic+%28Austin+Translation%29
+    url: https://www.google.com/search?q=Foundations+of+Arithmetic+Austin+Translation
     
   - title: Tractatus Logico-Philosophicus
     orTitle: <span lang="de">Logisch-Philosophische Abhandlung</span>
@@ -120,6 +120,50 @@
   #   year: 1893
   #   url: https://www.google.com/search?q=Basic+Laws+of+Arithmetic
 
+- title: Society
+  id: society
+  books:
+  - title: Thinking Sociologically
+    zhTitle: 社會學動動腦
+    author: Zygmunt Bauman and Tim May
+    year: 1990
+    url: https://www.google.com/search?q=Thinking+Sociologically
+    
+  - zhTitle: 殺戮的艱難
+    zhAuthor: 張娟芬
+    year: 2010
+    url: https://www.google.com/search?q=殺戮的艱難
+    
+  - title: Miss Hammurabi
+    orTitle: <span lang="ko">미스 함무라비</span>
+    zhTitle: 漢摩拉比小姐：現任法官寫的法庭小說
+    author: Moon Yoo-seok
+    year: 2015
+    url: https://www.google.com/search?q=Miss+Hammurabi+Book
+    
+  - title: Imagined Communities
+    zhTitle: 想象的共同體
+    author: Benedict Anderson
+    year: 1983
+    url: https://www.google.com/search?q=Imagined+Communities
+    
+  - title: "The Gender Knot: Unraveling Our Patriarchal Legacy"
+    zhTitle: 性別打結：拆除父權違建
+    author: Allan G. Johnson
+    year: 1997
+    url: https://www.google.com/search?q=The+Gender+Knot%3A+Unraveling+Our+Patriarchal+Legacy
+    
+  - title: "The Forest and the Trees: Sociology as Life, Practice, and Promise"
+    zhTitle: 見樹又見林
+    author: Allan G. Johnson
+    year: 1997
+    url: https://www.google.com/search?q=The+Forest+and+the+Trees
+    
+  # - zhTitle: 巷仔口社會學
+  #   zhAuthor: 大家出版
+  #   year: 2014
+  #   url: https://www.google.com/search?q=巷仔口社會學
+    
 - title: Western Literature
   id: westernLiterature
   books:
@@ -194,7 +238,7 @@
     author: Lu Xun
     zhAuthor: 魯迅
     year: 1918
-    url: https://www.google.com/search?q=Diary+of+a+Madman
+    url: https://www.google.com/search?q=Diary+of+a+Madman+Lu+Xun
     
   - title: Kokoro
     orTitle: <span lang="ja">こころ</span>
@@ -202,7 +246,7 @@
     author: Natsume S&omacr;seki
     zhAuthor: 夏目漱石
     year: 1914
-    url: https://www.google.com/search?q=Kokoro
+    url: https://www.google.com/search?q=Kokoro+Book
 
   - title: Botchan
     orTitle: <span lang="ja">坊っちゃん</span>

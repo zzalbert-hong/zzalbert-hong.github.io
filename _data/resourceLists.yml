@@ -1,0 +1,175 @@
+- title: YouTube channels
+  id: youtubeChannels
+  group: math
+  links:
+  - url: https://www.youtube.com/@veritasium
+    text: Veritasium
+  - url: https://www.youtube.com/@numberphile
+    text: Numberphile
+  - url: https://www.youtube.com/playlist?list=PLJicmE8fK0EiFRt1Hm5a_7SJFaikIFW30
+    text: Ted-Ed
+  - url: https://www.youtube.com/@QuantaScienceChannel
+    text: Quanta Magazine
+  - url: https://www.youtube.com/@3blue1brown
+    text: 3Blue1Brown
+  - url: https://www.youtube.com/@EpsilonDeltaMain
+    text: EpsilonDelta
+  - url: https://www.youtube.com/@AbideByReason
+    text: Abide By Reason
+  - url: https://www.youtube.com/c/MathTheBeautiful
+    text: MathTheBeautiful
+  - url: https://www.youtube.com/@NumeracyLab
+    text: Numeracy Lab
+    mardarin: true
+  - url: https://www.youtube.com/@zgxk6246
+    text: Math & Logic
+    mardarin: true
+  - url: https://www.youtube.com/@ZZAlbert-Hong
+    text: ZZAlbert
+    note: This is my YouTube channel.
+
+- title: Competition problems
+  id: competitionProblems
+  group: math
+  intro: "Ordered by difficulty, from easy to hard: (with solutions)"
+  links:
+  - url: https://cemc.uwaterloo.ca/resources/past-contests
+    text: CEMC Past Contests
+  - url: https://cms.math.ca/competitions/repechage/#archive
+    text: Rep&ecirc;chage Problems
+  - url: https://cms.math.ca/competitions/cmo/#archive
+    text: CMO Problems
+  - url: https://kskedlaya.org/putnam-archive/
+    text: The Putnam Archive
+  # - url: https://academyflex.com/wp-content/uploads/2024/03/a-practical-guide-to-quantitative-finance-interviews.pdf
+  #   text: A Practical Guide to Quantitative Finance Interviews
+
+- title: Professors' websites
+  id: professorsWebsites
+  group: math
+  intro: |-
+    A lot of math professors generously post their handouts, notes,
+    problem sets, etc. on their website. Below are some that I know of.
+  links:
+  - url: https://www.math.utoronto.ca/barbeau/
+    text: Professor Ed Barbeau's website
+  - url: https://www.math.toronto.edu/mein/teaching/lectures.html
+    text: Professor Eckhard Meinrenken's website
+  - url: https://www.math.toronto.edu/drorbn/
+    text: Professor Dror Bar-Natan's website
+  - url: https://math.ntnu.edu.tw/~li/
+    text: Professor Hua-Chieh Li's website
+    mardarin: true
+
+- title: GeoGebra and Desmos
+  id: geogebraAndDesmos
+  group: math
+  intro: |-
+    Desmos is an interactive graphing calculator where you can input
+    functions or equations and it will draw their graphs.
+    GeoGebra (GGB) is similar, but a lot more powerful: it combines
+    geometry and algebra&mdash;hence the name "GeoGebra"&mdash;allowing
+    you to draw graphs <em>not only</em> with algebraic expressions
+    <em>but also</em> using geometric (and various other) commands.
+    It can even visualize 3D objects. It also integrates tools such as
+    spreadsheets and scripting. It is <em>extremely</em> useful for
+    visualizations, simulations, and experimenting with
+    mathematical concepts. The best thing? THEY ARE FREE!
+  links:
+  - url: https://www.geogebra.org/
+    text: GeoGebra.org
+    note: |-
+      The GeoGebra website, where you can use GeoGebra calculators online;
+      also contains tutorials and various other resources.
+      (You can save files online as well if you create an account.)
+  - url: https://geogebra.github.io/docs/manual/en/
+    text: GeoGebra Manual
+    note: The complete list of commands and tools.
+  - url: https://geogebra.github.io/docs/reference/en/GeoGebra_Installation/#_geogebra_classic_5_for_desktop
+    text: GeoGebra Classic 5 for desktop
+    note: |-
+      Installing GeoGebra onto your computer. (You can install
+      whichever version you want, but Classic 5 has the most features.)
+  - url: https://www.geogebra.org/classic
+    text: GeoGebra Classic Online
+    note: |-
+      Use this link to use GeoGebra Classic online. (The default
+      calculators on the GeoGebra website are non-classic ones,
+      so use this if you need all the features.)
+  - url: https://www.desmos.com/
+    text: Desmos.com
+
+- title: Other resources
+  id: otherResources
+  group: math
+  links:
+  - url: https://ocw.mit.edu/search/?d=Mathematics
+    text: MIT OpenCourseWare
+  - url: https://ocw.aca.ntu.edu.tw/courses
+    text: NTU OpenCourseWare
+    mardarin: true
+  # - url: http://www.mathland.idv.tw/
+  #   text: Mathland
+  #   mardarin: true
+
+- title: LaTeX
+  id: latex
+  group: misc
+  links:
+  - url: 
+    text: 
+  - url: https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes
+    text: Overleaf LaTeX tutorials
+  - url: 
+    text: 
+  - url: https://www.youtube.com/playlist?list=PLHXZ9OQGMqxcWWkx2DMnQmj5os2X5ZR73
+    text: Dr. Trefor Bazett's LaTeX tutorials
+  - url: 
+    text: 
+
+- title: Programming
+  id: 
+  group: misc
+  links:
+  - url: 
+    text: 
+  - url: 
+    text: 
+  - url: https://www.w3schools.com/
+    text: W3Schools Coding tutorials
+  - url: 
+    text: 
+
+- title: Web development
+  id: 
+  group: misc
+  links:
+  - url: 
+    text: 
+  - url: 
+    text: 
+  - url: 
+    text: 
+  - url: https://katex.org/docs/browser.html
+    text: 
+  - url: 
+    text: 
+
+- title: Search engines
+  id: 
+  group: misc
+  links:
+  - url: 
+    text: 
+
+- title: Other websites
+  id: 
+  group: misc
+  intro: |-
+    These are really random, but I really wanted to mention them
+    and I think there are no better ways to organize them.
+  links:
+  - url: https://app.diagrams.net/
+    text: Draw.io
+  - url: 
+    text: Have I been pwned?

@@ -1,107 +1,36 @@
 ---
 title: Mathematics Resources
-description: Books I have read and liked, .......................................
+description: Math-related external websites that I find useful.
 date: 2005-06-25
 ---
 
 <div class="mybox" id="tocBox"></div>
-<p>
-    (There are <em>many</em> others not listed here yet.
-    I am trying to make an exhaustive list of movies I have watched and liked,
-    but there are only so many I can think of right now.)
-</p>
 
-{% for section in page.movieLists %}
-    <h2 id="{{ section.id }}">{{ section.title }}</h2>
-    {% if section.comments %}
-        <p>{{ section.comments }}</p>
+{% for section in site.data.resourceLists %}
+    {% if section.group == 'math' %}
+        <h2 id="{{ section.id }}">{{ section.title }}</h2>
+        {% if section.intro %}
+            <p>{{ section.intro }}</p>
+        {% endif %}
+        <dl>
+        {% for l in section.links %}
+            <dt>
+                <a href="{{ l.url }}">{{ l.text }}</a>
+                {% if l.mandarin %}(Mandarin){% endif %}
+            </dt>
+            {% if l.note %}<dd>{{ l.note }}</dd>{% endif %}
+        {% endfor %}
+        </dl>
     {% endif %}
-    <ul>
-    {% for m in section.movies %}
-        <li><a href="{{ m.url }}">{{ m.title }}</a></li>
-    {% endfor %}
-    </ul>
 {% endfor %}
 
-<h2 id="latex">LaTeX</h2>
+<h2 id="latex">*LaTeX</h2>
 <p>
-    Click <a href="/extras/miscellaneous-resources/#latex">here</a> to see
-    LaTeX-related resources.
+    LaTeX-related resources are listed
+    <a href="/extras/miscellaneous-resources/#latex">here</a>.
 </p>
-<h2 id="books">Books</h2>
+<h2 id="books">*Books</h2>
 <p>
-    Click <a href="/extras/book-recommendations/#mathematics">here</a> to see
-    my favourite math books.
+    Math books are listed
+    <a href="/extras/book-recommendations/#mathematics">here</a>.
 </p>
-
-
-
-
-
-
-
-<h2 id="math-yt">Math YouTube channels</h2>
-<ul>
-    <li><a href="https://www.youtube.com/@veritasium"
-    target="_blank">Veritasium</a></li>
-    <li><a href="https://www.youtube.com/@numberphile"
-    target="_blank">Numberphile</a></li>
-    <li><a href=
-    "https://www.youtube.com/playlist?list=PLJicmE8fK0EiFRt1Hm5a_7SJFaikIFW30"
-    target="_blank">Ted-Ed</a></li>
-    <li><a href="https://www.youtube.com/@QuantaScienceChannel"
-    target="_blank">Quanta Magazine</a></li>
-    <li><a href="https://www.youtube.com/@3blue1brown"
-    target="_blank">3Blue1Brown</a></li>
-    <li><a href="https://www.youtube.com/@EpsilonDeltaMain"
-    target="_blank">EpsilonDelta</a></li>
-    <li><a href="https://www.youtube.com/@AbideByReason"
-    target="_blank">Abide By Reason</a></li>
-    <li><a href="https://www.youtube.com/@misterwootube"
-    target="_blank">Eddie Woo</a></li>
-    <li><a href="https://www.youtube.com/@math-life-balance"
-    target="_blank">Math-life balance</a></li>
-    <li><a href="https://www.youtube.com/@NumeracyLab"
-    target="_blank">Numeracy Lab</a> (Mandarin)</li>
-    <li><a href="https://www.youtube.com/@zgxk6246"
-    target="_blank">Math & Logic</a> (Mandarin)</li>
-</ul>
-
-<h2 id="math-books">Math books</h2>
-<ul>
-    <li>Proofs from THE BOOK</li>
-    <li>...</li>
-</ul>
-
-<h2 id="math-problems">Math problems</h2>
-<ul>
-    <li><a href="https://cms.math.ca/competitions/repechage/#archive"
-    target="_blank">Rep&ecirc;chage Problems</a></li>
-    <li><a href="https://cms.math.ca/competitions/cmo/#archive"
-    target="_blank">CMO Problems</a></li>
-</ul>
-
-<h2 id="useful-sites">Useful websites</h2>
-<ul>
-    <li><a href="https://www.math.utoronto.ca/barbeau/home.html"
-    target="_blank">Professor Barbeau's website</a></li>
-    <li><a href="http://www.mathland.idv.tw/"
-    target="_blank">Mathland</a> (Mandarin)</li>
-    <li><a href="https://www.geogebra.org/"
-    target="_blank">Geogebra</a></li>
-    https://geogebra.github.io/docs/manual/en/commands/ExportImage/
-    https://geogebra.github.io/docs/reference/en/GeoGebra_Installation/#_geogebra_classic_5_for_desktop
-    https://www.geogebra.org/classic
-    <li><a href="https://www.desmos.com/"
-    target="_blank">Desmos</a></li>
-    <li><a href="https://app.diagrams.net/"
-    target="_blank">Draw.io</a></li>
-    <li><a href="https://www.w3schools.com/"
-    target="_blank">W3Schools Coding tutorials</a></li>
-    https://katex.org/docs/browser.html
-    <li><a href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes"
-    target="_blank">Overleaf LaTeX tutorials</a></li>
-    <li><a href="https://www.youtube.com/playlist?list=PLHXZ9OQGMqxcWWkx2DMnQmj5os2X5ZR73"
-    target="_blank">Dr. Trefor Bazett's LaTeX tutorials</a></li>
-    https://jordanhong.com/
-</ul>
