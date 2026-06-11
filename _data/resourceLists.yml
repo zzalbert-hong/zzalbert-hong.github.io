@@ -131,8 +131,8 @@
     text: Handouts I made for math club meetings in highschool
     note: |-
       Acknowledgement: For the story-telling passages, I did not write them
-      by myself but copy-pasted from external resources.
-      I did not use proper in-text citation because I was not that aware of
+      myself. They were copy-pasted from external resources.
+      I did not use proper in-text citations because I was not that aware of
       their importance then (I was Grade 10), plus this was just a math club
       meeting handout, not some serious academic paper.
       However, I did list all resources I used on the last page.
@@ -144,9 +144,25 @@
 - title: LaTeX
   id: latex
   group: misc
+  intro: |-
+    LaTeX (pronounced as "lay-tek" or "la-tek" when referring to the software,
+    as opposed to the material) is a
+    <a href="https://www.geeksforgeeks.org/blogs/difference-between-programming-scripting-and-markup-languages/">
+    markup language</a> that allows you to typeset documents any way you want.
+    In particular, it was originally created to make typing mathematical expressions
+    easy and aesthetic. When learning LaTeX, the biggest issue I encountered
+    was that resources are scattered across the internet. As such,
+    I organized below a list of core features that I think beginners should know
+    at the back their head (as opposed to very specific features that you just
+    search up or ask AI about when needed), plus some useful pages that I
+    constantly refer to. Finally, a side note (for myself): while LaTeX allows
+    customizing layouts any way you want, this should generally be avoided
+    as the default layouts were already designed around conventional,
+    time-tested typography standards, which balance readability and aesthetics;
+    unprofessional customizations often do more harm than good.
   links:
   - url: https://www.youtube.com/watch?v=4lyHIQl4VM8
-    text: VS Code setup
+    text: VS Code LaTeX setup
   - url: https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes
     text: Quick guide (Overleaf)
   - url: https://wch.github.io/latexsheet/latexsheet.pdf
@@ -179,10 +195,17 @@
     text: Multi-file projects (Overleaf)
   - url: https://tex.stackexchange.com/questions/29820/how-can-i-generate-just-pgf-tikz-images-not-placed-a-whole-page-or-slide
     text: The standalone class (Stack Exchange)
+  - url: https://www.latex-project.org/about/#an-introduction-to-latex
+    text: '"LaTeX is not a word processor"'
+  - url: https://blog.orvium.io/latex-over-word/
+    text: '"LaTeX over Word"'
+  - url: https://tobi.oetiker.ch/lshort/lshort.pdf
+    text: "Open source book: <i>The not-so-short introduction to LaTeX</i>"
 
-- title: Programming (mainly Python)
+- title: Programming
   id: programming
   group: misc
+  intro: "Mainly Python:"
   links:
   - url: https://runestone.academy/ns/books/published/thinkcspy/index.html
     text: Runestone interactive book
@@ -190,19 +213,22 @@
     text: W3Schools tutorials
   - url: https://www.geeksforgeeks.org/python/python-programming-language-tutorial/
     text: GeeksforGeeks tutorials
-  - url: /assets/pdfs/Notes_Python-Basics
+  - url: /assets/pdfs/Notes_Python-Basics.pdf
     text: Notes on Python I made in highschool
-  - url: /assets/pdfs/Notes_Processing-py-Basics
+  - url: /assets/pdfs/Notes_Processing-py-Basics.pdf
     text: Notes on Processing.py I made in highschool
 
 - title: Web Development
   id: 
   group: misc
+  intro: |-
+    Similar to the LaTeX section, below is a list of resources I found useful,
+    which I collected along learning how to build this website.
   links:
   - url: https://www.w3schools.com/html/default.asp
     text: W3Schools HTML tutorials
   - url: https://www.youtube.com/watch?v=x-FsEH1LrZw
-    text: VS Code setup
+    text: VS Code HTML setup
   - url: https://www.i-evolve.com/about-us/frequently-asked-questions-buffalo-ny/what-dns-and-whats-difference-between-dns-hosting-and-web-hosting
     text: Domain and web hosting
   - url: https://medium.com/@tosinfarai/understanding-web-hosting-and-dns-473bca3d2916
@@ -213,8 +239,24 @@
     text: Jekyll documentation
   - url: https://shopify.github.io/liquid/
     text: Liquid documentation
+  - url: https://www.yaml.info/learn/index.html#tutorial
+    text: YAML tutorial
+    note: |-
+      Fun fact: YAML originally stands for "Yet Another Markup Language,"
+      but was soon changed to the <i>recursive</i> acronym
+      "YAML Ain't Markup Language" as it is really a data-oriented language
+      rather than a markup one.
   - url: https://www.markdownguide.org/basic-syntax/
     text: Markdown guide
+    note: |-
+      A side note for people who were not familiar:
+      "markup" is a <em>class</em> of (coding) languages, which includes
+      several languages, whereas "Markdown" is one <em>particular</em>
+      markup language, which has its specific syntax.
+      The asymmetry between one being a <em>class</em> and the other
+      being a <em>particular</em> makes things a bit confusing,
+      but someone decided to name them like that and unfortunately
+      there is nothing I can do about it.
   - url: https://www.w3schools.com/howto/default.asp
     text: W3Schools how-to guides
   - url: https://katex.org/docs/browser.html
@@ -232,12 +274,12 @@
   - url: https://www.w3.org/WAI/standards-guidelines/wcag/
     text: The Web Content Accessibility Guidelines (WCAG) international standard
 
-- title: Other resources
+- title: Other Resources
   id: otherResources
   group: misc
   intro: |-
-    These are really random, but I really wanted to mention them
-    and I think there are no better ways to organize them.
+    These are very random, but I really wanted to mention them
+    and I cannot think of a better way to organize them.
   links:
   - url: https://app.diagrams.net/
     text: Draw.io

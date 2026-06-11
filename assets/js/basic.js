@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Stop immediately if page has no TOC container
     if (!tocContainer) return;
     // Otherwise set up the TOC
-    tocContainer.innerHTML = `<ul><li>Jump to section:</li>
+    tocContainer.innerHTML = `<ul><li>Jump to:</li>
         <ul id="tocList"></ul></ul>`
     const toc = document.getElementById("tocList");
     
