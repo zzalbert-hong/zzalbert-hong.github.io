@@ -104,7 +104,7 @@
             {% endfor %}
         </p>
         <p class="content-meta">
-            {{ page.date | date: "%B %d, %Y" }} &middot; {{ page.wordcount }} words
+            {{ page.date | date: "%B %d, %Y" }} &middot; {{ page.content | number_of_words }} words
         </p>
     </div>
     {% if page.alsoAt or page.updatedAt %}
@@ -122,12 +122,12 @@
             </ul>
         </div>
     {% endif %}
-    <!-- {% if page.context %}
-        <div class="mybox"><p>{{ page.context }}</p></div>
+    {% if page.context %}
+        <div class="mybox">{{ page.context | markdownify }}</div>
     {% endif %}
     {% if page.prerequisites %}
-        <div class="mybox"><p>{{ page.prerequisites }}</p></div>
-    {% endif %} -->
+        <div class="mybox">{{ page.prerequisites | markdownify }}</div>
+    {% endif %}
 
 {% else %}
 

@@ -153,19 +153,19 @@ myposts:
     - (filename of open graph image)
   date: # Specify in frontmatter
     - (date in yyyy-mm-dd for sorting)
-  wordcount: # Specify in frontmatter
-    - (an integer approximation)
+  # wordcount: # Specify in frontmatter
+  #   - (an integer approximation)
   tags: # Specify in frontmatter
     - (list of tags the article is listed under)
     - [ "aestheticsAndEthics", ]
     - (add the "featured" tag for particularly good posts)
     - (use [] for posts that should not be listed anywhere)
     - etc.
-  # context: # Specify in frontmatter if applicable
-  #   - (sentences explaining the original context of writing the article)
-  #   - nil
-  # prerequisites: # Specify in frontmatter if applicable
-  #   - (sentences explaining the background knowledge the article assumes)
+  context: # Specify in frontmatter in md syntax if applicable
+    - (sentences explaining the original context of writing the article)
+    - nil
+  prerequisites: # Specify in frontmatter in md syntax if applicable
+    - (sentences explaining the background knowledge the article assumes)
     - nil
   alsoAt: # Specify in frontmatter if applicable
     - [ (full url to where the article is published), (text) ]

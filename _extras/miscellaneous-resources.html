@@ -10,7 +10,7 @@ date: 2006-06-25
     {% if section.group == 'misc' %}
         <h2 id="{{ section.id }}">{{ section.title }}</h2>
         {% if section.intro %}
-            <p>{{ section.intro }}</p>
+            {{ section.intro | markdownify }}
         {% endif %}
         {% if section.links %}
             <ul>

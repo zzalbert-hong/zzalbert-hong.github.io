@@ -130,13 +130,13 @@
   - url: /assets/pdfs/Handouts_CKHS-Math-Club.pdf
     text: Handouts I made for math club meetings in highschool
     note: |-
-      Acknowledgement: For the story-telling passages, I did not write them
-      myself. They were copy-pasted from external resources.
+      Acknowledgement: For the story-telling passages in the handout,
+      I copy-pasted them from external resources.
       I did not use proper in-text citations because I was not that aware of
       their importance then (I was Grade 10), plus this was just a math club
       meeting handout, not some serious academic paper.
-      However, I did list all resources I used on the last page.
-  #   mandarin: true
+      However, I did list all resources I referred to on the last page.
+    mandarin: true
   # - url: http://www.mathland.idv.tw/
   #   text: Mathland
   #   mandarin: true
@@ -145,17 +145,21 @@
   id: latex
   group: misc
   intro: |-
-    LaTeX (pronounced as "lay-tek" or "la-tek" when referring to the software,
-    as opposed to the material) is a
+    LaTeX&mdash;pronounced "lay-tek" or "la-tek" when referring to the software
+    (as opposed to the material)&mdash;is a
     <a href="https://www.geeksforgeeks.org/blogs/difference-between-programming-scripting-and-markup-languages/">
     markup language</a> that allows you to typeset documents any way you want.
     In particular, it was originally created to make typing mathematical expressions
-    easy and aesthetic. When learning LaTeX, the biggest issue I encountered
+    easy and aesthetic.
+    
+    When learning LaTeX, the biggest issue I encountered
     was that resources are scattered across the internet. As such,
     I organized below a list of core features that I think beginners should know
     at the back their head (as opposed to very specific features that you just
     search up or ask AI about when needed), plus some useful pages that I
-    constantly refer to. Finally, a side note (for myself): while LaTeX allows
+    constantly refer to.
+    
+    Finally, a side note (for myself): while LaTeX allows
     customizing layouts any way you want, this should generally be avoided
     as the default layouts were already designed around conventional,
     time-tested typography standards, which balance readability and aesthetics;
@@ -273,6 +277,20 @@
     text: HTML characters, symbols, and emojis
   - url: https://www.w3.org/WAI/standards-guidelines/wcag/
     text: The Web Content Accessibility Guidelines (WCAG) international standard
+
+- title: Reddit Posts
+  id: redditPosts
+  group: misc
+  intro: |-
+    In this section I list reddit posts I found informative
+    (so far they are all UofT-specific).
+  links:
+  - url: https://www.reddit.com/r/UofT/comments/1coz6ix/tips_and_reflection_from_a_graduate_student_who/
+    text: <i>Tips and reflection from a graduate student who is done</i>
+  - url: https://www.reddit.com/r/UofT/comments/1txtugy/guide_to_making_your_first_year_schedule_faculty/
+    text: <i>Guide to making your first year schedule (faculty of arts and science specific)</i>
+  - url: https://www.reddit.com/r/UofT/comments/1ertvee/full_guide_to_preparing_for_first_week_in/
+    text: <i>(Full?) Guide to Preparing for First Week in University</i>
 
 - title: Other Resources
   id: otherResources
