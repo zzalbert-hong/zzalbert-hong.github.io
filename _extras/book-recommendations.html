@@ -12,13 +12,17 @@ date: 2008-06-25
 <div class="mybox" id="tocBox"></div>
 <p>
     There are only a limited number of books presented here because these are just
-    the books I have read (and remember). Certainly there are many other great books.
+    books that I have read (and remember). Certainly there are many other great books.
 </p>
 <p>
-    For books that <em>are</em> in English or have English translations, I listed
-    the English title. Otherwise for books that do <em>not</em> have an English
-    version&mdash;meaning I must have read them in Chinese&mdash;I listed
-    the Chinese title.
+    For books that <em>are</em> in English or have English translations,
+    I listed the English title as the primary title. Otherwise&mdash;for books that
+    do <em>not</em> have an English version, meaning I must have read them in
+    Chinese&mdash;I used the Chinese title instead.
+</p>
+<p>
+    Nonetheless, where relevant, I still included the original and Chinese titles
+    (if the primary title is not already in Chinese) for some books.
 </p>
 
 {% for section in site.data.bookLists %}
@@ -46,14 +50,17 @@ date: 2008-06-25
                     ({{ b.year }})</a>
             </p>
             {% if b.orTitle %}
-                <p><i>{{ b.orTitle }}</i></p>
+                <p><a class="plain" href="{{ b.orUrl }}"><i>{{ b.orTitle }}</i></a></p>
             {% endif %}
             {% if b.author and b.zhAuthor and b.title and b.zhTitle %}
-                <p><span lang="zh-Hant">{{ b.zhAuthor }}&#12298;{{ b.zhTitle }}&#12299;</span></p>
+                <p>
+                    <a lang="zh-Hant" class="plain" href="{{ b.zhUrl }}">
+                    {{ b.zhAuthor }}&#12298;{{ b.zhTitle }}&#12299;</a>
+                </p>
             {% elsif b.author and b.zhAuthor %}
-                <p><span lang="zh-Hant">{{ b.zhAuthor }}</span></p>
+                <p><a lang="zh-Hant" class="plain" href="{{ b.zhUrl }}">{{ b.zhAuthor }}</a></p>
             {% elsif b.title and b.zhTitle %}
-                <p><span lang="zh-Hant">&#12298;{{ b.zhTitle }}&#12299;</span></p>
+                <p><a lang="zh-Hant" class="plain" href="{{ b.zhUrl }}">&#12298;{{ b.zhTitle }}&#12299;</a></p>
             {% endif %}
             {% if b.note %}<p class="content-meta">{{ b.note }}</p>{% endif %}
         </div>

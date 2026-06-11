@@ -26,7 +26,7 @@ to *truly* understand Dedekind cuts, you must first forget about these statement
 learn what Dedekind cuts are---directly and literally from its formal definitions,
 and then come back to look at how it connects to the reals. Usually, mathematical
 concepts make more sense when you learn about the context along with the technical
-details. Yet for Dedekind cuts, having contextual knowledge at the back of your
+details; yet for Dedekind cuts, having contextual knowledge at the back of your
 head as you learn the formal definitions and related proofs just makes everything
 even more confusing.
 

@@ -8,38 +8,47 @@
       zh: 心靈捕手
       year: 1997
       url: https://www.google.com/search?q=Good+Will+Hunting+(1997)
+      zhUrl: https://www.google.com/search?q=心靈捕手
     - en: The Legend of 1900
       zh: 海上鋼琴師
       year: 1998
       url: https://www.google.com/search?q=The+Legend+of+1900+(1998)
+      zhUrl: https://www.google.com/search?q=海上鋼琴師
     - en: The Truman Show
       zh: 楚門的世界
       year: 1998
       url: https://www.google.com/search?q=The+Truman+Show+(1998)
+      zhUrl: https://www.google.com/search?q=楚門的世界
     - en: A Beautiful Mind
       zh: 美麗境界
       year: 2001
       url: https://www.google.com/search?q=A+Beautiful+Mind+(2001)
+      zhUrl: https://www.google.com/search?q=美麗境界
     - en: Catch Me if You Can
       zh: 神鬼交鋒
       year: 2002
       url: https://www.google.com/search?q=Catch+Me+if+You+Can+(2002)
+      zhUrl: https://www.google.com/search?q=神鬼交鋒
     - en: The Dark Knight
       zh: 黑暗騎士
       year: 2008
       url: https://www.google.com/search?q=The+Dark+Knight+(2008)
+      zhUrl: https://www.google.com/search?q=黑暗騎士
     - en: 3 Idiots
       zh: 三個傻瓜
       year: 2009
       url: https://www.google.com/search?q=3+Idiots+(2009)
+      zhUrl: https://www.google.com/search?q=三個傻瓜
     - en: The Secret Life of Walter Mitty
       zh: 白日夢冒險王
       year: 2013
       url: https://www.google.com/search?q=The+Secret+Life+of+Walter+Mitty+(2013)
+      zhUrl: https://www.google.com/search?q=白日夢冒險王
     - en: Oppenheimer
       zh: 奧本海默
       year: 2023
       url: https://www.google.com/search?q=Oppenheimer+(2023)
+      zhUrl: https://www.google.com/search?q=奧本海默+電影
 - title: About Love
   id: aboutLove
   intro: |-
@@ -51,77 +60,93 @@
       lang: Japanese
       year: 1997
       url: https://www.google.com/search?q=Princess+Mononoke+(1997)
+      zhUrl: https://www.google.com/search?q=魔法公主
     - en: Pay It Forward
       zh: 讓愛傳出去
       year: 2000
       url: https://www.google.com/search?q=Pay+It+Forward+(2000)
+      zhUrl: https://www.google.com/search?q=讓愛傳出去+電影
     - en: Spirited Away
       zh: 神隱少女
       lang: Japanese
       year: 2001
       url: https://www.google.com/search?q=Spirited+Away+(2001)
+      zhUrl: https://www.google.com/search?q=神隱少女
     - en: Before Sunset
       zh: 愛在日落巴黎時
       year: 2004
       url: https://www.google.com/search?q=Before+Sunset+(2004)
+      zhUrl: https://www.google.com/search?q=愛在日落巴黎時
     - en: Front of the Class
       zh: 叫我第一名
       year: 2008
       url: https://www.google.com/search?q=Front+of+the+Class+(2008)
+      zhUrl: https://www.google.com/search?q=叫我第一名
     - en: Avatar
       zh: 阿凡達
       year: 2009
       url: https://www.google.com/search?q=Avatar+(2009)
+      zhUrl: https://www.google.com/search?q=阿凡達
     - en: My Sister's Keeper
       zh: 姊姊的守護者
       year: 2009
       url: https://www.google.com/search?q=My+Sister%27s+Keeper+(2009)
-    - en: You Are the Apple of My Eye
-      zh: 那些年，我們一起追的女孩
-      lang: Mandarin
-      year: 2011
-      url: https://www.google.com/search?q=You+Are+the+Apple+of+My+Eye+(2011)
+      zhUrl: https://www.google.com/search?q=姊姊的守護者
+    # - en: You Are the Apple of My Eye
+    #   zh: 那些年，我們一起追的女孩
+    #   lang: Mandarin
+    #   year: 2011
+    #   url: https://www.google.com/search?q=You+Are+the+Apple+of+My+Eye+(2011)
     - en: Les Mis&eacute;rables
       zh: 悲慘世界
       year: 2012
       url: https://www.google.com/search?q=Les+Miserables+(2012)
+      zhUrl: https://www.google.com/search?q=悲慘世界+電影
     - en: The Great Gatsby
       zh: 大亨小傳
       year: 2013
       url: https://www.google.com/search?q=The+Great+Gatsby+(2013)
+      zhUrl: https://www.google.com/search?q=大亨小傳+電影
     - en: Have a Song on Your Lips
       zh: 再會吧！青春小鳥
       lang: Japanese
       year: 2015
       url: https://www.google.com/search?q=Have+a+Song+on+Your+Lips+(2015)
+      zhUrl: https://www.google.com/search?q=再會吧！青春小鳥
     - en: Arrival
       zh: 異星入境
       year: 2016
       url: https://www.google.com/search?q=Arrival+(2016)
+      zhUrl: https://www.google.com/search?q=異星入境
     - en: A Silent Voice
       zh: 聲之形
       lang: Japanese
       year: 2016
       url: https://www.google.com/search?q=A+Silent+Voice+(2016)
+      zhUrl: https://www.google.com/search?q=聲之形+電影
     - en: Your Name
       zh: 你的名字
       lang: Japanese
       year: 2016
       url: https://www.google.com/search?q=Your+Name+(2016)
+      zhUrl: https://www.google.com/search?q=你的名字
     - en: Instant Family
       zh: 速成家庭
       year: 2018
       url: https://www.google.com/search?q=Instant+Family+(2018)
+      zhUrl: https://www.google.com/search?q=速成家庭
     - en: We Made a Beautiful Bouquet
       zh: 花束般的戀愛
       lang: Japanese
       year: 2021
       url: https://www.google.com/search?q=We+Made+a+Beautiful+Bouquet+(2021)
+      zhUrl: https://www.google.com/search?q=花束般的戀愛
     - en: Suzume
       zh: 鈴芽之旅
       lang: Japanese
       year: 2022
       url: https://www.google.com/search?q=Suzume+(2022)
+      zhUrl: https://www.google.com/search?q=鈴芽之旅
 - title: Motivational
   id: motivational
   movies:
@@ -133,10 +158,12 @@
       zh: 神鬼戰士
       year: 2000
       url: https://www.google.com/search?q=Gladiator+(2000)
+      zhUrl: https://www.google.com/search?q=神鬼戰士
     - en: "Homeless to Harvard: The Liz Murray Story"
       zh: 最貧窮的哈佛女孩
       year: 2003
       url: https://www.google.com/search?q=Homeless+to+Harvard%3A+The+Liz+Murray+Story+(2003)
+      zhUrl: https://www.google.com/search?q=最貧窮的哈佛女孩+電影
 - title: Inspirational
   id: inspirational
   movies:
@@ -144,10 +171,12 @@
       zh: 逆轉人生
       year: 2011
       url: https://www.google.com/search?q=The+Intouchables+(2011)
+      zhUrl: https://www.google.com/search?q=逆轉人生
     - en: Hidden Figures
       zh: 關鍵少數
       year: 2016
       url: https://www.google.com/search?q=Hidden+Figures+(2016)
+      zhUrl: https://www.google.com/search?q=關鍵少數
 - title: About Justice
   id: aboutJustice
   movies:
@@ -155,14 +184,17 @@
       zh: 永不妥協
       year: 2000
       url: https://www.google.com/search?q=Erin+Brockovich+(2000)
+      zhUrl: https://www.google.com/search?q=永不妥協
     - en: The People vs. Fritz Bauer
       zh: 大審判家
       year: 2015
       url: https://www.google.com/search?q=The+People+vs.+Fritz+Bauer+(2015)
+      zhUrl: https://www.google.com/search?q=大審判家
     - en: Just Mercy
       zh: 不完美的正義
       year: 2019
       url: https://www.google.com/search?q=Just+Mercy+(2019)
+      zhUrl: https://www.google.com/search?q=不完美的正義
 - title: Thriller and Mystery
   id: thrillerAndMystery
   movies:
@@ -170,31 +202,38 @@
       zh: 危機總動員
       year: 1995
       url: https://www.google.com/search?q=Outbreak+(1995)
+      zhUrl: https://www.google.com/search?q=危機總動員
     - en: Memento
       zh: 記憶拼圖
       year: 2000
       url: https://www.google.com/search?q=Memento+(2000)
+      zhUrl: https://www.google.com/search?q=記憶拼圖
     - en: The Prestige
       zh: 頂尖對決
       year: 2006
       url: https://www.google.com/search?q=The+Prestige+(2006)
+      zhUrl: https://www.google.com/search?q=頂尖對決
     - en: 21
       zh: 決勝21點
       year: 2008
       url: https://www.google.com/search?q=21+(2008)
+      zhUrl: https://www.google.com/search?q=決勝21點
     - en: Suspect X
       zh: 嫌疑犯X的獻身
       lang: Japanese
       year: 2008
       url: https://www.google.com/search?q=Suspect+X+(2008)
-    - en: Game of Thrones
+      zhUrl: https://www.google.com/search?q=嫌疑犯X的獻身+2008
+    - en: Game of Thrones (Drama)
       zh: "冰與火之歌：權力遊戲"
       year: 2011
       url: https://www.google.com/search?q=Game+of+Thrones+(2011)
+      zhUrl: https://www.google.com/search?q=冰與火之歌：權力遊戲
     - en: Conclave
       zh: 秘密會議
       year: 2024
       url: https://www.google.com/search?q=Conclave+(2024)
+      zhUrl: https://www.google.com/search?q=秘密會議+2024
 - title: Horror
   id: horror
   intro: |-
@@ -205,11 +244,14 @@
       zh: 鬼店
       year: 1980
       url: https://www.google.com/search?q=The+Shining+(1980)
+      zhUrl: https://www.google.com/search?q=鬼店+1980
     - en: Until Dawn
       zh: 直到黎明
       year: 2025
       url: https://www.google.com/search?q=Until+Dawn+(2025)
+      zhUrl: https://www.google.com/search?q=直到黎明+2025
     - en: Hokum
       zh: 陰魂旅社
       year: 2026
       url: https://www.google.com/search?q=Hokum+(2026)
+      zhUrl: https://www.google.com/search?q=陰魂旅社+2026

@@ -8,6 +8,8 @@
 #     zhAuthor: ...
 #     year: ...
 #     url: https://www.google.com/search?q= (only characters I can type from my keyboard)
+#     orUrl: https://www.google.com/search?q=
+#     zhUrl: https://www.google.com/search?q= (only characters I can type from my keyboard)
 #
 # - title: 
 #   id: 
@@ -19,6 +21,8 @@
 #     zhAuthor: 
 #     year: 
 #     url: https://www.google.com/search?q=
+#     orUrl: https://www.google.com/search?q=
+#     zhUrl: https://www.google.com/search?q=
 #     
 
 - title: Mathematics
@@ -29,6 +33,7 @@
     author: Leith Hathout
     year: 2007
     url: https://www.google.com/search?q=Crimes+and+Mathdemeanors
+    orUrl: https://www.google.com/search?q=數學偵探物語
 
   - title: "The Man who Counted: A Collection of Mathematical Adventures"
     orTitle: <span lang="pt">O Homem que Calculava</span>
@@ -36,6 +41,8 @@
     author: J&uacute;lio C&eacute;sar de Mello e Souza
     year: 1938
     url: https://www.google.com/search?q=The+Man+who+Counted%3A+A+Collection+of+Mathematical+Adventures
+    orUrl: https://www.google.com/search?q=O+Homem+que+Calculava
+    zhUrl: https://www.google.com/search?q=數學天方夜譚：撒米爾的奇幻之旅
 
   - zhTitle: 有關數學的100個觀念
     zhAuthor: 邢豔
@@ -47,6 +54,7 @@
     author: Christian Hesse
     year: 2009
     url: https://www.google.com/search?q=德國一流大學教你數學家的22個思考工具
+    orUrl: https://www.google.com/search?q=Das+kleine+Einmaleins+des+klaren+Denkens%3A+22+Denkwerkzeuge+f&uuml;r+ein+besseres+Leben
     note: |-
       This is actually my favourite math book. It presents 22 "thinking tools"
       that mathematicians commonly use, such as argument by cases, the principle
@@ -62,12 +70,14 @@
     zhAuthor: 大栗博司
     year: 2015
     url: 'https://www.google.com/search?q=用數學的語言看世界：一位博士爸爸送給女兒的數學之書，發現數學真正的趣味、價值與美'
+    orUrl: https://www.google.com/search?q=数学の言葉で世界を見たら：父から娘に贈る数学
 
   - title: "The Magic of Math: Solving for x and Figuring Out Why"
     zhTitle: 數學大觀念：全面理解從數字到微積分的12大觀念
     author: Arthur T. Benjamin
     year: 2015
     url: https://www.google.com/search?q=The+Magic+of+Math%3A+Solving+for+x+and+Figuring+Out+Why
+    zhUrl: https://www.google.com/search?q=數學大觀念：全面理解從數字到微積分的12大觀念
 
   - zhTitle: 數學大歷史
     zhAuthor: 蔡天新
@@ -79,6 +89,7 @@
     author: Martin Aigner and G&uuml;nter M. Ziegler
     year: 1998
     url: https://www.google.com/search?q=Proofs+from+THE+BOOK
+    zhUrl: https://www.google.com/search?q=數學天書中的證明
 
   - title: "G&ouml;del, Escher, Bach: an Eternal Golden Braid"
     author: Douglas Hofstadter
@@ -101,12 +112,14 @@
     author: Gottlob Frege
     year: 1884
     url: https://www.google.com/search?q=Foundations+of+Arithmetic+Austin+Translation
+    orUrl: https://www.google.com/search?q=Die+Grundlagen+der+Arithmetik
     
   - title: Tractatus Logico-Philosophicus
     orTitle: <span lang="de">Logisch-Philosophische Abhandlung</span>
     author: Ludwig Wittgenstein
     year: 1921
     url: https://www.google.com/search?q=Tractatus+Logico-Philosophicus
+    orUrl: https://www.google.com/search?q=Logisch-Philosophische+Abhandlung
     
   # - title: Concept-Writing
   #   orTitle: <span lang="de">Begriffsschrift</span>
@@ -128,6 +141,7 @@
     author: Zygmunt Bauman and Tim May
     year: 1990
     url: https://www.google.com/search?q=Thinking+Sociologically
+    zhUrl: https://www.google.com/search?q=社會學動動腦
     
   - zhTitle: 殺戮的艱難
     zhAuthor: 張娟芬
@@ -140,24 +154,29 @@
     author: Moon Yoo-seok
     year: 2015
     url: https://www.google.com/search?q=Miss+Hammurabi+Book
+    orUrl: https://www.google.com/search?q=미스+함무라비
+    zhUrl: https://www.google.com/search?q=漢摩拉比小姐：現任法官寫的法庭小說
     
   - title: Imagined Communities
     zhTitle: 想象的共同體
     author: Benedict Anderson
     year: 1983
     url: https://www.google.com/search?q=Imagined+Communities
+    zhUrl: https://www.google.com/search?q=想象的共同體
     
   - title: "The Gender Knot: Unraveling Our Patriarchal Legacy"
     zhTitle: 性別打結：拆除父權違建
     author: Allan G. Johnson
     year: 1997
     url: https://www.google.com/search?q=The+Gender+Knot%3A+Unraveling+Our+Patriarchal+Legacy
+    zhUrl: https://www.google.com/search?q=性別打結：拆除父權違建
     
   - title: "The Forest and the Trees: Sociology as Life, Practice, and Promise"
     zhTitle: 見樹又見林
     author: Allan G. Johnson
     year: 1997
     url: https://www.google.com/search?q=The+Forest+and+the+Trees
+    zhUrl: https://www.google.com/search?q=見樹又見林
     
   # - zhTitle: 巷仔口社會學
   #   zhAuthor: 大家出版
@@ -172,23 +191,22 @@
     author: Aldous Huxley
     year: 1932
     url: https://www.google.com/search?q=Brave+New+World
+    zhUrl: https://www.google.com/search?q=美麗新世界
     
   - title: The Kite Runner
     zhTitle: 追風箏的孩子
     author: Khaled Hosseini
     year: 2003
     url: https://www.google.com/search?q=The+Kite+Runner
+    zhUrl: https://www.google.com/search?q=追風箏的孩子
     
 - title: Eastern Literature
   id: easternLiterature
   books:
-  # - title: Journey to the West Modern Version
-  #   orTitle: <span lang=""></span>
-  #   zhTitle: 
-  #   author: 
-  #   zhAuthor: 
-  #   year: 
-  #   url: https://www.google.com/search?q=
+  - zhTitle: 新編兒童讀西遊記 (三冊)
+    zhAuthor: 世一文化出版
+    year: 2008
+    url: https://www.google.com/search?q=世一+兒童經典文學+西遊記
     
   - title: Journey to the West
     zhTitle: 西遊記
@@ -196,6 +214,7 @@
     zhAuthor: 吳承恩
     year: 1592
     url: https://www.google.com/search?q=Journey+to+the+West
+    zhUrl: https://www.google.com/search?q=吳承恩+西遊記
     
   - zhTitle: 三國人物攻略 (叢書)
     zhAuthor: 天衛文化出版
@@ -207,19 +226,22 @@
     author: Luo Guanzhong
     zhAuthor: 羅貫中
     year: 1522
-    url: https://www.google.com/search?q=三國演義
+    url: https://www.google.com/search?q=Romance+of+the+Three+Kingdoms
+    zhUrl: https://www.google.com/search?q=羅貫中+三國演義
     
   - title: Jin Yong Novels (Series)
     zhAuthor: 金庸小說（系列）
     author: Jin Yong
     year: 1955&ndash;1969
     url: https://www.google.com/search?q=Jin+Yong+Books
+    zhUrl: https://www.google.com/search?q=金庸小說
     
   - title: Liang Yusheng Novels (Series)
     zhAuthor: 梁羽生小說（系列）
     author: Liang Yusheng
     year: 1954&ndash;1983
     url: https://www.google.com/search?q=Liang+Yusheng+Books
+    zhUrl: https://www.google.com/search?q=梁羽生小說
     
   - title: Lang Ya Bang
     zhTitle: 瑯琊榜
@@ -227,6 +249,7 @@
     zhAuthor: 海宴
     year: 2007
     url: https://www.google.com/search?q=Lang+Ya+Bang+Book
+    zhUrl: https://www.google.com/search?q=瑯琊榜
     
   - zhTitle: 體膚小事
     zhAuthor: 黃信恩
@@ -239,6 +262,7 @@
     zhAuthor: 魯迅
     year: 1918
     url: https://www.google.com/search?q=Diary+of+a+Madman+Lu+Xun
+    zhUrl: https://www.google.com/search?q=魯迅+狂人日記
     
   - title: Kokoro
     orTitle: <span lang="ja">こころ</span>
@@ -247,6 +271,8 @@
     zhAuthor: 夏目漱石
     year: 1914
     url: https://www.google.com/search?q=Kokoro+Book
+    orUrl: https://www.google.com/search?q=こころ
+    zhUrl: https://www.google.com/search?q=夏目漱石+心
 
   - title: Botchan
     orTitle: <span lang="ja">坊っちゃん</span>
@@ -255,6 +281,8 @@
     zhAuthor: 夏目漱石
     year: 1906
     url: https://www.google.com/search?q=Botchan
+    orUrl: https://www.google.com/search?q=坊っちゃん
+    zhUrl: https://www.google.com/search?q=夏目漱石+少爺
 
 # - title: Finances
 #   id: finances
@@ -266,3 +294,5 @@
 #     zhAuthor: 
 #     year: 
 #     url: https://www.google.com/search?q=
+#     orUrl: https://www.google.com/search?q=
+#     zhUrl: https://www.google.com/search?q=

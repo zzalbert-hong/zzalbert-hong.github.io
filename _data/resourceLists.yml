@@ -1,4 +1,4 @@
-- title: YouTube channels
+- title: YouTube Channels
   id: youtubeChannels
   group: math
   links:
@@ -24,11 +24,18 @@
   - url: https://www.youtube.com/@zgxk6246
     text: Math & Logic
     mandarin: true
-  - url: https://www.youtube.com/@ZZAlbert-Hong
-    text: ZZAlbert
-    note: This is my YouTube channel.
+  # - url: https://www.youtube.com/@ZZAlbert-Hong
+  #   text: ZZAlbert
+  #   note: This is my YouTube channel.
 
-- title: Competition problems
+- title: Books
+  id: books
+  group: math
+  intro: |-
+    Math books are listed
+    <a href="/extras/book-recommendations/#mathematics">here</a>.
+
+- title: Competition Problems
   id: competitionProblems
   group: math
   intro: "Ordered by difficulty, from easy to hard: (with solutions)"
@@ -44,7 +51,7 @@
   # - url: https://academyflex.com/wp-content/uploads/2024/03/a-practical-guide-to-quantitative-finance-interviews.pdf
   #   text: A Practical Guide to Quantitative Finance Interviews
 
-- title: Professors' websites
+- title: Professors' Websites
   id: professorsWebsites
   group: math
   intro: |-
@@ -52,13 +59,17 @@
     problem sets, etc. on their website. Below are some that I know of.
   links:
   - url: https://www.math.utoronto.ca/barbeau/
-    text: Professor Ed Barbeau's website
+    text: Professor Ed Barbeau's Website
   - url: https://www.math.toronto.edu/mein/teaching/lectures.html
-    text: Professor Eckhard Meinrenken's website
+    text: Professor Eckhard Meinrenken's Website
   - url: https://www.math.toronto.edu/drorbn/
-    text: Professor Dror Bar-Natan's website
+    text: Professor Dror Bar-Natan's Website
+  - url: https://www.math.toronto.edu/weiss/
+    text: Professor William Weiss's Website
+  - url: https://www.math.toronto.edu/~stevo/
+    text: Professor Stevo Todorcevic's Website
   - url: https://math.ntnu.edu.tw/~li/
-    text: Professor Hua-Chieh Li's website
+    text: Professor Hua-Chieh Li's Website
     mandarin: true
 
 - title: GeoGebra and Desmos
@@ -72,9 +83,9 @@
     you to draw graphs <em>not only</em> with algebraic expressions
     <em>but also</em> using geometric (and various other) commands.
     It can even visualize 3D objects. It also integrates tools such as
-    spreadsheets and scripting. It is <em>extremely</em> useful for
+    spreadsheets and scripting, and it is <em>extremely</em> useful for
     visualizations, simulations, and experimenting with
-    mathematical concepts. The best thing? THEY ARE FREE!
+    mathematical concepts. The best thing: THEY ARE FREE!
   links:
   - url: https://www.geogebra.org/
     text: GeoGebra.org
@@ -86,29 +97,46 @@
     text: GeoGebra Manual
     note: The complete list of commands and tools.
   - url: https://geogebra.github.io/docs/reference/en/GeoGebra_Installation/#_geogebra_classic_5_for_desktop
-    text: GeoGebra installation
+    text: GeoGebra Installation
     note: |-
-      Use the links on that page to install GeoGebra onto your computer.
-      (You can install whichever version you want,
-      but Classic 5 has the most features.)
+      The page contains all the GeoGebra versions you can install.
+      (But I recommend Classic 5 because it has the most features.)
   - url: https://www.geogebra.org/classic
     text: GeoGebra Classic Online
     note: |-
-      Use this link to use GeoGebra Classic online. (The default
-      calculators on the GeoGebra website are non-classic ones,
-      so use this if you need all the features.)
+      The default calculators on the GeoGebra website are non-classic ones.
+      Use this link if you need features that are only in Classic.
   - url: https://www.desmos.com/
     text: Desmos.com
 
-- title: Other resources
+- title: LaTeX
+  id: latex
+  group: math
+  intro: |-
+    LaTeX-related resources are listed
+    <a href="/extras/miscellaneous-resources/#latex">here</a>.
+
+- title: Other Resources
   id: otherResources
   group: math
   links:
+  - url: https://topology.pi-base.org/questions
+    text: pi-Base
   - url: https://ocw.mit.edu/search/?d=Mathematics
     text: MIT OpenCourseWare
   - url: https://ocw.aca.ntu.edu.tw/courses
     text: NTU OpenCourseWare
     mandarin: true
+  - url: /assets/pdfs/Handouts_CKHS-Math-Club.pdf
+    text: Handouts I made for math club meetings in highschool
+    note: |-
+      Acknowledgement: For the story-telling passages, I did not write them
+      by myself but copy-pasted from external resources.
+      I did not use proper in-text citation because I was not that aware of
+      their importance then (I was Grade 10), plus this was just a math club
+      meeting handout, not some serious academic paper.
+      However, I did list all resources I used on the last page.
+  #   mandarin: true
   # - url: http://www.mathland.idv.tw/
   #   text: Mathland
   #   mandarin: true
@@ -117,54 +145,95 @@
   id: latex
   group: misc
   links:
-  - url: 
-    text: 
+  - url: https://www.youtube.com/watch?v=4lyHIQl4VM8
+    text: VS Code setup
   - url: https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes
-    text: Overleaf LaTeX tutorials
-  - url: 
-    text: 
-  - url: https://www.youtube.com/playlist?list=PLHXZ9OQGMqxcWWkx2DMnQmj5os2X5ZR73
-    text: Dr. Trefor Bazett's LaTeX tutorials
-  - url: 
-    text: 
+    text: Quick guide (Overleaf)
+  - url: https://wch.github.io/latexsheet/latexsheet.pdf
+    text: LaTeX cheat sheet (Winston Chang)
+  - url: https://www.overleaf.com/latex/templates/a-quick-guide-to-latex/fghqpfgnxggz.pdf
+    text: LaTeX math cheat sheet (Professor Dave Richeson)
+  - url: https://www.overleaf.com/learn/latex/Tables
+    text: Tables (Overleaf)
+  - url: https://www.overleaf.com/learn/latex/How_to_Write_a_Thesis_in_LaTeX_(Part_3)%3A_Figures%2C_Subfigures_and_Tables
+    text: Figures and subfigures (Overleaf)
+  - url: https://www.overleaf.com/learn/latex/Commands
+    text: Commands (Overleaf)
+  - url: https://www.overleaf.com/learn/latex/Environments
+    text: Environments (Overleaf)
+  - url: https://www.overleaf.com/learn/latex/Cross_referencing_sections%2C_equations_and_floats
+    text: Cross-referencing (Overleaf)
+  - url: https://www.overleaf.com/learn/latex/Aligning_equations_with_amsmath
+    text: Aligning equations (Overleaf)
+  - url: https://www.overleaf.com/learn/latex/Mathematical_fonts
+    text: Mathematical fonts (Overleaf)
+  - url: https://www.overleaf.com/learn/latex/TikZ_package
+    text: Drawing diagrams (Overleaf)
+  - url: https://www.youtube.com/watch?v=bQugbYq0BVA&list=PLHXZ9OQGMqxcWWkx2DMnQmj5os2X5ZR73&index=5
+    text: Drawing diagrams (Dr. Trefor Bazett)
+  - url: https://www.youtube.com/watch?v=5jmIHOWpEg0&list=PLHXZ9OQGMqxcWWkx2DMnQmj5os2X5ZR73&index=6
+    text: Drawing graphs (Dr. Trefor Bazett)
+  - url: https://www.overleaf.com/learn/latex/Using_colors_in_LaTeX
+    text: Colours (Overleaf)
+  - url: https://www.overleaf.com/learn/latex/Multi-file_LaTeX_projects
+    text: Multi-file projects (Overleaf)
+  - url: https://tex.stackexchange.com/questions/29820/how-can-i-generate-just-pgf-tikz-images-not-placed-a-whole-page-or-slide
+    text: The standalone class (Stack Exchange)
 
-- title: Programming
+- title: Programming (mainly Python)
+  id: programming
+  group: misc
+  links:
+  - url: https://runestone.academy/ns/books/published/thinkcspy/index.html
+    text: Runestone interactive book
+  - url: https://www.w3schools.com/python/default.asp
+    text: W3Schools tutorials
+  - url: https://www.geeksforgeeks.org/python/python-programming-language-tutorial/
+    text: GeeksforGeeks tutorials
+  - url: /assets/pdfs/Notes_Python-Basics
+    text: Notes on Python I made in highschool
+  - url: /assets/pdfs/Notes_Processing-py-Basics
+    text: Notes on Processing.py I made in highschool
+
+- title: Web Development
   id: 
   group: misc
   links:
-  - url: 
-    text: 
-  - url: 
-    text: 
-  - url: https://www.w3schools.com/
-    text: W3Schools Coding tutorials
-  - url: 
-    text: 
-
-- title: Web development
-  id: 
-  group: misc
-  links:
-  - url: 
-    text: 
-  - url: 
-    text: 
-  - url: 
-    text: 
+  - url: https://www.w3schools.com/html/default.asp
+    text: W3Schools HTML tutorials
+  - url: https://www.youtube.com/watch?v=x-FsEH1LrZw
+    text: VS Code setup
+  - url: https://www.i-evolve.com/about-us/frequently-asked-questions-buffalo-ny/what-dns-and-whats-difference-between-dns-hosting-and-web-hosting
+    text: Domain and web hosting
+  - url: https://medium.com/@tosinfarai/understanding-web-hosting-and-dns-473bca3d2916
+    text: Hosting-related terminologies
+  - url: https://docs.github.com/en/pages
+    text: GitHub Pages documentation
+  - url: https://jekyllrb.com/
+    text: Jekyll documentation
+  - url: https://shopify.github.io/liquid/
+    text: Liquid documentation
+  - url: https://www.markdownguide.org/basic-syntax/
+    text: Markdown guide
+  - url: https://www.w3schools.com/howto/default.asp
+    text: W3Schools how-to guides
   - url: https://katex.org/docs/browser.html
-    text: 
-  - url: 
-    text: 
+    text: KaTeX documentation
+  - url: https://howbigismybrowser.com/
+    text: Measuring browser viewport dimensions
+  - url: https://developer.chrome.com/docs/devtools/overview
+    text: Google DevTools documentation
+  - url: https://developers.google.com/search/docs
+    text: Google SEO guides
+  - url: https://www.youtube.com/watch?v=uBfdsTs7zwQ
+    text: Google Search Console page indexing
+  - url: https://www.w3schools.com/charsets/
+    text: HTML characters, symbols, and emojis
+  - url: https://www.w3.org/WAI/standards-guidelines/wcag/
+    text: The Web Content Accessibility Guidelines (WCAG) international standard
 
-- title: Search engines
-  id: 
-  group: misc
-  links:
-  - url: 
-    text: 
-
-- title: Other websites
-  id: 
+- title: Other resources
+  id: otherResources
   group: misc
   intro: |-
     These are really random, but I really wanted to mention them
@@ -172,5 +241,10 @@
   links:
   - url: https://app.diagrams.net/
     text: Draw.io
-  - url: 
+  - url: https://static.semrush.com/blog/uploads/files/39/12/39121580a18160d3587274faed6323e2.pdf
+    text: Google search operators cheat sheet
+  - url: https://haveibeenpwned.com/
     text: Have I been pwned?
+  - url: https://jordanhong.com/
+    text: My brother's website
+    note: Probably not "useful," but I link it here anyways just for fun &#128513;

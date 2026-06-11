@@ -362,10 +362,10 @@ button {
     outline: none;
     background-color: black;
     color: white;
-    opacity: 0.75;
+    opacity: 0.64;
     cursor: pointer;
     font-size: 18px;
-    padding: 0.5rem;
+    padding: 0.6rem;
     border-radius: 3px;
 }
 #myBtn:hover {
@@ -414,7 +414,7 @@ button {
 }
 @media (min-width: 1200px) {
     #myBtn {
-        font-size: 20px;
+        font-size: 24px;
         padding: 0.6rem;
     }
 }

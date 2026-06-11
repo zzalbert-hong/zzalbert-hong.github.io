@@ -122,7 +122,7 @@ if (quoteDiv) {
         quotes[Math.floor(Math.random() * quotes.length)];
 
     quoteDiv.innerHTML = `<p>"${randomQuote.text}"</p>
-        <p>&mdash; <b>${randomQuote.author}</b>,
+        <p>&mdash; <!-- Paraphrased from --> <b>${randomQuote.author}</b>,
         <i>${randomQuote.source}</i> (${randomQuote.year})</p>`;
 
 }
@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Stop immediately if page has no TOC container
     if (!tocContainer) return;
     // Otherwise set up the TOC
-    tocContainer.innerHTML = `<ul><li>Jump to:</li>
+    tocContainer.innerHTML = `<ul><li>Jump to section:</li>
         <ul id="tocList"></ul></ul>`
     const toc = document.getElementById("tocList");
     
@@ -170,7 +170,7 @@ document.addEventListener("DOMContentLoaded", () => {
 document.querySelectorAll('a').forEach(link => {
     const url = link.getAttribute('href');
     const isPlain = link.getAttribute('class') == 'plain';
-    if (!url || isPlain) return;
+    if (!url) return;
 
     // Check if external
     // const isExternal =
@@ -184,7 +184,12 @@ document.querySelectorAll('a').forEach(link => {
     const isMyFile = url.startsWith('/assets/');
 
     // Apply attributes and CSS classes
-    if (isExternal) {
+    if (isPlain && isExternal) {
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer nofollow';
+    } else if (isPlain && isMyFile) {
+        link.target = '_blank';
+    } else if (isExternal) {
         link.target = '_blank';
         // link.rel = 'noopener noreferrer nofollow';
         link.rel = 'noopener noreferrer';

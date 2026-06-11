@@ -36,7 +36,11 @@ date: 2007-06-25
             <a href="{{ m.url }}">{{ m.en }}
                 ({% if m.lang %}{{ m.lang }}, {% endif %}{{ m.year }})</a>
             <!-- &ensp; -->
-            <span lang="zh-Hant">{{ m.zh }}</span>
+            {% if m.zhUrl %}
+                <a lang="zh-Hant" class="plain" href="{{ m.zhUrl }}">{{ m.zh }}</a>
+            {% else %}
+                <span lang="zh-Hant">{{ m.zh }}</span>
+            {% endif %}
         </li>
     {% endfor %}
     </ul>
