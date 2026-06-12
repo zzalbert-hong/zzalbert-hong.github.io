@@ -133,8 +133,8 @@
       Acknowledgement: The story-telling passages in the handout were
       copy-pasted from external resources; I did not write them myself.
       I did not use proper in-text citations because I was not that aware of
-      their importance then (I was Grade 10), plus this was just a math club
-      meeting handout, not some serious academic paper.
+      their importance then (I was Grade 10); besides, this was just a
+      math club meeting handout, not some serious academic paper.
       I did, however, list all resources I referred to on the last page.
     mandarin: true
   # - url: http://www.mathland.idv.tw/
@@ -159,7 +159,7 @@
     search up or ask AI about when needed), plus some useful pages that I
     constantly refer to.
     
-    Finally, a side note (for myself): while LaTeX allows
+    Finally, a note (for myself): while LaTeX allows
     customizing layouts any way you want, this should generally be avoided
     as the default layouts were already designed around conventional,
     time-tested typography standards, which balance readability and aesthetics;
@@ -222,8 +222,8 @@
   - url: /assets/pdfs/Notes_Processing-py-Basics.pdf
     text: Notes on Processing.py I made in highschool
 
-- title: Web Development
-  id: 
+- title: Basic Web Development
+  id: basicWebDevelopment
   group: misc
   intro: |-
     Similar to the LaTeX section, below is a list of resources I found useful,
@@ -253,14 +253,12 @@
   - url: https://www.markdownguide.org/basic-syntax/
     text: Markdown guide
     note: |-
-      A side note for people who were not familiar:
-      "markup" is a <em>class</em> of (coding) languages, which includes
-      several languages, whereas "Markdown" is one <em>particular</em>
-      markup language, which has its specific syntax.
-      The asymmetry between one being a <em>class</em> and the other
-      being a <em>particular</em> makes things a bit confusing,
-      but someone decided to name them like that and unfortunately
-      there is nothing I can do about it.
+      A side note for people who were not familiar: "markup" is a <em>class</em>
+      of (coding) languages, which includes several languages,
+      whereas "Markdown" is one <em>particular</em> markup language,
+      which has its specific syntax. I dislike the asymmetry between
+      one being a <em>class</em> and the other being a <em>particular</em>,
+      but unfortunately there is nothing I can do about it.
   - url: https://www.w3schools.com/howto/default.asp
     text: W3Schools how-to guides
   - url: https://katex.org/docs/browser.html

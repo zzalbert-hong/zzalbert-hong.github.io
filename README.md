@@ -17,30 +17,27 @@ zzalbert-hong.github.io/
    │
    ├─── _includes/   # Reusable modules or complex self-contained components
    │      ├─── ...
-   │      ├─── navbar.html
-   │      ├─── subnav.html
+   │      ├─── nav.html
    │      ├─── content-heading.html
    │      └─── content-closure.html
    │
-   ├─── _data/                  # Data structures such as lists and dictionaries
-   │      ├─── ...                that are referred to in html documents
-   │      ├─── variables.yml    # Page variables for each of my custom collections
-   │      ├─── navigation.yml   # Structure of the site and key info about each page
-   │      ├─── socials.yml      # List of social media links and contact info
-   │      └─── 404quotes.yml    # Fun quotes to display on the  404 error page
+   ├─── _data/                 # Data structures such as lists and dictionaries
+   │      ├─── ...               that are referred to in html documents
+   │      ├─── variables.yml   # Page variables for each of my custom collections
+   │      └─── socials.yml     # List of social media links and contact info
    │
    ├─── _privates/                # My (custom) collection of private pages
    ├─── _projects/                # My (custom) collection of project documents
-   ├─── _courses/                 # My (custom) collection of course info documents
+   ├─── _courses/                 # My (custom) collection of course documents
    ├─── _myposts/                 # My (custom) collection of blog posts
+   ├─── _extras/                  # My (custom) collection of extra pages
    │      ├─── [file-name].html   # For "privates" and "extras"
    │      └─── [file-name].md     # For all other collections
    │
    ├─── assets/
    │      ├─── css/
    │      │      ├─── default.css
-   │      │      ├─── plain.css
-   │      │      └─── fancy.css
+   │      │      └─── plain.css
    │      ├─── js/
    │      │      └─── basic.js
    │      ├─── images/
@@ -69,11 +66,7 @@ zzalbert-hong.github.io/
    │      ├─── philosophy.html
    │      └─── other.html
    ├─── extras/
-   │      ├─── index.html
-   │      ├─── resources.html
-   │      ├─── movies.html
-   │      ├─── books.html
-   │      └─── ...                # Maybe I will add more stuff later
+   │      └─── index.html
    │
    └─── 404.html   # The page that is shown when there is a 404 error
 ```

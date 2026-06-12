@@ -1,0 +1,17 @@
+Mentality:
+- DO NOT TOUCH IT IF IT WORKS
+
+Conventions and practices:
+- Try to keep html and md files focused on content
+  For other stuff like layouts and styling, try to manage them in external files
+  (with image widths and heights being the only exception, ideally)
+- It is good to use semantic elements such as <article> and <section>
+  However, do not worry too much when you forget to
+- Naming cases:
+- Capitalization:
+- Text decoration:
+- Aliases:
+
+Architecture and maintenance:
+
+Design decisions:

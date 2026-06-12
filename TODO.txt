@@ -1,0 +1,12 @@
+Tasks to do:
+- Finish DOCUMENTATION.txt
+- Finish project documents
+- Start course documents
+- Start blog posts
+- Finish movie recommendation lists
+
+Ideas to consider doing:
+- Redirect url in my domain
+- Or simpler pranks using og url, title, and image tags
+- Expand summary to see details https://www.w3schools.com/tags/tag_details.asp
+- Fade in tabs https://www.w3schools.com/howto/howto_js_tabs.asp
